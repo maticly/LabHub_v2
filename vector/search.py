@@ -18,15 +18,14 @@ def get_chroma_collection():
     """Caches the Chroma connection to prevent empty UI lag."""
     #check if DB exists 
     if not CHROMA_DB_PATH.exists():
-        print(f"❌ ChromaDB not found at {CHROMA_DB_PATH}. Run the vector sync script first.")
+        st.warning(f"ChromaDB not found at: {CHROMA_DB_PATH}")
         return []
-    
     try:
-        client = chromadb.PersistentClient(path=CHROMA_DB_PATH)
+        client = chromadb.PersistentClient(path=str(CHROMA_DB_PATH))
         model = embedding_functions.SentenceTransformerEmbeddingFunction(model_name="all-MiniLM-L6-v2")
         return client.get_collection(name="lab_products", embedding_function=model)
     except Exception as e:
-        print(f"Error connecting to ChromaDB: {e}")
+        st.warning(f"ChromaDB error: {e} | Path: {CHROMA_DB_PATH}")
         return []
     
 def semantic_search(query_text, n_results=5):

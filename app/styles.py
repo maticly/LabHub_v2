@@ -32,23 +32,9 @@ html, body, .stApp {
     background-color: #FBFBFD !important;
 }
 
-     
 
 /* ================= KPI CARDS ================= */
 
-.kpi-card {
-    background:#E9E9E9;
-    border-radius:14px;
-    padding:22px;
-    border:1px solid #65676B;
-    box-shadow:0 2px 8px rgba(0,0,0,0.08);
-    transition: all 0.25s ease;
-}
-
-.kpi-card:hover {
-    transform: translateY(-3px);
-    box-shadow:0 8px 18px rgba(0,0,0,0.10);
-}
 
 .kpi-title {
     font-size:18px;
