@@ -1,6 +1,7 @@
 # 🧪 LabHub — Inventory Intelligence Platform
 *A full OLTP → OLAP warehouse with ETL, Data Quality, semantic search, and a Streamlit analytics dashboard.*
 
+## [App link](https://vectorlab.streamlit.app/)
 ---
 
 ## 📌 Overview
