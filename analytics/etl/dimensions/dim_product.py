@@ -10,7 +10,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-PROJECT_ROOT = Path(__file__).resolve().parents[1] 
+PROJECT_ROOT = Path(__file__).resolve().parents[2] 
 CSV_DESCRIPTION_PATH = PROJECT_ROOT / "data" / "generated_data_OLTP" / "core.Product_with_Descriptions.csv"
 
 # 1. EXTRACT
