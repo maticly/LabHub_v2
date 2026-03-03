@@ -23,8 +23,8 @@ def get_chroma_collection():
     
     try:
         client = chromadb.PersistentClient(path=CHROMA_DB_PATH)
-        emb_fn = embedding_functions.DefaultEmbeddingFunction()
-        return client.get_collection(name="lab_products", embedding_function=emb_fn)
+        model = embedding_functions.SentenceTransformerEmbeddingFunction(model_name="all-MiniLM-L6-v2")
+        return client.get_collection(name="lab_products", embedding_function=model)
     except Exception as e:
         print(f"Error connecting to ChromaDB: {e}")
         return []

@@ -7,7 +7,10 @@ from sentence_transformers import SentenceTransformer
 
 def sync_vector_store():
     # ChromaDB setup (Local Persistently)
-    client = chromadb.PersistentClient(path="./chroma_db")
+    PROJECT_ROOT = Path(__file__).resolve().parents[1]
+    CHROMA_DB_PATH = PROJECT_ROOT / "chroma_db"
+
+    client = chromadb.PersistentClient(path=str(CHROMA_DB_PATH))
 
     # MiniLM-L6-v2 embedding model
     model = embedding_functions.SentenceTransformerEmbeddingFunction(model_name="all-MiniLM-L6-v2")
@@ -20,7 +23,7 @@ def sync_vector_store():
 
     # Paths
     PROJECT_ROOT = Path(__file__).resolve().parents[1]
-    csv_path = PROJECT_ROOT / "analytics" / "data" / "core.Product_with_Descriptions.csv"
+    csv_path = PROJECT_ROOT / "analytics" / "data" / "generated_data_OLTP" / "core.Product_with_Descriptions.csv"
 
     # CSV with descritption column
     df = pd.read_csv(csv_path)
