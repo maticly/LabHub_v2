@@ -27,6 +27,10 @@ ALTER TABLE core.Product
 ADD CONSTRAINT fk_product_unit FOREIGN KEY(UnitID)
 REFERENCES core.UnitOfMeasure(UnitID);
 
+ALTER TABLE core.Product
+ADD CONSTRAINT FK_Product_StorageCondition
+FOREIGN KEY (StorageConditionID) REFERENCES core.StorageConditions(StorageConditionID);
+
 ALTER TABLE core.[User]
 ADD CONSTRAINT check_EmailAtomic CHECK (Email NOT LIKE '%,%' AND Email NOT LIKE '%;%' AND Email NOT LIKE '% %')
 
@@ -44,6 +48,8 @@ ALTER TABLE supply.[Order]
 ADD CONSTRAINT fk_order_supplyrequest FOREIGN KEY(SupplyRequestID)
 REFERENCES supply.SupplyRequest(SupplyRequestID);
 
+ALTER TABLE supply.[Order]
+ADD CONSTRAINT fk_order_status FOREIGN KEY(OrderStatusID) REFERENCES supply.OrderStatus(StatusID);
 -- Inventory
 
 ALTER TABLE inventory.InventoryItem
@@ -53,6 +59,10 @@ REFERENCES core.Product(ProductID);
 ALTER TABLE inventory.InventoryItem
 ADD CONSTRAINT fk_inventory_location FOREIGN KEY(LocationID)
 REFERENCES inventory.Location(LocationID);
+
+ALTER TABLE inventory.InventoryItem
+ADD CONSTRAINT fk_supply_purchase FOREIGN KEY(PurchaseID)
+REFERENCES supply.Purchase(PurchaseID);
 
 ALTER TABLE inventory.StockEvent
 ADD CONSTRAINT fk_stock_inventory FOREIGN KEY(InventoryItemID)
@@ -71,6 +81,11 @@ REFERENCES supply.SupplyRequest(SupplyRequestID);
 ALTER TABLE link.SupplyRequestProduct
 ADD CONSTRAINT fk_link_product FOREIGN KEY(ProductID)
 REFERENCES core.Product(ProductID);
+
+ALTER TABLE link.VendorProduct
+ADD CONSTRAINT FK_VendorProduct_Vendor FOREIGN KEY (VendorID) REFERENCES core.Vendor(VendorID);
+ALTER TABLE link.VendorProduct
+ADD CONSTRAINT FK_VendorProduct_Product FOREIGN KEY (ProductID) REFERENCES core.Product(ProductID);
 
 COMMIT;
 GO

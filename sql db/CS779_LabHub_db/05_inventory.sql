@@ -28,9 +28,12 @@ CREATE TABLE inventory.InventoryItem
     InventoryItemID BIGINT IDENTITY PRIMARY KEY,
     ProductID BIGINT,
     LocationID BIGINT,
+    PurchaseID BIGINT,
     Quantity DECIMAL(12,2),
     ExpirationDate DATE,
-    AddedAt DATETIME2 DEFAULT SYSDATETIME()
+    AddedAt DATETIME2 DEFAULT SYSDATETIME(),
+    LotNumber VARCHAR(64),
+    IsHazardous BIT
 );
 
 CREATE TABLE inventory.Chemical
@@ -52,6 +55,13 @@ CREATE TABLE inventory.Consumable
     SerialNumber VARCHAR(64)
 );
 
+CREATE TABLE inventory.EventReason
+(
+    EventReasonID BIGINT IDENTITY PRIMARY KEY,
+    Reason VARCHAR(64) NOT NULL
+    -- Example: ('Expire', 'Loan', 'Use')
+);
+
 CREATE TABLE inventory.StockEvent
 (
     StockEventID BIGINT IDENTITY PRIMARY KEY,
@@ -61,8 +71,12 @@ CREATE TABLE inventory.StockEvent
     OldQuantity DECIMAL(12,2),
     NewQuantity DECIMAL(12,2),
     EventType VARCHAR(32),
+    EventReasonID BIGINT,
+    EventDescription VARCHAR(512),
     EventDate DATETIME2 DEFAULT SYSDATETIME()
 );
+
+SELECT * FROM inventory.StockEvent
 
 COMMIT;
 GO

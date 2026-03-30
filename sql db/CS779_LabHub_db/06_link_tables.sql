@@ -28,8 +28,10 @@ CREATE TABLE link.VendorProduct
     ID BIGINT IDENTITY PRIMARY KEY,
     VendorID BIGINT,
     ProductID BIGINT,
-    Price DECIMAL(12,2)
-);
+    ProductPrice DECIMAL(12,2),
+    LeadTimeDays INT,
+    UpdatedAt DATETIME2 DEFAULT SYSDATETIME()
+);       
 
 CREATE TABLE link.OrderProduct
 (

@@ -69,9 +69,11 @@ CREATE TABLE core.Vendor
     VendorID BIGINT IDENTITY PRIMARY KEY NOT NULL,
     VendorName VARCHAR(128) NOT NULL,
     Email VARCHAR(150) NOT NULL UNIQUE CHECK (Email NOT LIKE '%,%' AND Email NOT LIKE '%;%' AND Email NOT LIKE '% %'),
-    VendorCreatedAt DATETIME2 DEFAULT SYSDATETIME(),
-    VendorStatus VARCHAR(16) NOT NULL CHECK (VendorStatus IN ('Active', 'Paused', 'Inactive'))
+    Timestamp DATETIME2 DEFAULT SYSDATETIME(),
+    VendorStatus VARCHAR(16) NOT NULL CHECK (VendorStatus IN ('Active', 'Paused', 'Inactive')),
+    LeadTimeDays INT,
 );
+
 
 CREATE TABLE core.ProductCategory
 (
@@ -91,9 +93,19 @@ CREATE TABLE core.Product
     ProductName VARCHAR(128) NOT NULL,
     ProductCategoryID BIGINT NOT NULL,
     UnitID BIGINT NOT NULL,
-    CreatedAt DATETIME2 DEFAULT SYSDATETIME()
+    CreatedAt DATETIME2 DEFAULT SYSDATETIME(),
+    LastUpdatedAt DATETIME2 DEFAULT SYSDATETIME(),
+    StorageConditionID BIGINT
 );
 
+CREATE TABLE core.StorageConditions
+(
+    StorageConditionID BIGINT IDENTITY PRIMARY KEY,
+    IsHazardous BIT,
+    MaxTemp INT,
+    MinTemp INT,
+    ConditionDescription VARCHAR(512) NOT NULL
+);
 
 CREATE INDEX idx_user_role ON core.[User](UserRoleID);
 CREATE INDEX idx_user_department ON core.[User](DepartmentID);

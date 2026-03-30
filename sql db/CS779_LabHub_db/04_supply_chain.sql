@@ -24,8 +24,20 @@ CREATE TABLE supply.[Order]
     UserID BIGINT NOT NULL,
     SupplyRequestID BIGINT NOT NULL,
     VendorID BIGINT,
-    Status VARCHAR(16),
-    CreatedAt DATETIME2 DEFAULT SYSDATETIME()
+    OrderStatusID BIGINT,
+    Quantity DECIMAL(12,2),
+    UnitPrice DECIMAL(16,2),
+    CreatedAt DATETIME2 DEFAULT SYSDATETIME(),
+    UpdatedAt DATETIME2 DEFAULT SYSDATETIME()
+);
+
+
+
+-- OrderStatus
+CREATE TABLE supply.OrderStatus
+(
+    StatusID BIGINT IDENTITY PRIMARY KEY,
+    StatusName VARCHAR(64) NOT NULL
 );
 
 -- Purchase
@@ -48,6 +60,7 @@ CREATE TABLE supply.OrderHistory
     VendorID BIGINT,
     UserID BIGINT,
     TotalAmount DECIMAL(16,2),
+    UnitPrice DECIMAL(12,2),
     OrderDate DATETIME2
 );
 
