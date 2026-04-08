@@ -23,6 +23,8 @@ CREATE TABLE link.SupplyRequestProduct
     Priority VARCHAR(16)
 );
 
+SELECT * FROM link.VendorProduct
+
 CREATE TABLE link.VendorProduct
 (
     ID BIGINT IDENTITY PRIMARY KEY,

@@ -39,8 +39,7 @@ CREATE TABLE inventory.InventoryItem
 CREATE TABLE inventory.Chemical
 (
     InventoryItemID BIGINT PRIMARY KEY,
-    RegulationStatus VARCHAR(32),
-    SerialNumber VARCHAR(64)
+    RegulationStatus VARCHAR(32)
 );
 
 CREATE TABLE inventory.EquipmentItem
@@ -51,8 +50,7 @@ CREATE TABLE inventory.EquipmentItem
 
 CREATE TABLE inventory.Consumable
 (
-    InventoryItemID BIGINT PRIMARY KEY,
-    SerialNumber VARCHAR(64)
+    InventoryItemID BIGINT PRIMARY KEY
 );
 
 CREATE TABLE inventory.EventReason
@@ -75,8 +73,5 @@ CREATE TABLE inventory.StockEvent
     EventDescription VARCHAR(512),
     EventDate DATETIME2 DEFAULT SYSDATETIME()
 );
-
-SELECT * FROM inventory.StockEvent
-
 COMMIT;
 GO

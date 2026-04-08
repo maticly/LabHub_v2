@@ -72,6 +72,10 @@ ALTER TABLE inventory.StockEvent
 ADD CONSTRAINT fk_stock_user FOREIGN KEY([UserID])
 REFERENCES core.[User](UserID);
 
+ALTER TABLE inventory.StockEvent
+ADD CONSTRAINT fk_event_reason FOREIGN KEY(EventReasonID)
+REFERENCES inventory.EventReason(EventReasonID);
+
 -- Links
 
 ALTER TABLE link.SupplyRequestProduct
