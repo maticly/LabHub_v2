@@ -1,6 +1,6 @@
-USE CS779_LabHub_final;
+USE LabHub_v2;
 GO
-
+SELECT name FROM sys.tables where schema_id = SCHEMA_ID('link');
 BEGIN TRAN;
 GO
 CREATE SCHEMA link;
@@ -21,19 +21,7 @@ CREATE TABLE link.SupplyRequestProduct
     ProductID BIGINT,
     Quantity DECIMAL(8,2),
     Priority VARCHAR(16)
-);
-
-SELECT * FROM link.VendorProduct
-
-CREATE TABLE link.VendorProduct
-(
-    ID BIGINT IDENTITY PRIMARY KEY,
-    VendorID BIGINT,
-    ProductID BIGINT,
-    ProductPrice DECIMAL(12,2),
-    LeadTimeDays INT,
-    UpdatedAt DATETIME2 DEFAULT SYSDATETIME()
-);       
+);    
 
 CREATE TABLE link.OrderProduct
 (
@@ -56,5 +44,26 @@ CREATE TABLE link.UserSupplyRequest
     SupplyRequestID BIGINT
 );
 
+CREATE TABLE link.OrderHistoryProduct
+(
+    ID BIGINT IDENTITY PRIMARY KEY,
+    OrderHistoryID BIGINT,
+    ProductID BIGINT
+);
+
+CREATE TABLE link.OrderHistoryInventoryItem
+(
+    ID BIGINT IDENTITY PRIMARY KEY,
+    OrderHistoryID BIGINT,
+    InventoryItemID BIGINT
+);
+
+CREATE TABLE link.VendorProductLink
+(
+    ID BIGINT IDENTITY PRIMARY KEY,
+    VendorID BIGINT,
+    ProductID BIGINT,
+    ListingPrice DECIMAL(12,2)
+);
 COMMIT;
 GO

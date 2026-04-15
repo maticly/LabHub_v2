@@ -1,0 +1,114 @@
+LocationID,SiteName,Building,RoomNumber,StorageType
+,Main Campus,Bio Sci A,101,Fridge
+,Main Campus,Bio Sci A,102,Freezer
+,Main Campus,Bio Sci A,201,Cabinet
+,Main Campus,Bio Sci A,202,Shelf
+,Main Campus,Bio Sci B,110,Fridge
+,Main Campus,Bio Sci B,210,Freezer
+,Main Campus,Bio Sci B,310,Cabinet
+,Main Campus,Bio Sci B,320,Shelf
+,Main Campus,Chemistry North,301,Fridge
+,Main Campus,Chemistry North,302,Freezer
+,Main Campus,Chemistry North,303,Shelf
+,Main Campus,Chemistry North,304,Cabinet
+,Main Campus,Chemistry South,210,Fridge
+,Main Campus,Chemistry South,211,Freezer
+,Main Campus,Chemistry South,212,Shelf
+,Main Campus,Chemistry South,213,Cabinet
+,Main Campus,Physics Hall,120,Fridge
+,Main Campus,Physics Hall,220,Freezer
+,Main Campus,Physics Hall,320,Cabinet
+,Main Campus,Physics Hall,321,Shelf
+,Main Campus,Engineering Lab,15,Fridge
+,Main Campus,Engineering Lab,16,Freezer
+,Main Campus,Engineering Lab,110,Cabinet
+,Main Campus,Engineering Lab,210,Shelf
+,Main Campus,Comp Sci Center,101,Fridge
+,Main Campus,Comp Sci Center,102,Freezer
+,Main Campus,Comp Sci Center,201,Shelf
+,Main Campus,Comp Sci Center,202,Cabinet
+,Main Campus,Math Center,10,Cabinet
+,Main Campus,Math Center,11,Shelf
+,Main Campus,Math Center,112,Fridge
+,Main Campus,Math Center,113,Freezer
+,Main Campus,Env Sci Center,101,Fridge
+,Main Campus,Env Sci Center,102,Shelf
+,Main Campus,Env Sci Center,201,Freezer
+,Main Campus,Env Sci Center,202,Cabinet
+,Medical Campus,Clinical Research,401,Fridge
+,Medical Campus,Clinical Research,402,Freezer
+,Medical Campus,Clinical Research,403,Cabinet
+,Medical Campus,Clinical Research,404,Shelf
+,Medical Campus,Med Center East,210,Fridge
+,Medical Campus,Med Center East,211,Freezer
+,Medical Campus,Med Center East,310,Cabinet
+,Medical Campus,Med Center East,311,Shelf
+,Medical Campus,Med Center West,115,Fridge
+,Medical Campus,Med Center West,116,Freezer
+,Medical Campus,Med Center West,215,Shelf
+,Medical Campus,Med Center West,216,Cabinet
+,Medical Campus,Pharmacy Block A,101,Fridge
+,Medical Campus,Pharmacy Block A,102,Freezer
+,Medical Campus,Pharmacy Block A,201,Cabinet
+,Medical Campus,Pharmacy Block A,202,Shelf
+,Medical Campus,Pharmacy Block B,301,Fridge
+,Medical Campus,Pharmacy Block B,302,Freezer
+,Medical Campus,Pharmacy Block B,303,Shelf
+,Medical Campus,Pharmacy Block B,304,Cabinet
+,Research Park,Bio Innovation Hub,120,Fridge
+,Research Park,Bio Innovation Hub,220,Freezer
+,Research Park,Bio Innovation Hub,320,Shelf
+,Research Park,Bio Innovation Hub,321,Cabinet
+,Research Park,Tech Incubator,10,Cabinet
+,Research Park,Tech Incubator,11,Shelf
+,Research Park,Tech Incubator,112,Fridge
+,Research Park,Tech Incubator,113,Freezer
+,Research Park,Genomics Center,201,Fridge
+,Research Park,Genomics Center,202,Freezer
+,Research Park,Genomics Center,301,Shelf
+,Research Park,Genomics Center,302,Cabinet
+,Research Park,Proteomics Core,101,Fridge
+,Research Park,Proteomics Core,102,Freezer
+,Research Park,Proteomics Core,201,Shelf
+,Research Park,Proteomics Core,202,Cabinet
+,Satellite Campus,North Science,101,Fridge
+,Satellite Campus,North Science,102,Freezer
+,Satellite Campus,North Science,201,Shelf
+,Satellite Campus,North Science,202,Cabinet
+,Satellite Campus,South Science,301,Fridge
+,Satellite Campus,South Science,302,Freezer
+,Satellite Campus,South Science,303,Shelf
+,Satellite Campus,South Science,304,Cabinet
+,Satellite Campus,Engineering Annex,10,Fridge
+,Satellite Campus,Engineering Annex,11,Freezer
+,Satellite Campus,Engineering Annex,110,Cabinet
+,Satellite Campus,Engineering Annex,111,Shelf
+,Satellite Campus,Physics Annex,120,Fridge
+,Satellite Campus,Physics Annex,121,Freezer
+,Satellite Campus,Physics Annex,220,Shelf
+,Satellite Campus,Physics Annex,221,Cabinet
+,Satellite Campus,Storage Unit1,01A,Fridge
+,Satellite Campus,Storage Unit1,01B,Freezer
+,Satellite Campus,Storage Unit2,02A,Shelf
+,Satellite Campus,Storage Unit2,02B,Cabinet
+,Satellite Campus,Storage Unit3,03A,Fridge
+,Satellite Campus,Storage Unit3,03B,Freezer
+,Satellite Campus,Storage Unit4,04A,Shelf
+,Satellite Campus,Storage Unit4,04B,Cabinet
+,Satellite Campus,Cold Room Block,CR1,Fridge
+,Satellite Campus,Cold Room Block,CR2,Fridge
+,Satellite Campus,Cold Room Block,FR1,Freezer
+,Satellite Campus,Storage Unit5,05C,Shelf
+,Main Campus,Bio Sci A,101,Fridge
+,Main Campus,Bio Sci A,102,Freezer
+,Main Campus,Bio Sci A,201,Cabinet
+,Main Campus,Bio Sci A,202,Shelf
+,Main Campus,Chemistry North,310,Fridge
+,Main Campus,Chemistry North,311,Freezer
+,Main Campus,Chemistry North,312,Shelf
+,Main Campus,Physics Hall,120,Cabinet
+,Main Campus,Physics Hall,220,Shelf
+,Main Campus,Engineering Lab,15,Fridge
+,Main Campus,Engineering Lab,16,Freezer
+,Main Campus,Engineering Lab,110,Cabinet
+,Medical Campus,Clinical Research,405,Cabinet

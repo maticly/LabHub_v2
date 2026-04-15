@@ -1,4 +1,7 @@
-USE CS779_LabHub_final;
+CREATE DATABASE LabHub_v2;
+
+select name from sys.databases;
+USE LabHub_v2;
 GO
 
 BEGIN TRAN;
@@ -28,4 +31,3 @@ DROP SCHEMA IF EXISTS core;
 COMMIT;
 GO
 
-SELECT * FROM core.[User];

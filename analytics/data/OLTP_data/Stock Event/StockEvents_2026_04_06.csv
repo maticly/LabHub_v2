@@ -1,0 +1,1001 @@
+StockEventID,InventoryItemID,LocationID,UserID,OldQuantity,NewQuantity,EventReasonID,EventDescription,EventDate
+,121,33,167,212,212.24,6,Return of unused material to stock.,4/6/2026 18:36
+,878,31,262,201.99,197.87,1,Experimental usage: 4.12 units.,4/6/2026 9:17
+,667,106,296,266.29,265.59,1,Experimental usage: 0.7 units.,4/6/2026 13:54
+,524,60,113,200.92,250.92,2,Delivery arrival: +50 units.,4/6/2026 19:58
+,675,7,95,64.29,65.69,6,Return of unused material to stock.,4/6/2026 17:15
+,178,24,280,272.93,272.93,3,Internal lab transfer to Location 24.,4/6/2026 14:09
+,153,85,249,115.8,115.91,5,Inventory audit correction.,4/6/2026 19:19
+,107,102,110,154.06,150.35,1,Experimental usage: 3.71 units.,4/6/2026 8:39
+,884,71,65,114.14,113.58,1,Experimental usage: 0.56 units.,4/6/2026 9:35
+,678,104,115,397.21,397.73,6,Return of unused material to stock.,4/6/2026 19:58
+,825,107,74,43.39,43.39,3,Internal lab transfer to Location 107.,4/6/2026 10:07
+,664,111,289,436.56,433.16,1,Experimental usage: 3.4 units.,4/6/2026 9:14
+,818,45,246,365.69,363.46,1,Experimental usage: 2.23 units.,4/6/2026 13:00
+,956,1,248,211.22,206.55,1,Experimental usage: 4.67 units.,4/6/2026 17:53
+,513,56,328,341.65,338.11,1,Experimental usage: 3.54 units.,4/6/2026 19:11
+,791,111,317,275.77,274.92,4,Chemical waste disposal: 0.85 units.,4/6/2026 11:04
+,984,97,241,201.99,201.99,3,Internal lab transfer to Location 97.,4/6/2026 15:14
+,91,73,173,626,621.82,1,Experimental usage: 4.18 units.,4/6/2026 10:16
+,257,49,210,409,404.01,1,Experimental usage: 4.99 units.,4/6/2026 16:35
+,634,47,13,324.86,321.11,1,Experimental usage: 3.75 units.,4/6/2026 19:56
+,159,14,50,908.17,908.48,6,Return of unused material to stock.,4/6/2026 17:38
+,144,80,48,103.04,100.72,1,Experimental usage: 2.32 units.,4/6/2026 9:45
+,710,81,304,436.32,433,1,Experimental usage: 3.32 units.,4/6/2026 19:23
+,656,17,27,516.65,513.79,1,Experimental usage: 2.86 units.,4/6/2026 13:26
+,919,99,334,210.52,260.52,2,Delivery arrival: +50 units.,4/6/2026 18:56
+,720,21,48,430.27,426.05,1,Experimental usage: 4.22 units.,4/6/2026 11:01
+,913,96,3,220.87,217.62,1,Experimental usage: 3.25 units.,4/6/2026 15:17
+,687,78,311,312.36,309.17,1,Experimental usage: 3.19 units.,4/6/2026 19:42
+,111,51,82,68.8,64.7,1,Experimental usage: 4.1 units.,4/6/2026 18:13
+,65,95,48,282.94,281.3,1,Experimental usage: 1.64 units.,4/6/2026 11:07
+,612,16,251,147.55,143.04,1,Experimental usage: 4.51 units.,4/6/2026 10:35
+,785,33,170,346.93,346.45,4,Chemical waste disposal: 0.48 units.,4/6/2026 12:06
+,520,104,327,265.07,365.07,2,Delivery arrival: +100 units.,4/6/2026 18:26
+,908,19,115,314,309.22,1,Experimental usage: 4.78 units.,4/6/2026 16:56
+,977,97,119,250,251.6,6,Return of unused material to stock.,4/6/2026 14:39
+,357,29,288,284.08,284.08,3,Internal lab transfer to Location 29.,4/6/2026 10:34
+,111,51,318,64.7,63.68,1,Experimental usage: 1.02 units.,4/6/2026 15:58
+,625,9,120,49.16,48.58,1,Experimental usage: 0.58 units.,4/6/2026 12:41
+,448,49,258,304.4,300.22,1,Experimental usage: 4.18 units.,4/6/2026 12:53
+,23,71,191,346.75,344.75,1,Experimental usage: 2.0 units.,4/6/2026 11:52
+,621,62,19,693.06,693.07,5,Inventory audit correction.,4/6/2026 15:41
+,410,86,201,195,195,3,Internal lab transfer to Location 86.,4/6/2026 10:23
+,456,92,267,615.08,614.18,1,Experimental usage: 0.9 units.,4/6/2026 17:23
+,372,35,27,294.25,294.25,5,Inventory audit correction.,4/6/2026 15:29
+,371,29,182,459.86,456.11,1,Experimental usage: 3.75 units.,4/6/2026 15:00
+,999,38,181,421.52,420.11,1,Experimental usage: 1.41 units.,4/6/2026 17:58
+,393,85,259,170.96,170.99,5,Inventory audit correction.,4/6/2026 18:18
+,165,91,273,161.21,160.58,1,Experimental usage: 0.63 units.,4/6/2026 14:29
+,456,92,59,614.18,610.09,1,Experimental usage: 4.09 units.,4/6/2026 14:31
+,521,69,92,174.66,0,7,Item expired; removed from inventory.,4/6/2026 8:21
+,987,2,220,213,209.94,1,Experimental usage: 3.06 units.,4/6/2026 19:11
+,177,109,81,464,459.15,1,Experimental usage: 4.85 units.,4/6/2026 15:22
+,393,85,134,170.99,166.01,1,Experimental usage: 4.98 units.,4/6/2026 19:25
+,945,98,65,606.55,602.26,1,Experimental usage: 4.29 units.,4/6/2026 17:20
+,653,103,196,413.98,413.98,3,Internal lab transfer to Location 103.,4/6/2026 11:44
+,120,2,199,233,231.92,1,Experimental usage: 1.08 units.,4/6/2026 10:09
+,717,23,281,252.89,250.59,1,Experimental usage: 2.3 units.,4/6/2026 13:32
+,148,56,95,405.18,405.18,3,Internal lab transfer to Location 56.,4/6/2026 9:35
+,863,21,157,15.83,15.12,1,Experimental usage: 0.71 units.,4/6/2026 13:31
+,490,34,288,422.5,420.34,1,Experimental usage: 2.16 units.,4/6/2026 11:03
+,470,92,49,368.81,364.47,1,Experimental usage: 4.34 units.,4/6/2026 11:36
+,261,61,83,247.52,246.79,1,Experimental usage: 0.73 units.,4/6/2026 15:37
+,728,5,152,477.9,473.12,1,Experimental usage: 4.78 units.,4/6/2026 14:02
+,424,75,289,282.04,281.08,4,Chemical waste disposal: 0.96 units.,4/6/2026 13:47
+,414,97,329,138.86,238.86,2,Delivery arrival: +100 units.,4/6/2026 18:19
+,449,57,331,225.8,227.15,6,Return of unused material to stock.,4/6/2026 15:37
+,756,10,211,430.29,680.29,2,Delivery arrival: +250 units.,4/6/2026 13:49
+,827,34,152,255.03,253.77,1,Experimental usage: 1.26 units.,4/6/2026 14:53
+,386,102,241,139.79,139.79,3,Internal lab transfer to Location 102.,4/6/2026 17:52
+,879,23,266,77.94,75.6,1,Experimental usage: 2.34 units.,4/6/2026 9:58
+,573,98,93,0,0,5,Inventory audit correction.,4/6/2026 8:54
+,117,41,41,935,932.8,1,Experimental usage: 2.2 units.,4/6/2026 14:11
+,668,9,118,115.79,115.15,4,Chemical waste disposal: 0.64 units.,4/6/2026 15:34
+,150,9,146,230.24,230.24,3,Internal lab transfer to Location 9.,4/6/2026 18:17
+,899,91,123,469.17,469.65,6,Return of unused material to stock.,4/6/2026 15:36
+,892,23,172,172.36,173.99,6,Return of unused material to stock.,4/6/2026 15:04
+,170,88,311,312.34,310.65,1,Experimental usage: 1.69 units.,4/6/2026 13:03
+,908,19,2,309.22,309.39,5,Inventory audit correction.,4/6/2026 9:52
+,63,43,36,85.73,82.51,1,Experimental usage: 3.22 units.,4/6/2026 18:28
+,134,109,27,351.35,348.47,1,Experimental usage: 2.88 units.,4/6/2026 9:17
+,648,82,205,382.94,381.47,1,Experimental usage: 1.47 units.,4/6/2026 15:08
+,896,92,287,363.91,364.02,5,Inventory audit correction.,4/6/2026 18:44
+,656,17,86,513.79,514.91,6,Return of unused material to stock.,4/6/2026 10:01
+,378,27,196,231.15,228.31,1,Experimental usage: 2.84 units.,4/6/2026 10:38
+,66,70,135,140.74,139.51,1,Experimental usage: 1.23 units.,4/6/2026 19:12
+,925,65,234,176,0,7,Item expired; removed from inventory.,4/6/2026 11:27
+,189,82,62,430,430.23,6,Return of unused material to stock.,4/6/2026 11:04
+,805,104,191,527.44,1027.44,2,Delivery arrival: +500 units.,4/6/2026 16:14
+,208,71,38,775.33,775.45,5,Inventory audit correction.,4/6/2026 10:10
+,572,72,304,43.65,39.61,1,Experimental usage: 4.04 units.,4/6/2026 10:07
+,794,34,72,40.12,37.94,1,Experimental usage: 2.18 units.,4/6/2026 14:55
+,529,35,169,225.63,275.63,2,Delivery arrival: +50 units.,4/6/2026 16:57
+,252,88,292,710.35,710.35,3,Internal lab transfer to Location 88.,4/6/2026 11:10
+,884,71,220,113.58,109.08,1,Experimental usage: 4.5 units.,4/6/2026 11:38
+,642,6,68,59.86,57.35,1,Experimental usage: 2.51 units.,4/6/2026 19:57
+,882,71,218,321.53,316.72,1,Experimental usage: 4.81 units.,4/6/2026 19:47
+,675,7,107,65.69,61.21,1,Experimental usage: 4.48 units.,4/6/2026 18:12
+,471,26,133,365.59,364.74,4,Chemical waste disposal: 0.85 units.,4/6/2026 17:54
+,351,98,291,0,0.7,6,Return of unused material to stock.,4/6/2026 19:48
+,261,61,147,246.79,246.79,3,Internal lab transfer to Location 61.,4/6/2026 13:40
+,185,40,292,219.49,219.49,3,Internal lab transfer to Location 40.,4/6/2026 19:12
+,349,110,92,145.36,143.95,1,Experimental usage: 1.41 units.,4/6/2026 17:10
+,829,37,128,75.77,125.77,2,Delivery arrival: +50 units.,4/6/2026 9:23
+,909,50,170,23.59,22.13,1,Experimental usage: 1.46 units.,4/6/2026 18:02
+,361,98,159,87.02,87.02,3,Internal lab transfer to Location 98.,4/6/2026 10:27
+,763,106,164,529.81,528.93,4,Chemical waste disposal: 0.88 units.,4/6/2026 11:12
+,864,27,35,86.11,0,7,Item expired; removed from inventory.,4/6/2026 11:09
+,715,42,270,320.12,320.12,3,Internal lab transfer to Location 42.,4/6/2026 19:48
+,323,70,314,115.48,112.35,1,Experimental usage: 3.13 units.,4/6/2026 11:07
+,429,100,91,742.62,742.82,5,Inventory audit correction.,4/6/2026 17:45
+,883,2,304,485.25,735.25,2,Delivery arrival: +250 units.,4/6/2026 16:33
+,187,99,118,379.92,379.81,5,Inventory audit correction.,4/6/2026 13:29
+,592,48,264,209.12,210.14,6,Return of unused material to stock.,4/6/2026 8:55
+,745,2,58,295,290.99,1,Experimental usage: 4.01 units.,4/6/2026 10:51
+,237,22,140,444.78,444.77,5,Inventory audit correction.,4/6/2026 8:34
+,233,91,150,729.28,726.64,1,Experimental usage: 2.64 units.,4/6/2026 10:49
+,247,86,278,198.53,195.74,1,Experimental usage: 2.79 units.,4/6/2026 12:29
+,429,100,296,742.82,743.9,6,Return of unused material to stock.,4/6/2026 19:13
+,223,2,72,228.27,227.67,1,Experimental usage: 0.6 units.,4/6/2026 16:57
+,231,20,23,392.35,387.63,1,Experimental usage: 4.72 units.,4/6/2026 13:10
+,965,104,217,425.44,423.79,1,Experimental usage: 1.65 units.,4/6/2026 18:04
+,588,36,303,879.74,878.05,1,Experimental usage: 1.69 units.,4/6/2026 10:25
+,405,42,163,187.64,687.64,2,Delivery arrival: +500 units.,4/6/2026 18:46
+,533,107,311,337.52,437.52,2,Delivery arrival: +100 units.,4/6/2026 8:59
+,592,48,282,210.14,710.14,2,Delivery arrival: +500 units.,4/6/2026 11:26
+,127,28,71,346.94,846.94,2,Delivery arrival: +500 units.,4/6/2026 18:08
+,748,100,142,230.35,230.22,5,Inventory audit correction.,4/6/2026 12:05
+,573,98,276,0,500,2,Delivery arrival: +500 units.,4/6/2026 19:45
+,238,72,68,390.87,389.6,1,Experimental usage: 1.27 units.,4/6/2026 8:18
+,808,47,44,153.8,150.67,1,Experimental usage: 3.13 units.,4/6/2026 14:37
+,698,24,312,346.53,343.06,1,Experimental usage: 3.47 units.,4/6/2026 17:58
+,751,11,29,211.75,211.75,3,Internal lab transfer to Location 11.,4/6/2026 9:10
+,783,42,136,477.38,476.31,1,Experimental usage: 1.07 units.,4/6/2026 15:57
+,317,56,226,339.61,336.18,1,Experimental usage: 3.43 units.,4/6/2026 10:37
+,162,10,301,268.42,264.27,1,Experimental usage: 4.15 units.,4/6/2026 12:37
+,844,111,274,405.14,404.43,1,Experimental usage: 0.71 units.,4/6/2026 16:40
+,753,99,167,406,406,3,Internal lab transfer to Location 99.,4/6/2026 13:02
+,757,8,103,334.54,332.73,1,Experimental usage: 1.81 units.,4/6/2026 12:14
+,782,95,102,173.54,223.54,2,Delivery arrival: +50 units.,4/6/2026 13:49
+,425,45,311,435.38,432.44,1,Experimental usage: 2.94 units.,4/6/2026 18:17
+,3,103,70,367.2,366.46,1,Experimental usage: 0.74 units.,4/6/2026 15:36
+,107,102,49,150.35,149.68,1,Experimental usage: 0.67 units.,4/6/2026 8:45
+,786,1,63,713.33,709.63,1,Experimental usage: 3.7 units.,4/6/2026 16:44
+,333,9,226,292.49,0,7,Item expired; removed from inventory.,4/6/2026 13:51
+,635,23,85,350.47,348.28,1,Experimental usage: 2.19 units.,4/6/2026 18:15
+,295,23,220,12.55,8.03,1,Experimental usage: 4.52 units.,4/6/2026 16:04
+,857,15,307,306.8,304.73,1,Experimental usage: 2.07 units.,4/6/2026 14:22
+,359,101,241,400.23,400.23,3,Internal lab transfer to Location 101.,4/6/2026 17:40
+,757,8,169,332.73,328.22,1,Experimental usage: 4.51 units.,4/6/2026 9:45
+,702,73,213,492.89,489.76,1,Experimental usage: 3.13 units.,4/6/2026 17:56
+,604,35,208,189,188.47,1,Experimental usage: 0.53 units.,4/6/2026 10:53
+,898,66,303,491.22,492.86,6,Return of unused material to stock.,4/6/2026 13:07
+,471,83,299,364.74,364.74,3,Internal lab transfer to Location 83.,4/6/2026 14:14
+,107,102,249,149.68,151.4,6,Return of unused material to stock.,4/6/2026 8:32
+,273,34,245,370.65,369.41,1,Experimental usage: 1.24 units.,4/6/2026 12:56
+,610,25,142,426.92,425.29,1,Experimental usage: 1.63 units.,4/6/2026 12:33
+,351,98,312,0.7,100.7,2,Delivery arrival: +100 units.,4/6/2026 9:30
+,506,56,86,489.52,489.05,4,Chemical waste disposal: 0.47 units.,4/6/2026 17:50
+,394,91,157,298.59,298.59,3,Internal lab transfer to Location 91.,4/6/2026 17:21
+,466,74,307,223.61,223.09,4,Chemical waste disposal: 0.52 units.,4/6/2026 10:30
+,265,84,126,244.68,243.78,1,Experimental usage: 0.9 units.,4/6/2026 8:38
+,200,10,193,35.07,33.7,1,Experimental usage: 1.37 units.,4/6/2026 18:20
+,986,59,101,325.69,325.03,4,Chemical waste disposal: 0.66 units.,4/6/2026 8:44
+,330,95,114,39.76,37.07,1,Experimental usage: 2.69 units.,4/6/2026 14:05
+,432,12,234,305.39,305.39,3,Internal lab transfer to Location 12.,4/6/2026 8:17
+,147,79,278,478.4,473.89,1,Experimental usage: 4.51 units.,4/6/2026 15:35
+,31,14,197,204.08,199.74,1,Experimental usage: 4.34 units.,4/6/2026 12:11
+,716,31,189,489.4,589.4,2,Delivery arrival: +100 units.,4/6/2026 16:56
+,103,41,136,734.46,1234.46,2,Delivery arrival: +500 units.,4/6/2026 11:54
+,732,37,232,164.49,166.48,6,Return of unused material to stock.,4/6/2026 13:21
+,864,27,132,0,50,2,Delivery arrival: +50 units.,4/6/2026 8:16
+,108,70,61,115.58,111.7,1,Experimental usage: 3.88 units.,4/6/2026 13:40
+,400,50,50,128,126.88,1,Experimental usage: 1.12 units.,4/6/2026 9:05
+,289,69,67,324.79,322.07,1,Experimental usage: 2.72 units.,4/6/2026 15:08
+,113,86,32,18.79,15.14,1,Experimental usage: 3.65 units.,4/6/2026 16:38
+,207,75,196,454.15,453.43,4,Chemical waste disposal: 0.72 units.,4/6/2026 12:32
+,61,38,145,378.57,376.23,1,Experimental usage: 2.34 units.,4/6/2026 13:43
+,734,111,157,62.9,62.06,1,Experimental usage: 0.84 units.,4/6/2026 13:46
+,792,74,272,47,42.37,1,Experimental usage: 4.63 units.,4/6/2026 13:26
+,727,55,182,511.03,507.52,1,Experimental usage: 3.51 units.,4/6/2026 10:58
+,116,36,150,309.11,309.23,5,Inventory audit correction.,4/6/2026 8:02
+,792,74,40,42.37,39.99,1,Experimental usage: 2.38 units.,4/6/2026 16:55
+,250,34,189,488,988,2,Delivery arrival: +500 units.,4/6/2026 11:08
+,623,93,206,347,343.23,1,Experimental usage: 3.77 units.,4/6/2026 8:44
+,164,37,129,1045.71,1042.77,1,Experimental usage: 2.94 units.,4/6/2026 19:33
+,58,88,204,476.09,476.09,3,Internal lab transfer to Location 88.,4/6/2026 12:54
+,860,81,283,411.8,407.29,1,Experimental usage: 4.51 units.,4/6/2026 10:23
+,87,11,86,407.52,407.52,3,Internal lab transfer to Location 11.,4/6/2026 15:39
+,928,1,219,145,141.62,1,Experimental usage: 3.38 units.,4/6/2026 14:06
+,748,108,152,230.22,230.22,3,Internal lab transfer to Location 108.,4/6/2026 8:44
+,332,28,80,587.78,587.78,3,Internal lab transfer to Location 28.,4/6/2026 18:44
+,997,34,96,817.45,815.77,1,Experimental usage: 1.68 units.,4/6/2026 8:10
+,33,31,44,535.28,534.14,1,Experimental usage: 1.14 units.,4/6/2026 8:00
+,304,32,60,431.27,0,7,Item expired; removed from inventory.,4/6/2026 16:10
+,781,56,74,0,500,2,Delivery arrival: +500 units.,4/6/2026 16:59
+,398,18,135,214.05,464.05,2,Delivery arrival: +250 units.,4/6/2026 9:08
+,433,4,58,373.29,373.29,5,Inventory audit correction.,4/6/2026 9:16
+,90,61,235,503.99,503.99,3,Internal lab transfer to Location 61.,4/6/2026 18:10
+,396,46,145,368.81,365.89,1,Experimental usage: 2.92 units.,4/6/2026 19:11
+,306,82,315,434.75,434.86,5,Inventory audit correction.,4/6/2026 8:17
+,174,65,100,95.79,0,7,Item expired; removed from inventory.,4/6/2026 8:59
+,226,72,36,96.31,97.69,6,Return of unused material to stock.,4/6/2026 11:36
+,403,34,111,147.09,143.94,1,Experimental usage: 3.15 units.,4/6/2026 10:14
+,402,7,40,423.28,418.75,1,Experimental usage: 4.53 units.,4/6/2026 15:50
+,142,91,299,392.24,388.66,1,Experimental usage: 3.58 units.,4/6/2026 8:29
+,304,32,166,0,100,2,Delivery arrival: +100 units.,4/6/2026 12:42
+,924,94,127,306.95,304.91,1,Experimental usage: 2.04 units.,4/6/2026 8:02
+,446,69,78,313.25,313.25,3,Internal lab transfer to Location 69.,4/6/2026 13:10
+,482,109,189,318.61,0,7,Item expired; removed from inventory.,4/6/2026 10:23
+,928,1,174,141.62,137.01,1,Experimental usage: 4.61 units.,4/6/2026 13:51
+,636,39,299,492.17,491.11,1,Experimental usage: 1.06 units.,4/6/2026 11:09
+,285,57,179,280.61,277.84,1,Experimental usage: 2.77 units.,4/6/2026 13:35
+,404,58,34,96.05,92.58,1,Experimental usage: 3.47 units.,4/6/2026 9:02
+,74,37,167,212.71,211.68,1,Experimental usage: 1.03 units.,4/6/2026 12:45
+,991,112,104,4.83,3.65,1,Experimental usage: 1.18 units.,4/6/2026 16:51
+,370,112,300,249.3,247.03,1,Experimental usage: 2.27 units.,4/6/2026 15:01
+,569,82,110,151.43,148.98,1,Experimental usage: 2.45 units.,4/6/2026 9:41
+,703,80,99,110.22,110.24,5,Inventory audit correction.,4/6/2026 14:02
+,627,95,48,420.99,417.65,1,Experimental usage: 3.34 units.,4/6/2026 12:53
+,819,43,229,10.64,5.81,1,Experimental usage: 4.83 units.,4/6/2026 11:25
+,248,111,192,250,0,7,Item expired; removed from inventory.,4/6/2026 14:13
+,878,31,206,197.87,196.11,1,Experimental usage: 1.76 units.,4/6/2026 8:22
+,71,7,39,146.21,141.26,1,Experimental usage: 4.95 units.,4/6/2026 13:49
+,236,104,11,433.07,428.32,1,Experimental usage: 4.75 units.,4/6/2026 11:55
+,747,55,158,146.25,141.93,1,Experimental usage: 4.32 units.,4/6/2026 9:39
+,872,32,182,501.95,498.59,1,Experimental usage: 3.36 units.,4/6/2026 12:39
+,522,100,264,38.96,36.08,1,Experimental usage: 2.88 units.,4/6/2026 11:21
+,488,73,288,462.23,459.27,1,Experimental usage: 2.96 units.,4/6/2026 17:54
+,656,17,319,514.91,514.73,5,Inventory audit correction.,4/6/2026 19:19
+,189,82,274,430.23,427.69,1,Experimental usage: 2.54 units.,4/6/2026 16:38
+,361,98,252,87.02,82.5,1,Experimental usage: 4.52 units.,4/6/2026 15:38
+,954,113,121,0,0,4,Chemical waste disposal: 0.5 units.,4/6/2026 19:12
+,85,9,62,257.63,253.8,1,Experimental usage: 3.83 units.,4/6/2026 9:04
+,326,1,101,959.57,959.57,3,Internal lab transfer to Location 1.,4/6/2026 12:59
+,77,56,333,310,310,3,Internal lab transfer to Location 56.,4/6/2026 12:47
+,304,32,272,100,95.38,1,Experimental usage: 4.62 units.,4/6/2026 11:44
+,100,85,10,163.2,158.82,1,Experimental usage: 4.38 units.,4/6/2026 9:14
+,253,80,43,268.29,268.29,3,Internal lab transfer to Location 80.,4/6/2026 19:15
+,778,11,37,217.26,216.42,1,Experimental usage: 0.84 units.,4/6/2026 8:25
+,815,12,132,208.53,209.94,6,Return of unused material to stock.,4/6/2026 18:33
+,300,77,128,575.31,0,7,Item expired; removed from inventory.,4/6/2026 19:03
+,658,62,115,69.17,66.93,1,Experimental usage: 2.24 units.,4/6/2026 18:21
+,242,95,50,348.57,344.17,1,Experimental usage: 4.4 units.,4/6/2026 11:44
+,895,64,96,159,259,2,Delivery arrival: +100 units.,4/6/2026 10:37
+,744,85,13,190.46,290.46,2,Delivery arrival: +100 units.,4/6/2026 15:15
+,352,113,233,213.03,212.63,4,Chemical waste disposal: 0.4 units.,4/6/2026 17:41
+,432,12,328,305.39,304.97,4,Chemical waste disposal: 0.42 units.,4/6/2026 14:14
+,759,102,177,448.05,698.05,2,Delivery arrival: +250 units.,4/6/2026 12:36
+,492,69,330,129.69,125.19,1,Experimental usage: 4.5 units.,4/6/2026 18:20
+,648,82,327,381.47,377.4,1,Experimental usage: 4.07 units.,4/6/2026 14:49
+,83,2,85,341.03,342.63,6,Return of unused material to stock.,4/6/2026 14:20
+,576,61,188,59.66,57.13,1,Experimental usage: 2.53 units.,4/6/2026 16:03
+,987,2,198,209.94,210.13,6,Return of unused material to stock.,4/6/2026 9:03
+,39,111,44,429.38,427.38,1,Experimental usage: 2.0 units.,4/6/2026 18:28
+,1000,89,144,348.06,344.75,1,Experimental usage: 3.31 units.,4/6/2026 15:36
+,286,52,11,380.94,379.96,4,Chemical waste disposal: 0.98 units.,4/6/2026 11:33
+,8,96,225,306.84,305.33,1,Experimental usage: 1.51 units.,4/6/2026 8:19
+,649,112,147,533,534.7,6,Return of unused material to stock.,4/6/2026 8:07
+,909,50,152,22.13,19.33,1,Experimental usage: 2.8 units.,4/6/2026 12:07
+,31,14,67,199.74,198.9,4,Chemical waste disposal: 0.84 units.,4/6/2026 13:57
+,530,42,66,183.93,179.31,1,Experimental usage: 4.62 units.,4/6/2026 14:41
+,206,48,225,157.04,154.31,1,Experimental usage: 2.73 units.,4/6/2026 16:13
+,61,38,29,376.23,626.23,2,Delivery arrival: +250 units.,4/6/2026 13:30
+,396,46,272,365.89,365.5,4,Chemical waste disposal: 0.39 units.,4/6/2026 13:48
+,780,6,227,340,336.91,1,Experimental usage: 3.09 units.,4/6/2026 10:50
+,944,1,193,473.52,472.84,1,Experimental usage: 0.68 units.,4/6/2026 10:25
+,17,112,278,222.3,221.4,1,Experimental usage: 0.9 units.,4/6/2026 10:04
+,980,13,25,644.63,641.03,1,Experimental usage: 3.6 units.,4/6/2026 13:39
+,475,47,29,167,165.43,1,Experimental usage: 1.57 units.,4/6/2026 8:51
+,259,5,31,0,250,2,Delivery arrival: +250 units.,4/6/2026 9:30
+,289,69,21,322.07,320.74,1,Experimental usage: 1.33 units.,4/6/2026 17:56
+,837,12,54,375.86,371.9,1,Experimental usage: 3.96 units.,4/6/2026 14:55
+,321,43,38,310.65,309.35,1,Experimental usage: 1.3 units.,4/6/2026 8:16
+,888,108,199,110,610,2,Delivery arrival: +500 units.,4/6/2026 9:26
+,735,59,307,30.99,28.61,1,Experimental usage: 2.38 units.,4/6/2026 19:38
+,999,38,23,420.11,417.81,1,Experimental usage: 2.3 units.,4/6/2026 14:45
+,784,78,98,0,50,2,Delivery arrival: +50 units.,4/6/2026 15:00
+,40,52,260,424.93,422.99,1,Experimental usage: 1.94 units.,4/6/2026 10:13
+,585,29,300,258.62,254.71,1,Experimental usage: 3.91 units.,4/6/2026 9:03
+,907,88,70,470.41,470.11,4,Chemical waste disposal: 0.3 units.,4/6/2026 16:26
+,399,47,243,0,250,2,Delivery arrival: +250 units.,4/6/2026 15:35
+,728,5,283,473.12,470.86,1,Experimental usage: 2.26 units.,4/6/2026 16:38
+,894,67,204,179.8,179.1,4,Chemical waste disposal: 0.7 units.,4/6/2026 13:27
+,56,85,246,214.15,213.37,1,Experimental usage: 0.78 units.,4/6/2026 12:54
+,963,93,2,251.1,251.49,6,Return of unused material to stock.,4/6/2026 12:58
+,199,15,317,220.14,217.27,1,Experimental usage: 2.87 units.,4/6/2026 13:32
+,400,50,277,126.88,122.43,1,Experimental usage: 4.45 units.,4/6/2026 18:07
+,789,12,89,42.15,40.05,1,Experimental usage: 2.1 units.,4/6/2026 19:03
+,366,70,16,425.63,423.12,1,Experimental usage: 2.51 units.,4/6/2026 12:39
+,924,94,85,304.91,302.19,1,Experimental usage: 2.72 units.,4/6/2026 9:31
+,220,88,267,203.84,253.84,2,Delivery arrival: +50 units.,4/6/2026 14:29
+,582,8,114,380,380,3,Internal lab transfer to Location 8.,4/6/2026 10:35
+,897,38,34,159.98,409.98,2,Delivery arrival: +250 units.,4/6/2026 19:42
+,369,29,22,121.15,116.67,1,Experimental usage: 4.48 units.,4/6/2026 13:07
+,879,57,282,75.6,75.6,3,Internal lab transfer to Location 57.,4/6/2026 19:55
+,45,50,331,249.8,251.01,6,Return of unused material to stock.,4/6/2026 18:44
+,81,109,111,226,221.99,1,Experimental usage: 4.01 units.,4/6/2026 19:42
+,332,28,167,587.78,583.19,1,Experimental usage: 4.59 units.,4/6/2026 18:03
+,781,56,46,500,495.4,1,Experimental usage: 4.6 units.,4/6/2026 14:16
+,85,9,85,253.8,252.92,1,Experimental usage: 0.88 units.,4/6/2026 16:32
+,444,15,226,173.82,173.02,1,Experimental usage: 0.8 units.,4/6/2026 13:33
+,786,40,65,709.63,709.63,3,Internal lab transfer to Location 40.,4/6/2026 16:57
+,897,38,18,409.98,406.75,1,Experimental usage: 3.23 units.,4/6/2026 11:27
+,888,108,75,610,608.5,1,Experimental usage: 1.5 units.,4/6/2026 15:51
+,859,70,250,325.76,324.23,1,Experimental usage: 1.53 units.,4/6/2026 14:13
+,581,72,196,476.77,476.77,3,Internal lab transfer to Location 72.,4/6/2026 8:42
+,394,91,227,298.59,294.91,1,Experimental usage: 3.68 units.,4/6/2026 19:23
+,797,106,36,39.22,35.99,1,Experimental usage: 3.23 units.,4/6/2026 14:39
+,84,56,141,105.53,101.4,1,Experimental usage: 4.13 units.,4/6/2026 15:20
+,427,84,290,398,394.46,1,Experimental usage: 3.54 units.,4/6/2026 12:05
+,759,102,92,698.05,700.02,6,Return of unused material to stock.,4/6/2026 19:24
+,870,63,193,272.6,268.3,1,Experimental usage: 4.3 units.,4/6/2026 10:26
+,237,22,28,444.77,443.54,1,Experimental usage: 1.23 units.,4/6/2026 19:37
+,955,2,197,880.39,877.27,1,Experimental usage: 3.12 units.,4/6/2026 18:02
+,663,33,194,129.37,124.72,1,Experimental usage: 4.65 units.,4/6/2026 19:57
+,850,70,165,410.04,0,7,Item expired; removed from inventory.,4/6/2026 9:57
+,749,102,93,250.01,250.01,3,Internal lab transfer to Location 102.,4/6/2026 17:32
+,566,102,217,22.01,22.01,3,Internal lab transfer to Location 102.,4/6/2026 10:29
+,889,72,323,186,186,3,Internal lab transfer to Location 72.,4/6/2026 17:06
+,960,24,154,267.12,267.12,3,Internal lab transfer to Location 24.,4/6/2026 9:21
+,772,52,38,482,479.08,1,Experimental usage: 2.92 units.,4/6/2026 9:22
+,439,20,288,394.08,391.89,1,Experimental usage: 2.19 units.,4/6/2026 16:01
+,981,112,66,294,291.65,1,Experimental usage: 2.35 units.,4/6/2026 12:35
+,722,53,8,468.22,468.58,6,Return of unused material to stock.,4/6/2026 14:40
+,133,9,147,828.19,1328.19,2,Delivery arrival: +500 units.,4/6/2026 19:44
+,496,81,225,236.3,0,7,Item expired; removed from inventory.,4/6/2026 8:43
+,791,111,32,274.92,274.05,4,Chemical waste disposal: 0.87 units.,4/6/2026 11:23
+,741,102,79,275.84,272.17,1,Experimental usage: 3.67 units.,4/6/2026 11:35
+,413,36,174,276.27,273.32,1,Experimental usage: 2.95 units.,4/6/2026 9:35
+,415,101,245,344.34,0,7,Item expired; removed from inventory.,4/6/2026 11:05
+,602,90,217,11.21,12.32,6,Return of unused material to stock.,4/6/2026 15:40
+,795,98,193,376.46,372.91,1,Experimental usage: 3.55 units.,4/6/2026 12:19
+,989,19,124,109.76,106.86,1,Experimental usage: 2.9 units.,4/6/2026 13:53
+,595,68,321,421.75,471.75,2,Delivery arrival: +50 units.,4/6/2026 13:55
+,479,37,113,97.35,97.35,3,Internal lab transfer to Location 37.,4/6/2026 15:54
+,732,37,262,166.48,166.54,5,Inventory audit correction.,4/6/2026 12:19
+,818,45,25,363.46,362.83,1,Experimental usage: 0.63 units.,4/6/2026 11:26
+,32,112,121,30.47,28.91,1,Experimental usage: 1.56 units.,4/6/2026 19:38
+,872,32,9,498.59,494.79,1,Experimental usage: 3.8 units.,4/6/2026 15:03
+,107,102,264,151.4,151.98,6,Return of unused material to stock.,4/6/2026 17:32
+,878,31,1,196.11,195.03,1,Experimental usage: 1.08 units.,4/6/2026 17:47
+,680,39,257,112.48,109.86,1,Experimental usage: 2.62 units.,4/6/2026 14:30
+,29,2,261,97.87,93.84,1,Experimental usage: 4.03 units.,4/6/2026 18:19
+,825,107,193,43.39,41.33,1,Experimental usage: 2.06 units.,4/6/2026 8:34
+,981,112,172,291.65,286.92,1,Experimental usage: 4.73 units.,4/6/2026 19:14
+,507,47,75,38,38.03,5,Inventory audit correction.,4/6/2026 13:35
+,293,113,249,231.62,231.53,5,Inventory audit correction.,4/6/2026 16:52
+,787,12,244,230.03,229.24,1,Experimental usage: 0.79 units.,4/6/2026 18:36
+,679,73,98,896.94,898.08,6,Return of unused material to stock.,4/6/2026 11:29
+,614,37,251,674.77,674.77,3,Internal lab transfer to Location 37.,4/6/2026 9:24
+,394,91,48,294.91,294.95,5,Inventory audit correction.,4/6/2026 13:29
+,949,42,288,120.71,117.92,1,Experimental usage: 2.79 units.,4/6/2026 19:15
+,137,87,219,375.48,373.27,1,Experimental usage: 2.21 units.,4/6/2026 10:25
+,475,47,318,165.43,164.21,1,Experimental usage: 1.22 units.,4/6/2026 11:25
+,621,62,112,693.07,691.6,1,Experimental usage: 1.47 units.,4/6/2026 14:15
+,288,108,323,136.49,132.74,1,Experimental usage: 3.75 units.,4/6/2026 16:02
+,626,68,289,572.99,571.2,1,Experimental usage: 1.79 units.,4/6/2026 19:13
+,219,107,215,204.65,202.51,1,Experimental usage: 2.14 units.,4/6/2026 19:40
+,574,31,16,446.22,444.84,1,Experimental usage: 1.38 units.,4/6/2026 19:41
+,617,24,223,995.68,991.3,1,Experimental usage: 4.38 units.,4/6/2026 16:17
+,486,16,64,266.88,264.58,1,Experimental usage: 2.3 units.,4/6/2026 10:44
+,73,96,255,201.42,200.64,4,Chemical waste disposal: 0.78 units.,4/6/2026 14:15
+,594,71,218,48.04,46.79,1,Experimental usage: 1.25 units.,4/6/2026 8:04
+,493,55,186,462.7,463.45,6,Return of unused material to stock.,4/6/2026 13:00
+,763,106,285,528.93,524.9,1,Experimental usage: 4.03 units.,4/6/2026 14:08
+,863,21,141,15.12,13.72,1,Experimental usage: 1.4 units.,4/6/2026 18:36
+,22,110,196,324.32,320.82,1,Experimental usage: 3.5 units.,4/6/2026 10:58
+,779,77,326,206.68,205.08,1,Experimental usage: 1.6 units.,4/6/2026 14:42
+,759,102,52,700.02,698.5,1,Experimental usage: 1.52 units.,4/6/2026 14:04
+,850,70,333,0,0,4,Chemical waste disposal: 0.33 units.,4/6/2026 12:07
+,349,110,268,143.95,144.49,6,Return of unused material to stock.,4/6/2026 17:46
+,761,77,11,273.17,269.31,1,Experimental usage: 3.86 units.,4/6/2026 10:40
+,487,102,172,247.01,244.2,1,Experimental usage: 2.81 units.,4/6/2026 19:21
+,693,67,238,46.33,41.58,1,Experimental usage: 4.75 units.,4/6/2026 15:53
+,88,81,23,0,100,2,Delivery arrival: +100 units.,4/6/2026 9:53
+,612,16,207,143.04,140.24,1,Experimental usage: 2.8 units.,4/6/2026 12:44
+,283,45,149,191.01,441.01,2,Delivery arrival: +250 units.,4/6/2026 18:26
+,835,5,21,100,99.57,4,Chemical waste disposal: 0.43 units.,4/6/2026 9:42
+,882,71,164,316.72,313.7,1,Experimental usage: 3.02 units.,4/6/2026 13:11
+,933,95,11,267.88,267.33,1,Experimental usage: 0.55 units.,4/6/2026 10:34
+,923,44,224,262.96,258.13,1,Experimental usage: 4.83 units.,4/6/2026 18:40
+,230,96,206,456.82,452.65,1,Experimental usage: 4.17 units.,4/6/2026 12:26
+,548,109,115,494.31,492.47,1,Experimental usage: 1.84 units.,4/6/2026 19:53
+,538,7,316,323.36,323.36,3,Internal lab transfer to Location 7.,4/6/2026 19:53
+,124,13,282,893.36,892.77,4,Chemical waste disposal: 0.59 units.,4/6/2026 8:27
+,455,96,159,345.12,343.93,1,Experimental usage: 1.19 units.,4/6/2026 14:11
+,873,16,164,92,88.1,1,Experimental usage: 3.9 units.,4/6/2026 18:23
+,456,92,13,610.09,609.1,1,Experimental usage: 0.99 units.,4/6/2026 17:21
+,126,39,97,367,364.6,1,Experimental usage: 2.4 units.,4/6/2026 13:10
+,630,107,165,33.67,32.83,1,Experimental usage: 0.84 units.,4/6/2026 15:25
+,626,68,20,571.2,569.86,1,Experimental usage: 1.34 units.,4/6/2026 15:16
+,525,64,276,50.2,49.2,1,Experimental usage: 1.0 units.,4/6/2026 8:43
+,801,98,157,69.92,67.23,1,Experimental usage: 2.69 units.,4/6/2026 14:37
+,402,7,90,418.75,417.44,1,Experimental usage: 1.31 units.,4/6/2026 14:16
+,32,112,222,28.91,27.5,1,Experimental usage: 1.41 units.,4/6/2026 11:05
+,362,54,188,76.05,73.39,1,Experimental usage: 2.66 units.,4/6/2026 12:41
+,617,24,237,991.3,0,7,Item expired; removed from inventory.,4/6/2026 17:22
+,855,67,193,285,281.11,1,Experimental usage: 3.89 units.,4/6/2026 8:23
+,824,26,138,169.64,269.64,2,Delivery arrival: +100 units.,4/6/2026 15:11
+,769,89,207,597.24,593.86,1,Experimental usage: 3.38 units.,4/6/2026 18:25
+,443,106,259,406.63,906.63,2,Delivery arrival: +500 units.,4/6/2026 8:48
+,545,44,319,8.02,8.5,6,Return of unused material to stock.,4/6/2026 9:00
+,780,6,313,336.91,333.29,1,Experimental usage: 3.62 units.,4/6/2026 19:33
+,119,10,12,24.1,20.65,1,Experimental usage: 3.45 units.,4/6/2026 16:18
+,596,45,313,337.53,337.64,5,Inventory audit correction.,4/6/2026 13:37
+,628,37,73,420.27,420.08,5,Inventory audit correction.,4/6/2026 18:50
+,13,24,196,93.44,91.42,1,Experimental usage: 2.02 units.,4/6/2026 11:10
+,954,113,167,0,50,2,Delivery arrival: +50 units.,4/6/2026 8:56
+,463,11,154,19.34,519.34,2,Delivery arrival: +500 units.,4/6/2026 18:16
+,334,54,71,375.75,374.65,1,Experimental usage: 1.1 units.,4/6/2026 17:22
+,150,9,130,230.24,231.27,6,Return of unused material to stock.,4/6/2026 9:03
+,687,78,162,309.17,306.43,1,Experimental usage: 2.74 units.,4/6/2026 10:44
+,724,89,53,49.1,50.12,6,Return of unused material to stock.,4/6/2026 10:41
+,508,74,171,100,95.97,1,Experimental usage: 4.03 units.,4/6/2026 13:08
+,728,5,305,470.86,472.82,6,Return of unused material to stock.,4/6/2026 18:11
+,639,69,170,396.94,395.04,1,Experimental usage: 1.9 units.,4/6/2026 11:32
+,889,72,95,186,183.83,1,Experimental usage: 2.17 units.,4/6/2026 12:51
+,310,67,83,390.19,389.35,1,Experimental usage: 0.84 units.,4/6/2026 16:28
+,503,106,214,454.89,450.94,1,Experimental usage: 3.95 units.,4/6/2026 10:02
+,559,77,3,462.14,462.24,5,Inventory audit correction.,4/6/2026 16:29
+,295,23,255,8.03,4.9,1,Experimental usage: 3.13 units.,4/6/2026 19:14
+,346,13,312,162.41,158.94,1,Experimental usage: 3.47 units.,4/6/2026 15:01
+,933,95,134,267.33,265.01,1,Experimental usage: 2.32 units.,4/6/2026 14:56
+,597,55,64,312.1,812.1,2,Delivery arrival: +500 units.,4/6/2026 15:51
+,124,13,149,892.77,892.21,1,Experimental usage: 0.56 units.,4/6/2026 17:17
+,244,101,97,176.61,226.61,2,Delivery arrival: +50 units.,4/6/2026 10:02
+,661,24,154,299.02,298.9,5,Inventory audit correction.,4/6/2026 13:36
+,141,70,33,290.72,286.44,1,Experimental usage: 4.28 units.,4/6/2026 16:06
+,923,44,124,258.13,257.49,1,Experimental usage: 0.64 units.,4/6/2026 15:34
+,845,66,13,219,214.68,1,Experimental usage: 4.32 units.,4/6/2026 14:15
+,920,102,225,135.28,130.31,1,Experimental usage: 4.97 units.,4/6/2026 8:52
+,593,61,284,328.21,325.09,1,Experimental usage: 3.12 units.,4/6/2026 14:57
+,480,99,160,67,66.5,4,Chemical waste disposal: 0.5 units.,4/6/2026 13:13
+,544,49,120,231.31,228.71,1,Experimental usage: 2.6 units.,4/6/2026 16:39
+,890,60,311,207.57,205.62,1,Experimental usage: 1.95 units.,4/6/2026 18:55
+,140,107,96,444.41,444.61,5,Inventory audit correction.,4/6/2026 12:16
+,418,107,160,493.1,488.35,1,Experimental usage: 4.75 units.,4/6/2026 14:23
+,17,112,318,221.4,221.49,5,Inventory audit correction.,4/6/2026 14:34
+,878,31,107,195.03,194.33,1,Experimental usage: 0.7 units.,4/6/2026 14:40
+,31,14,157,198.9,198.28,1,Experimental usage: 0.62 units.,4/6/2026 18:49
+,107,102,46,151.98,149.25,1,Experimental usage: 2.73 units.,4/6/2026 18:37
+,347,90,306,405.6,401.64,1,Experimental usage: 3.96 units.,4/6/2026 11:45
+,998,44,216,228.02,225.84,1,Experimental usage: 2.18 units.,4/6/2026 15:48
+,744,43,193,290.46,290.46,3,Internal lab transfer to Location 43.,4/6/2026 15:22
+,515,94,334,341.35,591.35,2,Delivery arrival: +250 units.,4/6/2026 18:29
+,376,50,96,317.25,315.33,1,Experimental usage: 1.92 units.,4/6/2026 11:44
+,310,67,284,389.35,390.05,6,Return of unused material to stock.,4/6/2026 10:51
+,992,84,107,481.57,0,7,Item expired; removed from inventory.,4/6/2026 17:01
+,679,73,161,898.08,897.52,1,Experimental usage: 0.56 units.,4/6/2026 15:32
+,157,58,180,225.5,225.5,3,Internal lab transfer to Location 58.,4/6/2026 9:43
+,556,1,26,319.27,317.36,1,Experimental usage: 1.91 units.,4/6/2026 16:47
+,230,96,128,452.65,451.01,1,Experimental usage: 1.64 units.,4/6/2026 9:00
+,850,70,6,0,0,5,Inventory audit correction.,4/6/2026 12:01
+,309,100,59,267.41,263.93,1,Experimental usage: 3.48 units.,4/6/2026 18:10
+,967,4,52,409.45,405.24,1,Experimental usage: 4.21 units.,4/6/2026 19:59
+,406,59,53,428.29,423.79,1,Experimental usage: 4.5 units.,4/6/2026 16:26
+,420,25,312,332.13,332.13,3,Internal lab transfer to Location 25.,4/6/2026 12:15
+,165,91,145,160.58,158.01,1,Experimental usage: 2.57 units.,4/6/2026 12:14
+,60,25,199,338.46,337.67,1,Experimental usage: 0.79 units.,4/6/2026 17:58
+,913,68,200,217.62,217.62,3,Internal lab transfer to Location 68.,4/6/2026 10:24
+,132,113,323,74.13,73.55,1,Experimental usage: 0.58 units.,4/6/2026 9:17
+,179,101,150,227.33,227.51,5,Inventory audit correction.,4/6/2026 8:45
+,662,66,231,100.06,97.54,1,Experimental usage: 2.52 units.,4/6/2026 11:07
+,351,98,105,100.7,98.59,1,Experimental usage: 2.11 units.,4/6/2026 13:03
+,304,32,24,95.38,94.74,1,Experimental usage: 0.64 units.,4/6/2026 19:51
+,631,25,102,335.33,334.06,1,Experimental usage: 1.27 units.,4/6/2026 15:32
+,995,61,234,410,408.01,1,Experimental usage: 1.99 units.,4/6/2026 9:57
+,14,36,290,128.5,628.5,2,Delivery arrival: +500 units.,4/6/2026 17:39
+,869,69,264,517.24,0,7,Item expired; removed from inventory.,4/6/2026 19:34
+,150,9,221,231.27,227.75,1,Experimental usage: 3.52 units.,4/6/2026 14:17
+,579,63,154,183.14,183.14,3,Internal lab transfer to Location 63.,4/6/2026 19:14
+,270,21,286,347,347,3,Internal lab transfer to Location 21.,4/6/2026 10:08
+,879,57,264,75.6,72.25,1,Experimental usage: 3.35 units.,4/6/2026 14:42
+,98,74,23,412.38,409.72,1,Experimental usage: 2.66 units.,4/6/2026 14:52
+,399,47,274,250,245.12,1,Experimental usage: 4.88 units.,4/6/2026 11:01
+,261,29,232,246.79,246.79,3,Internal lab transfer to Location 29.,4/6/2026 16:01
+,492,69,88,125.19,120.97,1,Experimental usage: 4.22 units.,4/6/2026 18:25
+,210,52,107,62.44,62.44,3,Internal lab transfer to Location 52.,4/6/2026 8:54
+,259,5,181,250,247.36,1,Experimental usage: 2.64 units.,4/6/2026 15:13
+,333,9,299,0,100,2,Delivery arrival: +100 units.,4/6/2026 12:38
+,168,44,295,448.69,445.61,1,Experimental usage: 3.08 units.,4/6/2026 8:07
+,632,38,190,104.97,100.55,1,Experimental usage: 4.42 units.,4/6/2026 14:13
+,183,36,202,432.59,428.5,1,Experimental usage: 4.09 units.,4/6/2026 17:34
+,602,90,75,12.32,10.47,1,Experimental usage: 1.85 units.,4/6/2026 19:46
+,958,100,29,66,65.21,1,Experimental usage: 0.79 units.,4/6/2026 10:17
+,421,3,121,198.25,195,1,Experimental usage: 3.25 units.,4/6/2026 9:42
+,670,32,76,82.56,79.67,1,Experimental usage: 2.89 units.,4/6/2026 8:17
+,195,67,21,229.59,229.59,3,Internal lab transfer to Location 67.,4/6/2026 17:07
+,67,8,190,302.16,802.16,2,Delivery arrival: +500 units.,4/6/2026 17:43
+,11,104,297,451.24,701.24,2,Delivery arrival: +250 units.,4/6/2026 18:10
+,985,68,66,358.89,358.1,4,Chemical waste disposal: 0.79 units.,4/6/2026 16:21
+,312,40,37,149.38,0,7,Item expired; removed from inventory.,4/6/2026 13:56
+,300,77,175,0,50,2,Delivery arrival: +50 units.,4/6/2026 18:33
+,933,95,112,265.01,515.01,2,Delivery arrival: +250 units.,4/6/2026 15:38
+,466,74,78,223.09,221.39,1,Experimental usage: 1.7 units.,4/6/2026 17:24
+,204,5,141,127.46,125.11,1,Experimental usage: 2.35 units.,4/6/2026 11:00
+,477,32,126,48.99,148.99,2,Delivery arrival: +100 units.,4/6/2026 8:35
+,457,15,51,60.69,57.73,1,Experimental usage: 2.96 units.,4/6/2026 15:17
+,142,91,15,388.66,383.9,1,Experimental usage: 4.76 units.,4/6/2026 18:32
+,483,88,139,934.09,931.73,1,Experimental usage: 2.36 units.,4/6/2026 19:54
+,985,68,33,358.1,358.4,6,Return of unused material to stock.,4/6/2026 16:41
+,856,47,114,13.08,13.94,6,Return of unused material to stock.,4/6/2026 11:13
+,798,91,103,415,415,3,Internal lab transfer to Location 91.,4/6/2026 17:54
+,431,108,97,962.33,1062.33,2,Delivery arrival: +100 units.,4/6/2026 14:08
+,866,26,183,358.3,356.28,1,Experimental usage: 2.02 units.,4/6/2026 8:38
+,665,62,75,322.04,318.12,1,Experimental usage: 3.92 units.,4/6/2026 11:16
+,920,58,105,130.31,130.31,3,Internal lab transfer to Location 58.,4/6/2026 17:57
+,982,32,89,214.29,212.58,1,Experimental usage: 1.71 units.,4/6/2026 13:14
+,189,82,257,427.69,425.81,1,Experimental usage: 1.88 units.,4/6/2026 8:13
+,24,13,109,355.7,351.49,1,Experimental usage: 4.21 units.,4/6/2026 15:16
+,604,35,78,188.47,186.51,1,Experimental usage: 1.96 units.,4/6/2026 12:50
+,161,71,136,437.89,487.89,2,Delivery arrival: +50 units.,4/6/2026 12:15
+,44,24,26,47.98,547.98,2,Delivery arrival: +500 units.,4/6/2026 8:34
+,846,106,226,416.51,412.51,1,Experimental usage: 4.0 units.,4/6/2026 18:46
+,601,33,194,393,393,3,Internal lab transfer to Location 33.,4/6/2026 8:32
+,943,43,268,0,50,2,Delivery arrival: +50 units.,4/6/2026 10:49
+,341,27,138,96.5,93.46,1,Experimental usage: 3.04 units.,4/6/2026 14:28
+,548,109,72,492.47,491.97,1,Experimental usage: 0.5 units.,4/6/2026 10:56
+,784,60,58,50,50,3,Internal lab transfer to Location 60.,4/6/2026 8:18
+,778,11,118,216.42,215.27,1,Experimental usage: 1.15 units.,4/6/2026 16:39
+,74,37,38,211.68,212.05,6,Return of unused material to stock.,4/6/2026 11:57
+,334,54,75,374.65,370.87,1,Experimental usage: 3.78 units.,4/6/2026 13:10
+,431,108,82,1062.33,1058.23,1,Experimental usage: 4.1 units.,4/6/2026 15:33
+,480,99,156,66.5,64.99,1,Experimental usage: 1.51 units.,4/6/2026 8:35
+,959,53,225,190.96,440.96,2,Delivery arrival: +250 units.,4/6/2026 9:12
+,846,106,88,412.51,410.36,1,Experimental usage: 2.15 units.,4/6/2026 13:27
+,814,63,118,378.05,374.32,1,Experimental usage: 3.73 units.,4/6/2026 11:55
+,778,11,52,215.27,215.82,6,Return of unused material to stock.,4/6/2026 19:23
+,351,98,205,98.59,95.22,1,Experimental usage: 3.37 units.,4/6/2026 9:16
+,766,57,61,221.89,223.64,6,Return of unused material to stock.,4/6/2026 13:11
+,501,109,204,435.71,436.22,6,Return of unused material to stock.,4/6/2026 10:51
+,297,66,113,182.22,178.03,1,Experimental usage: 4.19 units.,4/6/2026 12:55
+,42,22,200,363.08,358.98,1,Experimental usage: 4.1 units.,4/6/2026 14:14
+,791,21,268,274.05,274.05,3,Internal lab transfer to Location 21.,4/6/2026 8:29
+,173,34,220,453.58,452.52,1,Experimental usage: 1.06 units.,4/6/2026 19:32
+,397,55,139,481.82,477.7,1,Experimental usage: 4.12 units.,4/6/2026 16:25
+,872,32,177,494.79,492.39,1,Experimental usage: 2.4 units.,4/6/2026 13:26
+,743,76,188,1.3,501.3,2,Delivery arrival: +500 units.,4/6/2026 18:03
+,318,37,325,433.85,429.72,1,Experimental usage: 4.13 units.,4/6/2026 18:41
+,624,76,106,495.08,493.54,1,Experimental usage: 1.54 units.,4/6/2026 13:32
+,139,57,252,890.37,887.57,1,Experimental usage: 2.8 units.,4/6/2026 9:02
+,82,24,151,222.42,217.81,1,Experimental usage: 4.61 units.,4/6/2026 14:29
+,327,30,310,145.52,145.47,5,Inventory audit correction.,4/6/2026 16:40
+,73,74,285,200.64,200.64,3,Internal lab transfer to Location 74.,4/6/2026 9:59
+,948,59,135,384.42,380,1,Experimental usage: 4.42 units.,4/6/2026 12:57
+,782,95,258,223.54,220.61,1,Experimental usage: 2.93 units.,4/6/2026 17:05
+,634,47,130,321.11,316.28,1,Experimental usage: 4.83 units.,4/6/2026 16:23
+,449,57,329,227.15,227.05,5,Inventory audit correction.,4/6/2026 14:44
+,122,25,214,452.55,453.63,6,Return of unused material to stock.,4/6/2026 13:38
+,563,98,308,204.04,200.6,1,Experimental usage: 3.44 units.,4/6/2026 13:56
+,914,108,86,327.99,327.99,3,Internal lab transfer to Location 108.,4/6/2026 15:55
+,239,37,253,288.45,283.51,1,Experimental usage: 4.94 units.,4/6/2026 12:09
+,960,24,292,267.12,266.17,1,Experimental usage: 0.95 units.,4/6/2026 9:26
+,453,78,31,385.24,0,7,Item expired; removed from inventory.,4/6/2026 16:39
+,614,78,101,674.77,674.77,3,Internal lab transfer to Location 78.,4/6/2026 9:21
+,160,96,61,231.01,228.94,1,Experimental usage: 2.07 units.,4/6/2026 9:59
+,566,102,272,22.01,20.42,1,Experimental usage: 1.59 units.,4/6/2026 13:24
+,263,94,50,126.85,122,1,Experimental usage: 4.85 units.,4/6/2026 16:28
+,722,53,179,468.58,465.61,1,Experimental usage: 2.97 units.,4/6/2026 13:28
+,329,78,224,382,381.73,4,Chemical waste disposal: 0.27 units.,4/6/2026 13:26
+,582,8,332,380,375.25,1,Experimental usage: 4.75 units.,4/6/2026 8:44
+,145,104,116,77.22,76.25,4,Chemical waste disposal: 0.97 units.,4/6/2026 11:13
+,527,94,235,269.26,264.79,1,Experimental usage: 4.47 units.,4/6/2026 12:42
+,510,59,189,485.25,482.73,1,Experimental usage: 2.52 units.,4/6/2026 8:13
+,64,68,171,402.56,400.9,1,Experimental usage: 1.66 units.,4/6/2026 15:29
+,467,29,220,100,95.79,1,Experimental usage: 4.21 units.,4/6/2026 16:24
+,251,35,192,411.36,408,1,Experimental usage: 3.36 units.,4/6/2026 14:21
+,271,30,106,645.52,642.02,1,Experimental usage: 3.5 units.,4/6/2026 8:02
+,256,14,137,527.55,524.47,1,Experimental usage: 3.08 units.,4/6/2026 17:50
+,995,61,224,408.01,403.82,1,Experimental usage: 4.19 units.,4/6/2026 10:47
+,120,2,300,231.92,228.97,1,Experimental usage: 2.95 units.,4/6/2026 15:30
+,448,49,195,300.22,297.05,1,Experimental usage: 3.17 units.,4/6/2026 9:55
+,73,41,133,200.64,200.64,3,Internal lab transfer to Location 41.,4/6/2026 10:51
+,495,48,95,0,0.63,6,Return of unused material to stock.,4/6/2026 14:10
+,215,102,270,316.73,312.19,1,Experimental usage: 4.54 units.,4/6/2026 12:03
+,598,96,327,702.65,701.89,1,Experimental usage: 0.76 units.,4/6/2026 18:02
+,453,78,294,0,250,2,Delivery arrival: +250 units.,4/6/2026 8:57
+,549,49,119,285.69,282.07,1,Experimental usage: 3.62 units.,4/6/2026 15:38
+,868,37,51,256.82,255.39,1,Experimental usage: 1.43 units.,4/6/2026 14:13
+,83,2,156,342.63,338.63,1,Experimental usage: 4.0 units.,4/6/2026 13:54
+,857,15,27,304.73,302.56,1,Experimental usage: 2.17 units.,4/6/2026 11:01
+,660,44,195,961,956.16,1,Experimental usage: 4.84 units.,4/6/2026 15:25
+,269,102,205,338.54,335.83,1,Experimental usage: 2.71 units.,4/6/2026 13:50
+,672,2,45,334.73,329.81,1,Experimental usage: 4.92 units.,4/6/2026 11:51
+,459,105,19,542.87,538.64,1,Experimental usage: 4.23 units.,4/6/2026 18:25
+,787,12,52,229.24,227.75,1,Experimental usage: 1.49 units.,4/6/2026 10:09
+,103,41,232,1234.46,1231.77,1,Experimental usage: 2.69 units.,4/6/2026 17:21
+,747,56,33,141.93,141.93,3,Internal lab transfer to Location 56.,4/6/2026 14:51
+,89,52,196,519.09,0,7,Item expired; removed from inventory.,4/6/2026 19:52
+,395,62,301,152.32,149.57,1,Experimental usage: 2.75 units.,4/6/2026 15:11
+,48,101,300,209,208.24,1,Experimental usage: 0.76 units.,4/6/2026 18:53
+,289,69,305,320.74,322.5,6,Return of unused material to stock.,4/6/2026 9:43
+,273,34,307,369.41,469.41,2,Delivery arrival: +100 units.,4/6/2026 15:25
+,705,79,143,305.35,300.76,1,Experimental usage: 4.59 units.,4/6/2026 11:53
+,42,22,77,358.98,356.09,1,Experimental usage: 2.89 units.,4/6/2026 13:23
+,260,110,243,160.01,156.69,1,Experimental usage: 3.32 units.,4/6/2026 17:47
+,438,80,232,146,146.25,6,Return of unused material to stock.,4/6/2026 16:52
+,680,39,109,109.86,359.86,2,Delivery arrival: +250 units.,4/6/2026 17:11
+,521,69,155,0,50,2,Delivery arrival: +50 units.,4/6/2026 19:09
+,702,73,332,489.76,487.23,1,Experimental usage: 2.53 units.,4/6/2026 12:56
+,403,34,197,143.94,142.43,1,Experimental usage: 1.51 units.,4/6/2026 9:33
+,734,107,240,62.06,62.06,3,Internal lab transfer to Location 107.,4/6/2026 13:23
+,646,90,82,19.38,18.06,1,Experimental usage: 1.32 units.,4/6/2026 17:25
+,604,35,51,186.51,184.19,1,Experimental usage: 2.32 units.,4/6/2026 11:15
+,257,49,206,404.01,654.01,2,Delivery arrival: +250 units.,4/6/2026 10:40
+,558,39,272,0,50,2,Delivery arrival: +50 units.,4/6/2026 10:24
+,21,111,241,407.29,406.65,1,Experimental usage: 0.64 units.,4/6/2026 8:35
+,942,45,320,201.15,203.06,6,Return of unused material to stock.,4/6/2026 9:10
+,433,4,111,373.29,368.49,1,Experimental usage: 4.8 units.,4/6/2026 16:23
+,629,13,43,218.82,218.25,1,Experimental usage: 0.57 units.,4/6/2026 13:38
+,963,93,108,251.49,249.72,1,Experimental usage: 1.77 units.,4/6/2026 10:10
+,846,106,266,410.36,406.57,1,Experimental usage: 3.79 units.,4/6/2026 17:25
+,86,36,62,228.42,228.42,3,Internal lab transfer to Location 36.,4/6/2026 8:38
+,166,101,195,250,245.76,1,Experimental usage: 4.24 units.,4/6/2026 12:35
+,411,113,166,528.58,1028.58,2,Delivery arrival: +500 units.,4/6/2026 10:15
+,582,8,131,375.25,372.44,1,Experimental usage: 2.81 units.,4/6/2026 12:46
+,582,109,166,372.44,372.44,3,Internal lab transfer to Location 109.,4/6/2026 18:52
+,685,4,284,123.37,123.1,4,Chemical waste disposal: 0.27 units.,4/6/2026 8:22
+,173,34,250,452.52,450.74,1,Experimental usage: 1.78 units.,4/6/2026 14:41
+,36,63,316,168.46,168.56,5,Inventory audit correction.,4/6/2026 8:31
+,25,7,119,478.29,476.27,1,Experimental usage: 2.02 units.,4/6/2026 13:14
+,484,107,237,494.04,494.04,3,Internal lab transfer to Location 107.,4/6/2026 15:01
+,488,73,225,459.27,459.01,4,Chemical waste disposal: 0.26 units.,4/6/2026 14:35
+,508,95,195,95.97,95.97,3,Internal lab transfer to Location 95.,4/6/2026 10:44
+,540,97,105,184.53,184.14,4,Chemical waste disposal: 0.39 units.,4/6/2026 15:04
+,95,6,172,145,144.2,1,Experimental usage: 0.8 units.,4/6/2026 12:58
+,986,59,260,325.03,323.03,1,Experimental usage: 2.0 units.,4/6/2026 16:32
+,348,3,153,26.42,21.92,1,Experimental usage: 4.5 units.,4/6/2026 17:25
+,45,56,289,251.01,251.01,3,Internal lab transfer to Location 56.,4/6/2026 9:50
+,828,64,14,109.78,108.83,1,Experimental usage: 0.95 units.,4/6/2026 15:55
+,187,99,323,379.81,379.33,4,Chemical waste disposal: 0.48 units.,4/6/2026 12:40
+,74,37,327,212.05,212.72,6,Return of unused material to stock.,4/6/2026 16:18
+,21,111,225,406.65,406.67,5,Inventory audit correction.,4/6/2026 10:19
+,778,11,284,215.82,214.96,1,Experimental usage: 0.86 units.,4/6/2026 19:40
+,978,43,142,36.57,33.13,1,Experimental usage: 3.44 units.,4/6/2026 11:02
+,130,64,232,98.89,98.89,3,Internal lab transfer to Location 64.,4/6/2026 15:49
+,832,105,188,107.33,607.33,2,Delivery arrival: +500 units.,4/6/2026 13:18
+,996,78,178,477.02,477.02,3,Internal lab transfer to Location 78.,4/6/2026 17:14
+,144,80,34,100.72,97.09,1,Experimental usage: 3.63 units.,4/6/2026 18:46
+,556,71,155,317.36,317.36,3,Internal lab transfer to Location 71.,4/6/2026 14:16
+,382,93,167,707.06,705.66,1,Experimental usage: 1.4 units.,4/6/2026 18:08
+,843,88,69,213.47,210.38,1,Experimental usage: 3.09 units.,4/6/2026 13:34
+,166,91,322,245.76,245.76,3,Internal lab transfer to Location 91.,4/6/2026 15:03
+,426,29,284,349.64,345.31,1,Experimental usage: 4.33 units.,4/6/2026 13:00
+,391,76,273,214.44,211.48,1,Experimental usage: 2.96 units.,4/6/2026 16:08
+,490,59,120,420.34,420.34,3,Internal lab transfer to Location 59.,4/6/2026 13:34
+,381,52,311,88.63,88.02,1,Experimental usage: 0.61 units.,4/6/2026 11:55
+,150,9,30,227.75,228.7,6,Return of unused material to stock.,4/6/2026 8:11
+,317,56,218,336.18,836.18,2,Delivery arrival: +500 units.,4/6/2026 13:06
+,552,28,109,362,357.62,1,Experimental usage: 4.38 units.,4/6/2026 9:19
+,256,14,245,524.47,1024.47,2,Delivery arrival: +500 units.,4/6/2026 19:24
+,986,46,242,323.03,323.03,3,Internal lab transfer to Location 46.,4/6/2026 14:40
+,215,102,122,312.19,311.77,4,Chemical waste disposal: 0.42 units.,4/6/2026 9:13
+,528,3,322,154.76,154.76,3,Internal lab transfer to Location 3.,4/6/2026 15:43
+,858,97,63,509.42,505.9,1,Experimental usage: 3.52 units.,4/6/2026 13:10
+,854,25,253,321.55,317.79,1,Experimental usage: 3.76 units.,4/6/2026 19:58
+,878,31,48,194.33,190.32,1,Experimental usage: 4.01 units.,4/6/2026 12:58
+,398,18,268,464.05,464.16,5,Inventory audit correction.,4/6/2026 14:57
+,919,99,46,260.52,257.21,1,Experimental usage: 3.31 units.,4/6/2026 10:52
+,780,6,36,333.29,330.84,1,Experimental usage: 2.45 units.,4/6/2026 15:26
+,297,66,240,178.03,176.58,1,Experimental usage: 1.45 units.,4/6/2026 9:09
+,432,12,110,304.97,303.71,1,Experimental usage: 1.26 units.,4/6/2026 10:28
+,781,56,328,495.4,492.06,1,Experimental usage: 3.34 units.,4/6/2026 9:05
+,47,101,209,336.26,334.77,1,Experimental usage: 1.49 units.,4/6/2026 15:05
+,374,63,54,865.13,864.44,1,Experimental usage: 0.69 units.,4/6/2026 19:01
+,65,95,2,281.3,279.3,1,Experimental usage: 2.0 units.,4/6/2026 11:03
+,925,65,241,0,50,2,Delivery arrival: +50 units.,4/6/2026 14:21
+,248,111,10,0,250,2,Delivery arrival: +250 units.,4/6/2026 8:02
+,494,85,93,914.75,910.29,1,Experimental usage: 4.46 units.,4/6/2026 13:45
+,917,9,129,304.9,303.28,1,Experimental usage: 1.62 units.,4/6/2026 11:09
+,578,92,288,225.17,220.37,1,Experimental usage: 4.8 units.,4/6/2026 14:49
+,202,20,182,138.42,136.16,1,Experimental usage: 2.26 units.,4/6/2026 9:06
+,534,12,81,180.53,175.83,1,Experimental usage: 4.7 units.,4/6/2026 8:12
+,291,4,115,64.58,62.29,1,Experimental usage: 2.29 units.,4/6/2026 12:10
+,267,40,2,196.5,193.09,1,Experimental usage: 3.41 units.,4/6/2026 9:31
+,408,42,68,54,49.16,1,Experimental usage: 4.84 units.,4/6/2026 13:01
+,822,14,5,0.29,100.29,2,Delivery arrival: +100 units.,4/6/2026 10:23
+,374,63,47,864.44,859.98,1,Experimental usage: 4.46 units.,4/6/2026 10:26
+,723,58,103,396.4,393.26,1,Experimental usage: 3.14 units.,4/6/2026 11:18
+,486,45,215,264.58,264.58,3,Internal lab transfer to Location 45.,4/6/2026 10:34
+,658,62,69,66.93,66.06,1,Experimental usage: 0.87 units.,4/6/2026 19:46
+,125,10,146,89.43,88.43,1,Experimental usage: 1.0 units.,4/6/2026 12:27
+,636,39,5,491.11,490.99,5,Inventory audit correction.,4/6/2026 17:12
+,645,38,285,104.41,102.85,1,Experimental usage: 1.56 units.,4/6/2026 18:44
+,748,108,78,230.22,230.56,6,Return of unused material to stock.,4/6/2026 11:34
+,708,111,22,897.73,894.61,1,Experimental usage: 3.12 units.,4/6/2026 16:04
+,659,57,105,890.73,886.22,1,Experimental usage: 4.51 units.,4/6/2026 15:34
+,657,44,178,396.83,393.99,1,Experimental usage: 2.84 units.,4/6/2026 17:18
+,65,95,156,279.3,276.64,1,Experimental usage: 2.66 units.,4/6/2026 19:45
+,476,105,241,1132,1182,2,Delivery arrival: +50 units.,4/6/2026 12:16
+,208,71,326,775.45,771.78,1,Experimental usage: 3.67 units.,4/6/2026 12:14
+,660,44,69,956.16,955.59,1,Experimental usage: 0.57 units.,4/6/2026 10:27
+,11,104,85,701.24,696.3,1,Experimental usage: 4.94 units.,4/6/2026 18:27
+,341,27,260,93.46,88.97,1,Experimental usage: 4.49 units.,4/6/2026 13:15
+,537,58,2,420.38,420.53,6,Return of unused material to stock.,4/6/2026 9:17
+,810,75,220,177.38,277.38,2,Delivery arrival: +100 units.,4/6/2026 19:17
+,261,29,71,246.79,243.39,1,Experimental usage: 3.4 units.,4/6/2026 11:34
+,382,93,326,705.66,704.65,1,Experimental usage: 1.01 units.,4/6/2026 18:13
+,815,12,244,209.94,207.76,1,Experimental usage: 2.18 units.,4/6/2026 18:06
+,174,53,333,0,0,3,Internal lab transfer to Location 53.,4/6/2026 15:39
+,892,23,62,173.99,171.22,1,Experimental usage: 2.77 units.,4/6/2026 8:46
+,235,80,43,4.34,4.34,3,Internal lab transfer to Location 80.,4/6/2026 15:12
+,135,32,280,99.87,97.47,1,Experimental usage: 2.4 units.,4/6/2026 11:57
+,331,91,225,217.97,213.87,1,Experimental usage: 4.1 units.,4/6/2026 18:29
+,163,65,121,279.4,279.21,5,Inventory audit correction.,4/6/2026 15:01
+,5,38,276,154.34,150.26,1,Experimental usage: 4.08 units.,4/6/2026 14:54
+,82,24,279,217.81,217.08,1,Experimental usage: 0.73 units.,4/6/2026 17:54
+,95,6,212,144.2,143.96,4,Chemical waste disposal: 0.24 units.,4/6/2026 10:31
+,271,30,160,642.02,639.13,1,Experimental usage: 2.89 units.,4/6/2026 10:15
+,745,2,115,290.99,289.21,1,Experimental usage: 1.78 units.,4/6/2026 11:15
+,208,71,69,771.78,771.73,5,Inventory audit correction.,4/6/2026 12:42
+,136,48,199,946,941.47,1,Experimental usage: 4.53 units.,4/6/2026 9:35
+,84,56,180,101.4,98.98,1,Experimental usage: 2.42 units.,4/6/2026 13:07
+,648,36,311,377.4,377.4,3,Internal lab transfer to Location 36.,4/6/2026 18:54
+,42,22,282,356.09,352.44,1,Experimental usage: 3.65 units.,4/6/2026 18:02
+,238,72,212,389.6,0,7,Item expired; removed from inventory.,4/6/2026 9:04
+,890,60,234,205.62,203.79,1,Experimental usage: 1.83 units.,4/6/2026 13:03
+,570,53,188,747.32,0,7,Item expired; removed from inventory.,4/6/2026 14:31
+,160,96,255,228.94,229.03,5,Inventory audit correction.,4/6/2026 8:46
+,589,40,123,366.48,364.53,1,Experimental usage: 1.95 units.,4/6/2026 18:57
+,567,52,79,484,479.5,1,Experimental usage: 4.5 units.,4/6/2026 11:22
+,15,24,17,17.41,12.68,1,Experimental usage: 4.73 units.,4/6/2026 8:35
+,54,101,183,60.66,62.32,6,Return of unused material to stock.,4/6/2026 14:46
+,296,75,136,133,133.15,5,Inventory audit correction.,4/6/2026 10:12
+,457,21,325,57.73,57.73,3,Internal lab transfer to Location 21.,4/6/2026 9:25
+,277,43,206,463.52,463.2,4,Chemical waste disposal: 0.32 units.,4/6/2026 9:54
+,911,77,51,39.23,34.74,1,Experimental usage: 4.49 units.,4/6/2026 17:39
+,565,67,204,67.03,62.88,1,Experimental usage: 4.15 units.,4/6/2026 8:47
+,881,111,294,380.74,376.78,1,Experimental usage: 3.96 units.,4/6/2026 8:55
+,711,81,74,329.92,326.15,1,Experimental usage: 3.77 units.,4/6/2026 17:06
+,908,78,91,309.39,309.39,3,Internal lab transfer to Location 78.,4/6/2026 9:31
+,222,86,174,268.26,265.55,1,Experimental usage: 2.71 units.,4/6/2026 14:34
+,55,72,269,91.6,87.44,1,Experimental usage: 4.16 units.,4/6/2026 16:14
+,85,9,64,252.92,252.75,5,Inventory audit correction.,4/6/2026 15:03
+,720,21,184,426.05,424.17,1,Experimental usage: 1.88 units.,4/6/2026 19:13
+,493,55,167,463.45,461.47,1,Experimental usage: 1.98 units.,4/6/2026 16:00
+,759,102,109,698.5,694.48,1,Experimental usage: 4.02 units.,4/6/2026 10:11
+,76,68,238,291.66,289.87,1,Experimental usage: 1.79 units.,4/6/2026 12:44
+,671,10,269,49.57,46.86,1,Experimental usage: 2.71 units.,4/6/2026 12:34
+,174,53,112,0,0,7,Item expired; removed from inventory.,4/6/2026 8:41
+,12,55,114,291.33,289.94,1,Experimental usage: 1.39 units.,4/6/2026 19:33
+,915,18,91,1.64,0.42,1,Experimental usage: 1.22 units.,4/6/2026 14:39
+,858,97,89,505.9,503.92,1,Experimental usage: 1.98 units.,4/6/2026 11:27
+,56,85,139,213.37,208.74,1,Experimental usage: 4.63 units.,4/6/2026 9:57
+,250,34,320,988,985.21,1,Experimental usage: 2.79 units.,4/6/2026 18:31
+,829,37,57,125.77,124.36,1,Experimental usage: 1.41 units.,4/6/2026 14:20
+,227,112,145,426.19,526.19,2,Delivery arrival: +100 units.,4/6/2026 14:27
+,796,69,125,366.93,365.5,1,Experimental usage: 1.43 units.,4/6/2026 11:29
+,505,14,164,731.89,1231.89,2,Delivery arrival: +500 units.,4/6/2026 12:19
+,333,9,108,100,97.94,1,Experimental usage: 2.06 units.,4/6/2026 17:35
+,123,67,84,1122,1122.18,6,Return of unused material to stock.,4/6/2026 10:20
+,154,14,245,969,964.38,1,Experimental usage: 4.62 units.,4/6/2026 10:41
+,824,26,46,269.64,268.12,1,Experimental usage: 1.52 units.,4/6/2026 19:09
+,114,83,184,112.08,108.54,1,Experimental usage: 3.54 units.,4/6/2026 19:49
+,873,95,49,88.1,88.1,3,Internal lab transfer to Location 95.,4/6/2026 16:48
+,695,58,47,225.66,222.93,1,Experimental usage: 2.73 units.,4/6/2026 11:02
+,191,87,177,136.27,186.27,2,Delivery arrival: +50 units.,4/6/2026 8:44
+,340,8,279,80.41,76.16,1,Experimental usage: 4.25 units.,4/6/2026 9:25
+,189,82,319,425.81,425.71,5,Inventory audit correction.,4/6/2026 19:53
+,764,73,333,110,111.36,6,Return of unused material to stock.,4/6/2026 17:40
+,504,93,292,154.9,154.92,5,Inventory audit correction.,4/6/2026 18:09
+,683,16,334,51.33,48.28,1,Experimental usage: 3.05 units.,4/6/2026 15:23
+,102,67,235,410.87,406.18,1,Experimental usage: 4.69 units.,4/6/2026 14:45
+,333,9,229,97.94,94.5,1,Experimental usage: 3.44 units.,4/6/2026 10:43
+,245,69,57,385.31,382.62,1,Experimental usage: 2.69 units.,4/6/2026 8:50
+,155,113,104,432.79,429.76,1,Experimental usage: 3.03 units.,4/6/2026 16:47
+,87,11,238,407.52,404.02,1,Experimental usage: 3.5 units.,4/6/2026 17:25
+,10,51,132,447,447,3,Internal lab transfer to Location 51.,4/6/2026 17:19
+,985,68,187,358.4,358.71,6,Return of unused material to stock.,4/6/2026 17:24
+,512,20,28,436.09,431.75,1,Experimental usage: 4.34 units.,4/6/2026 15:18
+,904,113,69,13.49,12.46,1,Experimental usage: 1.03 units.,4/6/2026 8:50
+,24,13,297,351.49,349.74,1,Experimental usage: 1.75 units.,4/6/2026 19:09
+,625,9,213,48.58,47.98,4,Chemical waste disposal: 0.6 units.,4/6/2026 16:18
+,944,1,83,472.84,472.75,5,Inventory audit correction.,4/6/2026 9:32
+,963,93,149,249.72,245.67,1,Experimental usage: 4.05 units.,4/6/2026 16:49
+,75,36,146,377.11,377.11,3,Internal lab transfer to Location 36.,4/6/2026 10:38
+,520,104,73,365.07,361.5,1,Experimental usage: 3.57 units.,4/6/2026 15:35
+,807,90,206,339.2,335.84,1,Experimental usage: 3.36 units.,4/6/2026 17:15
+,275,25,206,423.8,419.36,1,Experimental usage: 4.44 units.,4/6/2026 12:23
+,490,59,227,420.34,418.75,1,Experimental usage: 1.59 units.,4/6/2026 11:39
+,166,91,136,245.76,242.22,1,Experimental usage: 3.54 units.,4/6/2026 16:30
+,306,82,318,434.86,433.34,1,Experimental usage: 1.52 units.,4/6/2026 12:37
+,268,106,126,173.09,170.46,1,Experimental usage: 2.63 units.,4/6/2026 13:27
+,750,23,254,304.19,305.85,6,Return of unused material to stock.,4/6/2026 18:22
+,840,38,188,0,500,2,Delivery arrival: +500 units.,4/6/2026 11:47
+,955,2,291,877.27,875.02,1,Experimental usage: 2.25 units.,4/6/2026 18:49
+,666,15,227,66,66.19,5,Inventory audit correction.,4/6/2026 9:24
+,365,95,221,429.17,428.96,4,Chemical waste disposal: 0.21 units.,4/6/2026 13:17
+,749,102,42,250.01,246.05,1,Experimental usage: 3.96 units.,4/6/2026 9:40
+,624,76,3,493.54,993.54,2,Delivery arrival: +500 units.,4/6/2026 19:25
+,598,96,252,701.89,698.82,1,Experimental usage: 3.07 units.,4/6/2026 16:03
+,118,97,7,389.47,489.47,2,Delivery arrival: +100 units.,4/6/2026 14:24
+,894,67,36,179.1,176,1,Experimental usage: 3.1 units.,4/6/2026 18:05
+,809,48,55,346.59,346.59,3,Internal lab transfer to Location 48.,4/6/2026 14:31
+,578,92,320,220.37,270.37,2,Delivery arrival: +50 units.,4/6/2026 16:54
+,466,74,333,221.39,219.62,1,Experimental usage: 1.77 units.,4/6/2026 16:53
+,232,31,31,285.57,284.61,4,Chemical waste disposal: 0.96 units.,4/6/2026 9:14
+,549,74,86,282.07,282.07,3,Internal lab transfer to Location 74.,4/6/2026 17:18
+,65,95,283,276.64,274.61,1,Experimental usage: 2.03 units.,4/6/2026 11:25
+,114,83,277,108.54,358.54,2,Delivery arrival: +250 units.,4/6/2026 9:03
+,388,83,200,269.94,269.94,3,Internal lab transfer to Location 83.,4/6/2026 18:14
+,700,89,56,41.98,41.98,3,Internal lab transfer to Location 89.,4/6/2026 18:51
+,309,70,39,263.93,263.93,3,Internal lab transfer to Location 70.,4/6/2026 10:57
+,397,55,137,477.7,475.17,1,Experimental usage: 2.53 units.,4/6/2026 16:28
+,973,50,9,21,17.69,1,Experimental usage: 3.31 units.,4/6/2026 17:41
+,557,36,108,47.87,147.87,2,Delivery arrival: +100 units.,4/6/2026 16:50
+,550,24,247,162.18,158.8,1,Experimental usage: 3.38 units.,4/6/2026 9:30
+,500,2,253,377.71,374.16,1,Experimental usage: 3.55 units.,4/6/2026 18:59
+,78,8,178,319.02,314.31,1,Experimental usage: 4.71 units.,4/6/2026 13:45
+,891,16,145,224.12,219.19,1,Experimental usage: 4.93 units.,4/6/2026 12:42
+,804,61,332,273.99,272.99,1,Experimental usage: 1.0 units.,4/6/2026 19:39
+,562,36,243,332,327.89,1,Experimental usage: 4.11 units.,4/6/2026 15:07
+,535,51,75,294.31,292.94,1,Experimental usage: 1.37 units.,4/6/2026 14:12
+,95,6,104,143.96,145.73,6,Return of unused material to stock.,4/6/2026 12:42
+,945,98,168,602.26,601.05,1,Experimental usage: 1.21 units.,4/6/2026 10:39
+,57,92,99,337.94,335.21,1,Experimental usage: 2.73 units.,4/6/2026 10:37
+,931,39,167,500,0,7,Item expired; removed from inventory.,4/6/2026 18:29
+,198,106,114,133.43,130.89,1,Experimental usage: 2.54 units.,4/6/2026 13:11
+,66,64,61,139.51,139.51,3,Internal lab transfer to Location 64.,4/6/2026 18:28
+,773,35,92,198.86,198.1,4,Chemical waste disposal: 0.76 units.,4/6/2026 12:06
+,518,35,308,430.19,0,7,Item expired; removed from inventory.,4/6/2026 19:15
+,908,78,235,309.39,308.51,1,Experimental usage: 0.88 units.,4/6/2026 13:30
+,765,37,95,204.43,200.87,1,Experimental usage: 3.56 units.,4/6/2026 16:10
+,492,69,221,120.97,120.36,1,Experimental usage: 0.61 units.,4/6/2026 16:23
+,189,82,74,425.71,422.28,1,Experimental usage: 3.43 units.,4/6/2026 14:46
+,788,30,125,27.11,25.07,1,Experimental usage: 2.04 units.,4/6/2026 15:02
+,877,103,216,335.35,331.43,1,Experimental usage: 3.92 units.,4/6/2026 19:07
+,613,96,294,351,349.3,1,Experimental usage: 1.7 units.,4/6/2026 13:28
+,879,53,162,72.25,72.25,3,Internal lab transfer to Location 53.,4/6/2026 13:16
+,597,87,50,812.1,812.1,3,Internal lab transfer to Location 87.,4/6/2026 9:50
+,847,1,93,330.67,326.26,1,Experimental usage: 4.41 units.,4/6/2026 16:26
+,209,19,309,96.23,94.9,1,Experimental usage: 1.33 units.,4/6/2026 17:20
+,567,52,129,479.5,479.32,5,Inventory audit correction.,4/6/2026 18:32
+,786,40,155,709.63,708.04,1,Experimental usage: 1.59 units.,4/6/2026 17:04
+,193,82,236,390.84,387.43,1,Experimental usage: 3.41 units.,4/6/2026 14:59
+,892,23,38,171.22,167.64,1,Experimental usage: 3.58 units.,4/6/2026 16:36
+,732,37,56,166.54,162.87,1,Experimental usage: 3.67 units.,4/6/2026 18:24
+,781,56,63,492.06,491.5,1,Experimental usage: 0.56 units.,4/6/2026 19:15
+,825,107,79,41.33,40.82,1,Experimental usage: 0.51 units.,4/6/2026 13:21
+,231,20,90,387.63,384.13,1,Experimental usage: 3.5 units.,4/6/2026 14:38
+,931,39,122,0,0.28,6,Return of unused material to stock.,4/6/2026 12:01
+,376,50,165,315.33,311.11,1,Experimental usage: 4.22 units.,4/6/2026 17:07
+,637,2,197,0.69,500.69,2,Delivery arrival: +500 units.,4/6/2026 8:37
+,100,85,57,158.82,158.12,4,Chemical waste disposal: 0.7 units.,4/6/2026 10:29
+,311,63,28,485.57,481.44,1,Experimental usage: 4.13 units.,4/6/2026 9:37
+,524,60,17,250.92,246.76,1,Experimental usage: 4.16 units.,4/6/2026 19:13
+,800,110,123,50,50,3,Internal lab transfer to Location 110.,4/6/2026 9:33
+,144,65,159,97.09,97.09,3,Internal lab transfer to Location 65.,4/6/2026 13:22
+,457,48,159,57.73,57.73,3,Internal lab transfer to Location 48.,4/6/2026 19:01
+,20,21,160,0,500,2,Delivery arrival: +500 units.,4/6/2026 16:18
+,227,112,259,526.19,524.46,1,Experimental usage: 1.73 units.,4/6/2026 10:05
+,976,65,246,230.59,228.11,1,Experimental usage: 2.48 units.,4/6/2026 13:23
+,761,77,11,269.31,0,7,Item expired; removed from inventory.,4/6/2026 15:27
+,939,58,100,301.05,301.1,5,Inventory audit correction.,4/6/2026 9:55
+,802,97,323,295.77,293.97,1,Experimental usage: 1.8 units.,4/6/2026 17:50
+,669,52,94,402.88,401.34,1,Experimental usage: 1.54 units.,4/6/2026 10:27
+,765,37,188,200.87,197.72,1,Experimental usage: 3.15 units.,4/6/2026 13:39
+,631,25,301,334.06,434.06,2,Delivery arrival: +100 units.,4/6/2026 16:17
+,903,62,266,440.17,437.9,1,Experimental usage: 2.27 units.,4/6/2026 9:55
+,456,92,121,609.1,605.51,1,Experimental usage: 3.59 units.,4/6/2026 8:00
+,826,53,236,282.97,282.29,1,Experimental usage: 0.68 units.,4/6/2026 15:24
+,304,32,15,94.74,594.74,2,Delivery arrival: +500 units.,4/6/2026 18:40
+,3,103,208,366.46,362.82,1,Experimental usage: 3.64 units.,4/6/2026 18:26
+,266,45,253,10.98,7.21,1,Experimental usage: 3.77 units.,4/6/2026 10:10
+,982,32,227,212.58,208.77,1,Experimental usage: 3.81 units.,4/6/2026 18:26
+,354,62,326,126.86,123.45,1,Experimental usage: 3.41 units.,4/6/2026 16:38
+,701,40,18,228.62,225.43,1,Experimental usage: 3.19 units.,4/6/2026 15:47
+,483,88,275,931.73,930.6,1,Experimental usage: 1.13 units.,4/6/2026 8:43
+,188,52,193,123.1,223.1,2,Delivery arrival: +100 units.,4/6/2026 10:10
+,218,46,304,32,30,1,Experimental usage: 2.0 units.,4/6/2026 15:50
+,297,91,239,176.58,176.58,3,Internal lab transfer to Location 91.,4/6/2026 12:32
+,152,39,237,778.4,778.22,5,Inventory audit correction.,4/6/2026 10:23
+,108,70,143,111.7,112.07,6,Return of unused material to stock.,4/6/2026 12:31
+,746,26,217,768.98,0,7,Item expired; removed from inventory.,4/6/2026 8:04
+,312,40,280,0,250,2,Delivery arrival: +250 units.,4/6/2026 16:51
+,103,41,88,1231.77,1227.19,1,Experimental usage: 4.58 units.,4/6/2026 15:14
+,877,103,293,331.43,328.68,1,Experimental usage: 2.75 units.,4/6/2026 11:43
+,476,105,60,1182,1179.81,1,Experimental usage: 2.19 units.,4/6/2026 16:49
+,997,34,270,815.77,813.44,1,Experimental usage: 2.33 units.,4/6/2026 14:19
+,360,19,58,85.41,85.41,3,Internal lab transfer to Location 19.,4/6/2026 19:47
+,792,10,236,39.99,39.99,3,Internal lab transfer to Location 10.,4/6/2026 16:08
+,794,34,219,37.94,35.59,1,Experimental usage: 2.35 units.,4/6/2026 14:26
+,31,14,203,198.28,0,7,Item expired; removed from inventory.,4/6/2026 16:09
+,678,104,161,397.73,397.6,5,Inventory audit correction.,4/6/2026 8:47
+,473,76,53,460.08,456.02,1,Experimental usage: 4.06 units.,4/6/2026 15:09
+,467,29,228,95.79,94.91,1,Experimental usage: 0.88 units.,4/6/2026 10:57
+,231,20,324,384.13,382.76,1,Experimental usage: 1.37 units.,4/6/2026 16:12
+,286,52,58,379.96,629.96,2,Delivery arrival: +250 units.,4/6/2026 8:56
+,578,92,86,270.37,266.84,1,Experimental usage: 3.53 units.,4/6/2026 19:57
+,778,11,263,214.96,212.27,1,Experimental usage: 2.69 units.,4/6/2026 19:36
+,271,30,147,639.13,638.03,1,Experimental usage: 1.1 units.,4/6/2026 11:28
+,723,58,68,393.26,391.46,1,Experimental usage: 1.8 units.,4/6/2026 9:50
+,854,25,244,317.79,316.37,1,Experimental usage: 1.42 units.,4/6/2026 11:54
+,751,11,221,211.75,211.12,4,Chemical waste disposal: 0.63 units.,4/6/2026 11:52
+,239,37,178,283.51,282.54,1,Experimental usage: 0.97 units.,4/6/2026 14:32
+,475,47,145,164.21,162.23,1,Experimental usage: 1.98 units.,4/6/2026 15:14
+,291,4,179,62.29,59.6,1,Experimental usage: 2.69 units.,4/6/2026 14:09
+,248,111,160,250,245.4,1,Experimental usage: 4.6 units.,4/6/2026 11:15
+,361,98,302,82.5,81.39,1,Experimental usage: 1.11 units.,4/6/2026 10:31
+,995,61,223,403.82,399.6,1,Experimental usage: 4.22 units.,4/6/2026 15:18
+,18,10,164,43.71,39.05,1,Experimental usage: 4.66 units.,4/6/2026 17:36
+,531,110,301,337.12,334.8,1,Experimental usage: 2.32 units.,4/6/2026 10:21
+,150,9,60,228.7,226.14,1,Experimental usage: 2.56 units.,4/6/2026 10:38
+,146,84,49,405.45,905.45,2,Delivery arrival: +500 units.,4/6/2026 12:22
+,310,67,288,390.05,387.66,1,Experimental usage: 2.39 units.,4/6/2026 19:02
+,136,48,69,941.47,940.95,1,Experimental usage: 0.52 units.,4/6/2026 13:39
+,612,16,216,140.24,240.24,2,Delivery arrival: +100 units.,4/6/2026 8:28
+,42,22,186,352.44,349.93,1,Experimental usage: 2.51 units.,4/6/2026 17:39
+,76,68,32,289.87,290.3,6,Return of unused material to stock.,4/6/2026 19:01
+,286,52,202,629.96,626.53,1,Experimental usage: 3.43 units.,4/6/2026 9:32
+,496,81,222,0,250,2,Delivery arrival: +250 units.,4/6/2026 12:07
+,176,33,154,408.72,407.1,1,Experimental usage: 1.62 units.,4/6/2026 16:34
+,315,57,172,539.51,537.95,1,Experimental usage: 1.56 units.,4/6/2026 19:49
+,200,10,196,33.7,31.13,1,Experimental usage: 2.57 units.,4/6/2026 18:34
+,75,36,257,377.11,373.28,1,Experimental usage: 3.83 units.,4/6/2026 14:26
+,430,84,159,21.04,19.36,1,Experimental usage: 1.68 units.,4/6/2026 18:51
+,331,91,286,213.87,209.08,1,Experimental usage: 4.79 units.,4/6/2026 16:48
+,907,88,317,470.11,469.1,1,Experimental usage: 1.01 units.,4/6/2026 17:34
+,422,96,208,137.88,137.01,1,Experimental usage: 0.87 units.,4/6/2026 8:41
+,220,88,77,253.84,250.89,1,Experimental usage: 2.95 units.,4/6/2026 11:48
+,856,47,128,13.94,8.97,1,Experimental usage: 4.97 units.,4/6/2026 18:17
+,196,32,297,314.38,314.38,3,Internal lab transfer to Location 32.,4/6/2026 8:45
+,997,34,264,813.44,812.87,1,Experimental usage: 0.57 units.,4/6/2026 17:22
+,779,77,268,205.08,202.98,1,Experimental usage: 2.1 units.,4/6/2026 12:37
+,268,106,283,170.46,167.12,1,Experimental usage: 3.34 units.,4/6/2026 17:34
+,727,55,30,507.52,504.27,1,Experimental usage: 3.25 units.,4/6/2026 8:39
+,715,64,231,320.12,320.12,3,Internal lab transfer to Location 64.,4/6/2026 15:47
+,231,20,26,382.76,380.11,1,Experimental usage: 2.65 units.,4/6/2026 17:16
+,431,28,112,1058.23,1058.23,3,Internal lab transfer to Location 28.,4/6/2026 19:34
+,221,90,75,165.62,163.21,1,Experimental usage: 2.41 units.,4/6/2026 16:07
+,16,80,321,362,357.51,1,Experimental usage: 4.49 units.,4/6/2026 18:12
+,167,92,95,634.31,631.72,1,Experimental usage: 2.59 units.,4/6/2026 15:20
+,942,45,262,203.06,201.96,1,Experimental usage: 1.1 units.,4/6/2026 8:49
+,869,69,130,0,250,2,Delivery arrival: +250 units.,4/6/2026 12:38
+,807,90,306,335.84,333.63,1,Experimental usage: 2.21 units.,4/6/2026 8:15
+,514,23,97,367.48,363.32,1,Experimental usage: 4.16 units.,4/6/2026 14:05
+,46,34,316,153.66,151.77,1,Experimental usage: 1.89 units.,4/6/2026 10:24
+,414,97,84,238.86,239.31,6,Return of unused material to stock.,4/6/2026 12:59
+,598,96,234,698.82,1198.82,2,Delivery arrival: +500 units.,4/6/2026 12:35
+,559,77,262,462.24,457.64,1,Experimental usage: 4.6 units.,4/6/2026 18:29
+,101,73,2,39.5,38.12,1,Experimental usage: 1.38 units.,4/6/2026 18:19
+,987,2,187,210.13,207.42,1,Experimental usage: 2.71 units.,4/6/2026 8:53
+,709,93,269,508.79,504.52,1,Experimental usage: 4.27 units.,4/6/2026 19:47
+,957,110,239,81.74,79.73,1,Experimental usage: 2.01 units.,4/6/2026 8:28
+,65,95,247,274.61,273.46,1,Experimental usage: 1.15 units.,4/6/2026 19:48
+,99,85,180,361.67,359.42,1,Experimental usage: 2.25 units.,4/6/2026 12:35
+,308,20,280,431.63,427.2,1,Experimental usage: 4.43 units.,4/6/2026 18:24
+,886,12,294,377.65,374.61,1,Experimental usage: 3.04 units.,4/6/2026 12:38
+,171,82,104,418.02,418.27,6,Return of unused material to stock.,4/6/2026 8:16
+,905,32,66,74.33,574.33,2,Delivery arrival: +500 units.,4/6/2026 18:24
+,616,89,312,553.46,554.37,6,Return of unused material to stock.,4/6/2026 14:51
+,631,25,39,434.06,429.84,1,Experimental usage: 4.22 units.,4/6/2026 18:49
+,908,78,173,308.51,305.42,1,Experimental usage: 3.09 units.,4/6/2026 19:28
+,233,91,103,726.64,725.57,1,Experimental usage: 1.07 units.,4/6/2026 18:43
+,1,99,202,222,322,2,Delivery arrival: +100 units.,4/6/2026 11:17
+,678,104,223,397.6,396.67,1,Experimental usage: 0.93 units.,4/6/2026 19:57
+,832,32,2,607.33,607.33,3,Internal lab transfer to Location 32.,4/6/2026 19:59
+,116,36,51,309.23,306.35,1,Experimental usage: 2.88 units.,4/6/2026 13:15
+,319,31,20,270.01,269.96,5,Inventory audit correction.,4/6/2026 12:51
+,245,69,275,382.62,377.71,1,Experimental usage: 4.91 units.,4/6/2026 10:02
+,926,35,77,216.03,212.29,1,Experimental usage: 3.74 units.,4/6/2026 17:45
+,651,30,187,299.23,297.73,1,Experimental usage: 1.5 units.,4/6/2026 15:37
+,100,85,313,158.12,158.55,6,Return of unused material to stock.,4/6/2026 15:35
+,825,107,220,40.82,37.65,1,Experimental usage: 3.17 units.,4/6/2026 19:08
+,944,1,82,472.75,468.46,1,Experimental usage: 4.29 units.,4/6/2026 17:10
+,715,64,27,320.12,570.12,2,Delivery arrival: +250 units.,4/6/2026 17:14
+,8,96,160,305.33,301.94,1,Experimental usage: 3.39 units.,4/6/2026 8:39
+,443,106,233,906.63,905.92,1,Experimental usage: 0.71 units.,4/6/2026 16:05
+,612,16,150,240.24,239.5,4,Chemical waste disposal: 0.74 units.,4/6/2026 8:42
+,902,107,35,42.59,142.59,2,Delivery arrival: +100 units.,4/6/2026 13:34
+,441,103,165,106.87,0,7,Item expired; removed from inventory.,4/6/2026 18:19
+,610,25,157,425.29,426.04,6,Return of unused material to stock.,4/6/2026 10:49
+,560,90,86,359.53,359.69,5,Inventory audit correction.,4/6/2026 18:46
+,834,71,19,51.63,50.9,4,Chemical waste disposal: 0.73 units.,4/6/2026 12:05
+,988,93,202,148,145.94,1,Experimental usage: 2.06 units.,4/6/2026 10:16
+,932,108,112,297.84,294.17,1,Experimental usage: 3.67 units.,4/6/2026 19:12
+,62,28,256,708.68,808.68,2,Delivery arrival: +100 units.,4/6/2026 11:48
+,72,75,275,137.45,637.45,2,Delivery arrival: +500 units.,4/6/2026 18:53
+,395,62,311,149.57,149.06,4,Chemical waste disposal: 0.51 units.,4/6/2026 19:39
+,512,20,30,431.75,429.48,1,Experimental usage: 2.27 units.,4/6/2026 13:17
+,517,104,249,489.07,489.07,3,Internal lab transfer to Location 104.,4/6/2026 12:36
+,250,34,308,985.21,983.56,1,Experimental usage: 1.65 units.,4/6/2026 9:43
+,251,35,20,408,407.21,1,Experimental usage: 0.79 units.,4/6/2026 17:46
+,481,72,309,394.09,389.15,1,Experimental usage: 4.94 units.,4/6/2026 14:37
+,976,65,72,228.11,226.71,1,Experimental usage: 1.4 units.,4/6/2026 14:24
+,793,76,101,207.43,205.91,1,Experimental usage: 1.52 units.,4/6/2026 16:34
+,975,22,214,244.5,239.86,1,Experimental usage: 4.64 units.,4/6/2026 16:16
+,472,32,290,37.08,36.65,4,Chemical waste disposal: 0.43 units.,4/6/2026 15:33
+,663,33,114,124.72,123.38,1,Experimental usage: 1.34 units.,4/6/2026 12:45
+,975,22,99,239.86,239.16,4,Chemical waste disposal: 0.7 units.,4/6/2026 15:43
+,806,84,69,164.44,163.68,1,Experimental usage: 0.76 units.,4/6/2026 11:34
+,518,35,132,0,0,5,Inventory audit correction.,4/6/2026 19:21
+,431,28,274,1058.23,1055.85,1,Experimental usage: 2.38 units.,4/6/2026 9:56
+,473,76,66,456.02,453.42,1,Experimental usage: 2.6 units.,4/6/2026 18:35
+,324,11,234,316.39,366.39,2,Delivery arrival: +50 units.,4/6/2026 10:06
+,416,54,105,245.44,245.91,6,Return of unused material to stock.,4/6/2026 8:38
+,618,25,140,316.74,313.45,1,Experimental usage: 3.29 units.,4/6/2026 15:30
+,186,105,205,126.14,123.39,1,Experimental usage: 2.75 units.,4/6/2026 8:45
+,208,71,332,771.73,769.58,1,Experimental usage: 2.15 units.,4/6/2026 18:12
+,512,20,152,429.48,429.3,5,Inventory audit correction.,4/6/2026 11:28

@@ -1,4 +1,4 @@
-USE CS779_LabHub_final;
+USE LabHub_v2;
 GO
 
 BEGIN TRAN;
@@ -32,8 +32,7 @@ CREATE TABLE inventory.InventoryItem
     Quantity DECIMAL(12,2),
     ExpirationDate DATE,
     AddedAt DATETIME2 DEFAULT SYSDATETIME(),
-    LotNumber VARCHAR(64),
-    IsHazardous BIT
+    LotNumber VARCHAR(64)
 );
 
 CREATE TABLE inventory.Chemical
@@ -68,10 +67,11 @@ CREATE TABLE inventory.StockEvent
     [UserID] BIGINT,
     OldQuantity DECIMAL(12,2),
     NewQuantity DECIMAL(12,2),
-    EventType VARCHAR(32),
     EventReasonID BIGINT,
-    EventDescription VARCHAR(512),
+    EventDescription TEXT,
     EventDate DATETIME2 DEFAULT SYSDATETIME()
 );
+
+
 COMMIT;
 GO

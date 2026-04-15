@@ -1,7 +1,7 @@
 # --Current inventory--
 from multiprocessing.dummy import connection
 import duckdb
-from analytics.data.connect_db import get_warehouse_conn
+from analytics.warehouse.connect_db import get_warehouse_conn
 
 def create_analytics_views():
     conn = get_warehouse_conn()

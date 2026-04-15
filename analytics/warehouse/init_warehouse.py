@@ -43,7 +43,7 @@ def init_warehouse():
         
         print(f"✅ Warehouse initialized at: {DB_PATH}")
 
-        #IMMEDIATE VERIFICATION (Inside the same connection)
+        # VERIFICATION
         print("\n--- Verifying Tables ---")
         check_sql = "SELECT table_name FROM information_schema.tables WHERE table_schema = 'dw'"
         tables = conn.execute(check_sql).fetchdf()

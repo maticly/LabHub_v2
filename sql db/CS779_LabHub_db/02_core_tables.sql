@@ -1,4 +1,4 @@
-USE CS779_LabHub_final;
+USE LabHub_v2;
 GO
 
 BEGIN TRANSACTION;
@@ -6,7 +6,6 @@ BEGIN TRANSACTION;
 GO
 CREATE SCHEMA core;
 GO
-
 
 ---------------------------------------------------------
 --2. USER ENTITY ---
@@ -72,8 +71,7 @@ CREATE TABLE core.Vendor
     VendorName VARCHAR(128) NOT NULL,
     Email VARCHAR(150) NOT NULL UNIQUE CHECK (Email NOT LIKE '%,%' AND Email NOT LIKE '%;%' AND Email NOT LIKE '% %'),
     Timestamp DATETIME2 DEFAULT SYSDATETIME(),
-    VendorStatus VARCHAR(16) NOT NULL CHECK (VendorStatus IN ('Active', 'Paused', 'Inactive')),
-    LeadTimeDays INT,
+    VendorStatus VARCHAR(16) NOT NULL CHECK (VendorStatus IN ('Active', 'Paused', 'Inactive'))
 );
 
 
@@ -96,14 +94,15 @@ CREATE TABLE core.Product
     ProductCategoryID BIGINT NOT NULL,
     UnitID BIGINT NOT NULL,
     CreatedAt DATETIME2 DEFAULT SYSDATETIME(),
-    LastUpdatedAt DATETIME2 DEFAULT SYSDATETIME(),
-    StorageConditionID BIGINT
+    Description TEXT,
+    IsHazardous BIT NOT NULL DEFAULT 0,
+    StorageConditionID BIGINT NOT NULL
 );
 
 CREATE TABLE core.StorageConditions
 (
     StorageConditionID BIGINT IDENTITY PRIMARY KEY,
-    IsHazardous BIT,
+    ConditionName VARCHAR(64) NOT NULL UNIQUE,
     MaxTemp INT,
     MinTemp INT,
     ConditionDescription VARCHAR(512) NOT NULL

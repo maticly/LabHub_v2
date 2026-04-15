@@ -1,5 +1,5 @@
 import logging
-from analytics.data.connect_db import get_warehouse_conn
+from analytics.warehouse.connect_db import get_warehouse_conn
 from analytics.etl.dimensions import dim_product, dim_user, dim_location, dim_date
 from analytics.etl.facts import fact_inventory
 from analytics.warehouse.create_views import create_analytics_views

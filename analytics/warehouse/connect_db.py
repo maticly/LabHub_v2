@@ -15,13 +15,13 @@ from pathlib import Path
 # -------------------------
 # Config
 # -------------------------
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
-WAREHOUSE_DB = PROJECT_ROOT / "warehouse" / "warehouse.duckdb"
+PROJECT_ROOT = Path(__file__).resolve().parents[0]
+WAREHOUSE_DB = PROJECT_ROOT / "warehouse.duckdb"
 
 
 Driver = 'ODBC Driver 18 for SQL Server'
 Server = r'TABLET-LTM0C509\SQLEXPRESS01'
-Database = 'CS779_LabHub_final'
+Database = 'LabHub_v2'
 
 def get_oltp_connection(): 
     """Returns a connection to the SQL Server OLTP."""
@@ -41,7 +41,7 @@ def get_warehouse_conn():
 
 def test_query():
     conn = get_oltp_connection()
-    query = "SELECT TOP 5 * FROM core.UserRole;"  # change to a table that exists
+    query = "SELECT TOP 5 * FROM inventory.StockEvent;"  # change to a table that exists
     df = pd.read_sql(query, conn)
     print(df)
     conn.close()

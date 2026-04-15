@@ -1,12 +1,9 @@
 import logging
 import pandas as pd
-from analytics.data.connect_db import get_oltp_connection, get_warehouse_conn
+from datetime import datetime
+from analytics.warehouse.connect_db import get_oltp_connection, get_warehouse_conn
 
 # --- Logging Setup ---
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - [Dim_Location] - %(message)s'
-)
 logger = logging.getLogger(__name__)
 
 # -------------------------
@@ -15,7 +12,6 @@ logger = logging.getLogger(__name__)
 def extract_locations():
     """
     Pulls location data from the OLTP database.
-    Joins Site, Building, and Room to create a flattened location record.
     """
     query = """
         SELECT
@@ -47,28 +43,25 @@ def transform_dim_location(df_locations: pd.DataFrame) -> pd.DataFrame:
     logger.info("Transforming location data...")
     dim_location_df = df_locations.copy()
 
-    # Ensures SiteName and Building are capitalized
-    dim_location_df['SiteName'] = dim_location_df['SiteName'].str.strip().str.title()
-    dim_location_df['Building'] = dim_location_df['Building'].str.strip().str.title()
+    #Data cleaning: Trim and Title Case
+    for col in ['SiteName', 'Building', 'StorageType']:
+        if col in dim_location_df.columns:
+            dim_location_df[col] = dim_location_df[col].fillna("Unknown").str.strip().str.title()
 
-    dim_location_df = dim_location_df[["LocationID", "SiteName", "Building", "RoomNumber", "StorageType"]]
-    return dim_location_df
+    return dim_location_df[["LocationID", "SiteName", "Building", "RoomNumber", "StorageType"]]
 
 # -------------------------
 # Load
 # -------------------------
 def load_dim_location(duck_conn, dim_df: pd.DataFrame):
     """
-    Loads transformed data into DuckDB Dim_Location.
-    Incremental SCD Type 1 upsert into dw.Dim_Location.
-    - New LocationIDs are inserted.
-    - Existing LocationIDs have their attributes overwritten if anything changed.
-    Transaction is managed by the pipeline.
+    SCD2
     """
-    logger.info("Upserting data into dw.Dim_Location...")
+    now = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+    logger.info(f"Upserting {len(dim_df)} rows into dw.Dim_Location...")
     duck_conn.register("tmp_dim_location", dim_df)
 
-    #1. SCD1
+    #SCD2
     duck_conn.execute("""
         UPDATE dw.Dim_Location
         SET
@@ -86,10 +79,14 @@ def load_dim_location(duck_conn, dim_df: pd.DataFrame):
           );
     """)
 
-    # 2. Insert new locations
-    duck_conn.execute("""
-        INSERT INTO dw.Dim_Location (LocationID, SiteName, Building, RoomNumber, StorageType)
-        SELECT tmp.LocationID, tmp.SiteName, tmp.Building, tmp.RoomNumber, tmp.StorageType
+    #Insert new locations
+    duck_conn.execute(f"""
+        INSERT INTO dw.Dim_Location (LocationID, SiteName, Building, RoomNumber, StorageType,
+            EffectiveDate, EndDate, IsCurrent)
+        SELECT tmp.LocationID, tmp.SiteName, tmp.Building, tmp.RoomNumber, tmp.StorageType,
+            '{now}' AS EffectiveDate,
+            NULL AS EndDate,
+            1 AS IsCurrent
         FROM tmp_dim_location AS tmp
         WHERE NOT EXISTS (
             SELECT 1 FROM dw.Dim_Location
@@ -98,12 +95,13 @@ def load_dim_location(duck_conn, dim_df: pd.DataFrame):
     """)
 
     logger.info(f"Dim_Location upsert complete. Source rows: {len(dim_df)}.")
+
 # -------------------------
 # Orchestration
 # -------------------------
 def run_dim_location_etl(duck_conn):
     """Orchestrates the Location Dimension ETL.
-    Accepts a shared connection from the pipeline — does NOT open its own or manage transactions."""
+    Called by run_pipeline.py."""
     try:
         raw_locations = extract_locations()
         dim_location_df = transform_dim_location(raw_locations)
@@ -114,17 +112,28 @@ def run_dim_location_etl(duck_conn):
         raise
 
 
+# -------------------------
+# TEST
+# -------------------------
 if __name__ == "__main__":
+    logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - [Dim_Location_Test] - %(message)s')
+
     duck_conn = get_warehouse_conn()
     try:
+        logger.info("STARTING TEST...")
         duck_conn.execute("BEGIN TRANSACTION;")
         run_dim_location_etl(duck_conn)
-        duck_conn.execute("COMMIT;")
 
         count = duck_conn.execute("SELECT COUNT(*) FROM dw.Dim_Location").fetchone()[0]
-        logger.info(f"🧪 Post-load check: {count} records in Dim_Location.")
-    except Exception as e:
+        logger.info(f"✅ Works great!")
         duck_conn.execute("ROLLBACK;")
-        logger.error(f"Standalone run failed: {e}")
+        logger.info("✅ Transaction ROLLED BACK")
+
+    except Exception as e:
+        try:
+            duck_conn.execute("ROLLBACK;")
+        except Exception as rollback_e:
+            pass
+        logger.error(f"❌ Test failed: {e}")
     finally:
         duck_conn.close()

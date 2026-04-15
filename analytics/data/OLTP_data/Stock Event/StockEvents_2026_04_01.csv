@@ -1,0 +1,1001 @@
+StockEventID,InventoryItemID,LocationID,UserID,OldQuantity,NewQuantity,EventReasonID,EventDescription,EventDate
+,335,53,98,324,574,2,Restock event: Added 250 units from delivery.,4/1/2026 17:15
+,279,111,314,318,315.92,1,Routine experimental usage: 2.08 units consumed.,4/1/2026 15:35
+,822,14,325,307,0,7,Inventory purge: item expired and removed.,4/1/2026 19:05
+,555,34,81,32,33.37,6,Sterile return: unused reagent returned to stock.,4/1/2026 17:54
+,68,96,171,280,276.98,1,Routine experimental usage: 3.02 units consumed.,4/1/2026 13:00
+,467,29,85,17,17,3,Inventory transfer to Location ID 29.,4/1/2026 11:11
+,407,59,141,247,242.29,1,Routine experimental usage: 4.71 units consumed.,4/1/2026 12:32
+,96,80,69,263,258.61,1,Routine experimental usage: 4.39 units consumed.,4/1/2026 16:52
+,153,85,30,127,122.22,1,Routine experimental usage: 4.78 units consumed.,4/1/2026 10:12
+,820,42,162,495,491.75,1,Routine experimental usage: 3.25 units consumed.,4/1/2026 8:51
+,686,54,107,26,21.85,1,Routine experimental usage: 4.15 units consumed.,4/1/2026 12:41
+,6,89,202,223,223,3,Inventory transfer to Location ID 89.,4/1/2026 16:11
+,519,79,299,411,410.27,4,Material disposal: 0.73 units discarded due to contamination risk.,4/1/2026 9:44
+,409,44,115,121,118.19,1,Routine experimental usage: 2.81 units consumed.,4/1/2026 8:46
+,239,37,40,294,294,3,Inventory transfer to Location ID 37.,4/1/2026 13:57
+,713,85,201,154,149.4,1,Routine experimental usage: 4.6 units consumed.,4/1/2026 10:58
+,734,111,251,75,71.84,1,Routine experimental usage: 3.16 units consumed.,4/1/2026 14:34
+,976,65,297,235,230.59,1,Routine experimental usage: 4.41 units consumed.,4/1/2026 19:23
+,215,102,7,78,77.87,4,Material disposal: 0.13 units discarded due to contamination risk.,4/1/2026 15:55
+,663,33,46,141,142.97,6,Sterile return: unused reagent returned to stock.,4/1/2026 8:32
+,300,77,225,232,332,2,Restock event: Added 100 units from delivery.,4/1/2026 13:01
+,167,92,110,386,385.89,4,Material disposal: 0.11 units discarded due to contamination risk.,4/1/2026 13:19
+,791,111,220,43,39.06,1,Routine experimental usage: 3.94 units consumed.,4/1/2026 17:34
+,728,5,30,227,477,2,Restock event: Added 250 units from delivery.,4/1/2026 16:40
+,547,64,145,452,448.03,1,Routine experimental usage: 3.97 units consumed.,4/1/2026 11:53
+,996,101,309,485,480.06,1,Routine experimental usage: 4.94 units consumed.,4/1/2026 10:48
+,133,9,27,335,331.08,1,Routine experimental usage: 3.92 units consumed.,4/1/2026 12:51
+,54,101,6,65,62.26,1,Routine experimental usage: 2.74 units consumed.,4/1/2026 10:19
+,883,2,113,497,493.06,1,Routine experimental usage: 3.94 units consumed.,4/1/2026 13:32
+,611,41,287,185,185.35,5,Cycle count correction after physical audit.,4/1/2026 19:48
+,106,86,240,344,342.2,1,Routine experimental usage: 1.8 units consumed.,4/1/2026 19:33
+,516,67,244,203,198.48,1,Routine experimental usage: 4.52 units consumed.,4/1/2026 12:36
+,717,23,322,15,10,1,Routine experimental usage: 5.0 units consumed.,4/1/2026 8:59
+,11,104,160,460,460,3,Inventory transfer to Location ID 104.,4/1/2026 13:42
+,795,98,127,381,380.65,5,Cycle count correction after physical audit.,4/1/2026 17:45
+,141,70,242,54,52.4,1,Routine experimental usage: 1.6 units consumed.,4/1/2026 13:54
+,230,96,264,463,460.6,1,Routine experimental usage: 2.4 units consumed.,4/1/2026 12:10
+,826,53,291,295,290.08,1,Routine experimental usage: 4.92 units consumed.,4/1/2026 17:15
+,66,70,332,154,152.09,1,Routine experimental usage: 1.91 units consumed.,4/1/2026 10:00
+,768,60,57,116,114.59,1,Routine experimental usage: 1.41 units consumed.,4/1/2026 12:32
+,754,69,140,359,359,3,Inventory transfer to Location ID 69.,4/1/2026 13:22
+,428,9,46,381,378.26,1,Routine experimental usage: 2.74 units consumed.,4/1/2026 13:45
+,650,97,38,106,105.21,1,Routine experimental usage: 0.79 units consumed.,4/1/2026 15:30
+,88,31,260,461,460.65,5,Cycle count correction after physical audit.,4/1/2026 19:38
+,369,29,317,123,122.6,5,Cycle count correction after physical audit.,4/1/2026 10:27
+,793,76,181,221,218.67,1,Routine experimental usage: 2.33 units consumed.,4/1/2026 16:51
+,301,58,147,203,204.79,6,Sterile return: unused reagent returned to stock.,4/1/2026 9:29
+,944,71,54,484,483.56,4,Material disposal: 0.44 units discarded due to contamination risk.,4/1/2026 12:22
+,316,10,121,388,384.77,1,Routine experimental usage: 3.23 units consumed.,4/1/2026 19:07
+,835,5,318,179,176.64,1,Routine experimental usage: 2.36 units consumed.,4/1/2026 18:44
+,581,102,167,486,482.25,1,Routine experimental usage: 3.75 units consumed.,4/1/2026 19:55
+,415,101,63,358,358,3,Inventory transfer to Location ID 101.,4/1/2026 9:29
+,708,98,173,401,397.73,1,Routine experimental usage: 3.27 units consumed.,4/1/2026 19:13
+,343,54,63,462,460.47,1,Routine experimental usage: 1.53 units consumed.,4/1/2026 15:47
+,794,34,100,49,49,3,Inventory transfer to Location ID 34.,4/1/2026 8:11
+,159,14,284,410,408.46,1,Routine experimental usage: 1.54 units consumed.,4/1/2026 12:58
+,489,101,126,139,136.41,1,Routine experimental usage: 2.59 units consumed.,4/1/2026 15:47
+,594,71,217,50,47.64,1,Routine experimental usage: 2.36 units consumed.,4/1/2026 11:20
+,457,15,177,70,69.73,5,Cycle count correction after physical audit.,4/1/2026 17:52
+,202,20,45,146,143.66,1,Routine experimental usage: 2.34 units consumed.,4/1/2026 18:02
+,63,85,109,89,89,3,Inventory transfer to Location ID 85.,4/1/2026 13:55
+,969,102,218,36,35.45,4,Material disposal: 0.55 units discarded due to contamination risk.,4/1/2026 18:02
+,599,71,108,480,476.57,1,Routine experimental usage: 3.43 units consumed.,4/1/2026 14:45
+,206,48,75,163,160.23,1,Routine experimental usage: 2.77 units consumed.,4/1/2026 13:20
+,938,20,316,202,202.01,5,Cycle count correction after physical audit.,4/1/2026 14:32
+,324,11,329,323,320.15,1,Routine experimental usage: 2.85 units consumed.,4/1/2026 10:02
+,575,89,9,275,271.95,1,Routine experimental usage: 3.05 units consumed.,4/1/2026 12:40
+,90,16,297,407,405.97,1,Routine experimental usage: 1.03 units consumed.,4/1/2026 11:53
+,478,14,8,89,86.41,1,Routine experimental usage: 2.59 units consumed.,4/1/2026 14:48
+,164,37,274,304,804,2,Restock event: Added 500 units from delivery.,4/1/2026 9:21
+,643,7,250,402,397.24,1,Routine experimental usage: 4.76 units consumed.,4/1/2026 12:55
+,37,62,210,319,316.6,1,Routine experimental usage: 2.4 units consumed.,4/1/2026 19:46
+,124,13,158,294,394,2,Restock event: Added 100 units from delivery.,4/1/2026 12:46
+,469,101,6,186,186,3,Inventory transfer to Location ID 101.,4/1/2026 10:02
+,198,2,52,140,139.64,5,Cycle count correction after physical audit.,4/1/2026 9:43
+,198,106,241,139.64,139.64,3,Inventory transfer to Location ID 106.,4/1/2026 18:37
+,607,30,236,227,224.11,1,Routine experimental usage: 2.89 units consumed.,4/1/2026 9:48
+,267,40,64,199,196.5,1,Routine experimental usage: 2.5 units consumed.,4/1/2026 16:10
+,679,73,219,403,903,2,Restock event: Added 500 units from delivery.,4/1/2026 16:29
+,627,77,274,434,431.65,1,Routine experimental usage: 2.35 units consumed.,4/1/2026 13:58
+,444,15,293,180,176.28,1,Routine experimental usage: 3.72 units consumed.,4/1/2026 8:40
+,30,12,266,186,184.46,1,Routine experimental usage: 1.54 units consumed.,4/1/2026 17:11
+,967,78,231,412,412,3,Inventory transfer to Location ID 78.,4/1/2026 19:52
+,478,14,221,86.41,85.05,1,Routine experimental usage: 1.36 units consumed.,4/1/2026 16:53
+,378,86,26,235,234.38,1,Routine experimental usage: 0.62 units consumed.,4/1/2026 11:26
+,775,70,276,373,372.81,5,Cycle count correction after physical audit.,4/1/2026 11:09
+,835,5,313,176.64,0,7,Inventory purge: item expired and removed.,4/1/2026 10:19
+,392,29,134,483,483,3,Inventory transfer to Location ID 29.,4/1/2026 19:28
+,459,105,157,49,45.79,1,Routine experimental usage: 3.21 units consumed.,4/1/2026 8:33
+,89,52,92,491,541,2,Restock event: Added 50 units from delivery.,4/1/2026 11:53
+,738,30,126,319,315.09,1,Routine experimental usage: 3.91 units consumed.,4/1/2026 13:53
+,910,25,264,345,343.86,1,Routine experimental usage: 1.14 units consumed.,4/1/2026 17:03
+,22,110,118,275,325,2,Restock event: Added 50 units from delivery.,4/1/2026 12:34
+,387,80,18,346,341.64,1,Routine experimental usage: 4.36 units consumed.,4/1/2026 14:12
+,971,84,45,441,439.3,1,Routine experimental usage: 1.7 units consumed.,4/1/2026 12:00
+,793,76,123,218.67,215.55,1,Routine experimental usage: 3.12 units consumed.,4/1/2026 12:55
+,739,34,117,324,325.71,6,Sterile return: unused reagent returned to stock.,4/1/2026 12:34
+,896,92,229,369,366.25,1,Routine experimental usage: 2.75 units consumed.,4/1/2026 15:54
+,7,25,307,310,308.73,1,Routine experimental usage: 1.27 units consumed.,4/1/2026 9:41
+,183,36,88,441,436.36,1,Routine experimental usage: 4.64 units consumed.,4/1/2026 14:20
+,879,23,125,35,35,3,Inventory transfer to Location ID 23.,4/1/2026 11:14
+,687,78,86,64,314,2,Restock event: Added 250 units from delivery.,4/1/2026 12:13
+,256,14,9,279,529,2,Restock event: Added 250 units from delivery.,4/1/2026 18:02
+,115,39,66,243,241.19,1,Routine experimental usage: 1.81 units consumed.,4/1/2026 14:43
+,501,109,85,445,443.3,1,Routine experimental usage: 1.7 units consumed.,4/1/2026 10:54
+,843,88,246,115,115,3,Inventory transfer to Location ID 88.,4/1/2026 10:00
+,696,57,99,398,395.21,1,Routine experimental usage: 2.79 units consumed.,4/1/2026 16:31
+,379,87,211,130,128.21,1,Routine experimental usage: 1.79 units consumed.,4/1/2026 12:13
+,328,50,125,116,114.21,1,Routine experimental usage: 1.79 units consumed.,4/1/2026 9:10
+,654,2,256,445,443.2,1,Routine experimental usage: 1.8 units consumed.,4/1/2026 13:48
+,108,70,266,115,115,3,Inventory transfer to Location ID 70.,4/1/2026 9:38
+,98,74,147,324,324,3,Inventory transfer to Location ID 74.,4/1/2026 12:39
+,377,44,132,130,0,7,Inventory purge: item expired and removed.,4/1/2026 17:20
+,141,70,289,52.4,302.4,2,Restock event: Added 250 units from delivery.,4/1/2026 11:37
+,854,25,67,329,326.14,1,Routine experimental usage: 2.86 units consumed.,4/1/2026 10:36
+,520,104,215,285,280.25,1,Routine experimental usage: 4.75 units consumed.,4/1/2026 12:10
+,333,9,85,50,45.42,1,Routine experimental usage: 4.58 units consumed.,4/1/2026 18:19
+,413,36,320,294,289.19,1,Routine experimental usage: 4.81 units consumed.,4/1/2026 17:41
+,467,29,46,17,17.23,5,Cycle count correction after physical audit.,4/1/2026 9:59
+,315,57,147,454,450.28,1,Routine experimental usage: 3.72 units consumed.,4/1/2026 17:47
+,315,57,180,450.28,448.97,1,Routine experimental usage: 1.31 units consumed.,4/1/2026 11:37
+,763,106,18,443,439.13,1,Routine experimental usage: 3.87 units consumed.,4/1/2026 8:06
+,398,18,248,217,216.76,5,Cycle count correction after physical audit.,4/1/2026 12:56
+,914,113,268,338,337.78,4,Material disposal: 0.22 units discarded due to contamination risk.,4/1/2026 12:01
+,161,71,8,341,337.89,1,Routine experimental usage: 3.11 units consumed.,4/1/2026 16:52
+,341,27,144,355,354.39,1,Routine experimental usage: 0.61 units consumed.,4/1/2026 18:26
+,12,55,135,295,293.56,1,Routine experimental usage: 1.44 units consumed.,4/1/2026 9:34
+,89,52,223,541,536.74,1,Routine experimental usage: 4.26 units consumed.,4/1/2026 9:00
+,72,75,88,146,142.08,1,Routine experimental usage: 3.92 units consumed.,4/1/2026 8:46
+,164,37,146,804,1054,2,Restock event: Added 250 units from delivery.,4/1/2026 15:49
+,787,12,288,242,237.62,1,Routine experimental usage: 4.38 units consumed.,4/1/2026 15:40
+,526,106,326,135,135.34,6,Sterile return: unused reagent returned to stock.,4/1/2026 13:11
+,494,85,292,422,419.51,1,Routine experimental usage: 2.49 units consumed.,4/1/2026 17:23
+,603,59,182,353,348.16,1,Routine experimental usage: 4.84 units consumed.,4/1/2026 19:57
+,907,71,148,386,381.25,1,Routine experimental usage: 4.75 units consumed.,4/1/2026 12:27
+,715,21,299,329,328.04,1,Routine experimental usage: 0.96 units consumed.,4/1/2026 18:47
+,963,93,315,256,256,3,Inventory transfer to Location ID 93.,4/1/2026 13:10
+,886,12,232,382,380.66,1,Routine experimental usage: 1.34 units consumed.,4/1/2026 16:40
+,631,25,67,339,338.16,4,Material disposal: 0.84 units discarded due to contamination risk.,4/1/2026 11:08
+,700,55,174,55,53.86,1,Routine experimental usage: 1.14 units consumed.,4/1/2026 19:42
+,625,98,300,62,61.84,4,Material disposal: 0.16 units discarded due to contamination risk.,4/1/2026 8:14
+,681,11,240,301,296.64,1,Routine experimental usage: 4.36 units consumed.,4/1/2026 13:47
+,678,104,16,404,402.23,1,Routine experimental usage: 1.77 units consumed.,4/1/2026 14:39
+,612,16,309,50,100,2,Restock event: Added 50 units from delivery.,4/1/2026 18:54
+,381,52,24,4,2.14,1,Routine experimental usage: 1.86 units consumed.,4/1/2026 17:59
+,769,89,141,211,209.86,1,Routine experimental usage: 1.14 units consumed.,4/1/2026 15:16
+,212,6,19,118,119.66,6,Sterile return: unused reagent returned to stock.,4/1/2026 9:12
+,326,20,276,471,470.1,1,Routine experimental usage: 0.9 units consumed.,4/1/2026 16:23
+,38,28,308,160,160.35,5,Cycle count correction after physical audit.,4/1/2026 13:58
+,155,113,78,434,432.65,1,Routine experimental usage: 1.35 units consumed.,4/1/2026 16:13
+,558,113,331,237,234.01,1,Routine experimental usage: 2.99 units consumed.,4/1/2026 16:39
+,709,31,238,465,465,3,Inventory transfer to Location ID 31.,4/1/2026 15:56
+,307,88,38,345,345,3,Inventory transfer to Location ID 88.,4/1/2026 9:09
+,727,38,22,465,461.1,1,Routine experimental usage: 3.9 units consumed.,4/1/2026 11:57
+,398,18,307,216.76,212.16,1,Routine experimental usage: 4.6 units consumed.,4/1/2026 13:43
+,618,25,290,330,325.93,1,Routine experimental usage: 4.07 units consumed.,4/1/2026 17:49
+,75,110,105,402,398.74,1,Routine experimental usage: 3.26 units consumed.,4/1/2026 13:02
+,182,107,320,380,381.59,6,Sterile return: unused reagent returned to stock.,4/1/2026 19:38
+,952,90,46,61,58.27,1,Routine experimental usage: 2.73 units consumed.,4/1/2026 9:44
+,693,67,5,32,0,7,Inventory purge: item expired and removed.,4/1/2026 17:17
+,745,103,107,305,301.36,1,Routine experimental usage: 3.64 units consumed.,4/1/2026 11:45
+,898,66,85,397,497,2,Restock event: Added 100 units from delivery.,4/1/2026 16:39
+,839,33,185,58,55.73,1,Routine experimental usage: 2.27 units consumed.,4/1/2026 14:48
+,722,53,136,218,218.1,6,Sterile return: unused reagent returned to stock.,4/1/2026 9:50
+,140,107,191,453,451.05,1,Routine experimental usage: 1.95 units consumed.,4/1/2026 16:43
+,678,104,190,402.23,400.12,1,Routine experimental usage: 2.11 units consumed.,4/1/2026 14:20
+,749,70,125,258,254.45,1,Routine experimental usage: 3.55 units consumed.,4/1/2026 14:06
+,440,31,256,409,459,2,Restock event: Added 50 units from delivery.,4/1/2026 17:34
+,386,17,200,147,144.82,1,Routine experimental usage: 2.18 units consumed.,4/1/2026 8:16
+,999,38,316,425,425,3,Inventory transfer to Location ID 38.,4/1/2026 19:26
+,874,33,175,445,445,3,Inventory transfer to Location ID 33.,4/1/2026 8:22
+,73,96,205,107,107,3,Inventory transfer to Location ID 96.,4/1/2026 12:12
+,809,24,51,210,205.4,1,Routine experimental usage: 4.6 units consumed.,4/1/2026 14:20
+,905,32,303,79,76.08,1,Routine experimental usage: 2.92 units consumed.,4/1/2026 19:58
+,362,54,79,89,85.96,1,Routine experimental usage: 3.04 units consumed.,4/1/2026 8:02
+,79,66,10,164,163.41,1,Routine experimental usage: 0.59 units consumed.,4/1/2026 17:55
+,127,28,45,356,353,1,Routine experimental usage: 3.0 units consumed.,4/1/2026 9:17
+,975,17,43,9,0,7,Inventory purge: item expired and removed.,4/1/2026 13:59
+,347,90,89,407,408.06,6,Sterile return: unused reagent returned to stock.,4/1/2026 17:28
+,968,85,202,181,681,2,Restock event: Added 500 units from delivery.,4/1/2026 15:54
+,527,94,36,274,269.87,1,Routine experimental usage: 4.13 units consumed.,4/1/2026 9:03
+,347,90,177,408.06,405.6,1,Routine experimental usage: 2.46 units consumed.,4/1/2026 10:29
+,718,71,146,31,29.6,1,Routine experimental usage: 1.4 units consumed.,4/1/2026 13:08
+,89,52,206,536.74,533.5,1,Routine experimental usage: 3.24 units consumed.,4/1/2026 17:25
+,384,108,253,238,0,7,Inventory purge: item expired and removed.,4/1/2026 9:13
+,266,45,232,14,14,3,Inventory transfer to Location ID 45.,4/1/2026 10:37
+,128,29,161,196,196,3,Inventory transfer to Location ID 29.,4/1/2026 19:49
+,305,108,237,168,166.66,1,Routine experimental usage: 1.34 units consumed.,4/1/2026 14:27
+,802,97,154,300,296.51,1,Routine experimental usage: 3.49 units consumed.,4/1/2026 9:24
+,794,34,319,49,46.94,1,Routine experimental usage: 2.06 units consumed.,4/1/2026 19:54
+,809,24,4,205.4,305.4,2,Restock event: Added 100 units from delivery.,4/1/2026 16:36
+,4,59,181,402,402,3,Inventory transfer to Location ID 59.,4/1/2026 15:03
+,801,98,325,30,29.05,1,Routine experimental usage: 0.95 units consumed.,4/1/2026 10:25
+,852,50,75,314,314,3,Inventory transfer to Location ID 50.,4/1/2026 14:52
+,262,29,79,112,162,2,Restock event: Added 50 units from delivery.,4/1/2026 19:08
+,55,72,177,98,97.03,1,Routine experimental usage: 0.97 units consumed.,4/1/2026 10:19
+,890,60,279,214,209.88,1,Routine experimental usage: 4.12 units consumed.,4/1/2026 19:59
+,97,11,199,339,336.52,1,Routine experimental usage: 2.48 units consumed.,4/1/2026 17:27
+,685,98,222,135,134.23,1,Routine experimental usage: 0.77 units consumed.,4/1/2026 11:05
+,49,59,304,167,165.87,1,Routine experimental usage: 1.13 units consumed.,4/1/2026 17:34
+,174,65,15,258,255.77,1,Routine experimental usage: 2.23 units consumed.,4/1/2026 15:32
+,330,20,191,46,45.65,5,Cycle count correction after physical audit.,4/1/2026 11:10
+,935,85,122,157,156.11,4,Material disposal: 0.89 units discarded due to contamination risk.,4/1/2026 17:01
+,927,106,121,56,52.62,1,Routine experimental usage: 3.38 units consumed.,4/1/2026 17:56
+,100,86,127,171,171,3,Inventory transfer to Location ID 86.,4/1/2026 9:41
+,350,113,212,183,178.09,1,Routine experimental usage: 4.91 units consumed.,4/1/2026 17:00
+,571,63,144,59,58.66,5,Cycle count correction after physical audit.,4/1/2026 10:40
+,559,77,23,465,462.14,1,Routine experimental usage: 2.86 units consumed.,4/1/2026 18:42
+,790,1,98,425,425,3,Inventory transfer to Location ID 1.,4/1/2026 14:53
+,446,28,219,325,321.11,1,Routine experimental usage: 3.89 units consumed.,4/1/2026 9:11
+,191,21,242,141,136.43,1,Routine experimental usage: 4.57 units consumed.,4/1/2026 12:00
+,443,106,132,410,410,3,Inventory transfer to Location ID 106.,4/1/2026 10:49
+,178,7,225,280,276.9,1,Routine experimental usage: 3.1 units consumed.,4/1/2026 8:46
+,993,20,167,166,165.14,1,Routine experimental usage: 0.86 units consumed.,4/1/2026 18:52
+,243,48,180,482,482,3,Inventory transfer to Location ID 48.,4/1/2026 11:06
+,245,53,151,152,147.94,1,Routine experimental usage: 4.06 units consumed.,4/1/2026 15:19
+,298,5,64,167,164.16,1,Routine experimental usage: 2.84 units consumed.,4/1/2026 14:36
+,137,37,150,384,381.28,1,Routine experimental usage: 2.72 units consumed.,4/1/2026 17:53
+,15,60,301,22,18.07,1,Routine experimental usage: 3.93 units consumed.,4/1/2026 17:02
+,956,30,325,220,215.51,1,Routine experimental usage: 4.49 units consumed.,4/1/2026 17:39
+,549,42,198,287,285.3,1,Routine experimental usage: 1.7 units consumed.,4/1/2026 17:45
+,236,104,266,438,437.95,5,Cycle count correction after physical audit.,4/1/2026 16:09
+,564,2,93,59,54.43,1,Routine experimental usage: 4.57 units consumed.,4/1/2026 8:51
+,636,39,327,497,496.81,4,Material disposal: 0.19 units discarded due to contamination risk.,4/1/2026 12:36
+,223,14,285,238,233.96,1,Routine experimental usage: 4.04 units consumed.,4/1/2026 18:32
+,743,76,58,166,0,7,Inventory purge: item expired and removed.,4/1/2026 9:27
+,137,87,222,381.28,381.28,3,Inventory transfer to Location ID 87.,4/1/2026 9:02
+,871,90,38,179,279,2,Restock event: Added 100 units from delivery.,4/1/2026 8:02
+,432,97,95,310,305.72,1,Routine experimental usage: 4.28 units consumed.,4/1/2026 8:57
+,577,83,96,198,193.45,1,Routine experimental usage: 4.55 units consumed.,4/1/2026 9:50
+,27,70,97,377,376.37,4,Material disposal: 0.63 units discarded due to contamination risk.,4/1/2026 11:12
+,859,64,182,336,332.84,1,Routine experimental usage: 3.16 units consumed.,4/1/2026 17:26
+,456,92,251,429,426.14,1,Routine experimental usage: 2.86 units consumed.,4/1/2026 18:33
+,379,87,113,128.21,127.25,1,Routine experimental usage: 0.96 units consumed.,4/1/2026 9:42
+,914,113,126,337.78,333.85,1,Routine experimental usage: 3.93 units consumed.,4/1/2026 14:09
+,534,12,324,134,132.59,1,Routine experimental usage: 1.41 units consumed.,4/1/2026 17:45
+,339,54,94,227,222.34,1,Routine experimental usage: 4.66 units consumed.,4/1/2026 17:23
+,745,103,257,301.36,297.71,1,Routine experimental usage: 3.65 units consumed.,4/1/2026 8:25
+,479,90,305,102,100.94,1,Routine experimental usage: 1.06 units consumed.,4/1/2026 12:06
+,176,33,324,425,420.78,1,Routine experimental usage: 4.22 units consumed.,4/1/2026 16:11
+,685,98,226,134.23,133.42,1,Routine experimental usage: 0.81 units consumed.,4/1/2026 13:27
+,619,28,312,183,182.48,4,Material disposal: 0.52 units discarded due to contamination risk.,4/1/2026 19:52
+,490,96,246,425,425,3,Inventory transfer to Location ID 96.,4/1/2026 11:28
+,622,36,240,141,138.71,1,Routine experimental usage: 2.29 units consumed.,4/1/2026 8:38
+,392,29,224,483,483.84,6,Sterile return: unused reagent returned to stock.,4/1/2026 19:19
+,236,104,268,437.95,432.98,1,Routine experimental usage: 4.97 units consumed.,4/1/2026 10:06
+,483,88,57,448,446.42,1,Routine experimental usage: 1.58 units consumed.,4/1/2026 19:30
+,312,81,34,162,159.6,1,Routine experimental usage: 2.4 units consumed.,4/1/2026 12:05
+,171,82,11,417,416.36,1,Routine experimental usage: 0.64 units consumed.,4/1/2026 11:38
+,323,70,274,120,115.48,1,Routine experimental usage: 4.52 units consumed.,4/1/2026 17:45
+,837,12,321,284,281.46,1,Routine experimental usage: 2.54 units consumed.,4/1/2026 10:51
+,738,30,10,315.09,314.23,4,Material disposal: 0.86 units discarded due to contamination risk.,4/1/2026 10:53
+,263,26,86,139,137.32,1,Routine experimental usage: 1.68 units consumed.,4/1/2026 10:35
+,700,55,217,53.86,49.14,1,Routine experimental usage: 4.72 units consumed.,4/1/2026 12:25
+,848,85,322,498,496.21,1,Routine experimental usage: 1.79 units consumed.,4/1/2026 10:02
+,352,74,332,220,217.8,1,Routine experimental usage: 2.2 units consumed.,4/1/2026 11:30
+,405,42,117,196,193.82,1,Routine experimental usage: 2.18 units consumed.,4/1/2026 13:43
+,601,46,134,143,393,2,Restock event: Added 250 units from delivery.,4/1/2026 8:26
+,403,34,125,154,150.58,1,Routine experimental usage: 3.42 units consumed.,4/1/2026 18:00
+,860,81,27,424,423.31,1,Routine experimental usage: 0.69 units consumed.,4/1/2026 13:50
+,299,2,83,108,108,3,Inventory transfer to Location ID 2.,4/1/2026 10:25
+,116,36,307,312,312,3,Inventory transfer to Location ID 36.,4/1/2026 19:01
+,73,96,287,107,108.57,6,Sterile return: unused reagent returned to stock.,4/1/2026 18:19
+,774,65,130,212,207.05,1,Routine experimental usage: 4.95 units consumed.,4/1/2026 12:13
+,335,53,92,574,570.35,1,Routine experimental usage: 3.65 units consumed.,4/1/2026 8:14
+,68,96,326,276.98,273.77,1,Routine experimental usage: 3.21 units consumed.,4/1/2026 10:03
+,758,22,31,333,330.99,1,Routine experimental usage: 2.01 units consumed.,4/1/2026 13:51
+,505,14,79,239,234.56,1,Routine experimental usage: 4.44 units consumed.,4/1/2026 19:30
+,775,70,14,372.81,371.49,1,Routine experimental usage: 1.32 units consumed.,4/1/2026 8:24
+,732,37,86,164,164.49,5,Cycle count correction after physical audit.,4/1/2026 11:16
+,901,54,322,305,302.98,1,Routine experimental usage: 2.02 units consumed.,4/1/2026 9:23
+,568,31,319,19,15.66,1,Routine experimental usage: 3.34 units consumed.,4/1/2026 10:37
+,640,100,152,170,170,3,Inventory transfer to Location ID 100.,4/1/2026 13:55
+,457,15,73,69.73,67.44,1,Routine experimental usage: 2.29 units consumed.,4/1/2026 16:28
+,8,25,166,261,311,2,Restock event: Added 50 units from delivery.,4/1/2026 19:29
+,448,90,307,317,313.25,1,Routine experimental usage: 3.75 units consumed.,4/1/2026 11:51
+,584,38,117,484,534,2,Restock event: Added 50 units from delivery.,4/1/2026 12:50
+,292,15,167,443,438.21,1,Routine experimental usage: 4.79 units consumed.,4/1/2026 18:37
+,897,38,188,166,163.73,1,Routine experimental usage: 2.27 units consumed.,4/1/2026 9:20
+,11,104,166,460,458.91,1,Routine experimental usage: 1.09 units consumed.,4/1/2026 15:03
+,89,52,217,533.5,530.35,1,Routine experimental usage: 3.15 units consumed.,4/1/2026 8:12
+,412,49,294,183,683,2,Restock event: Added 500 units from delivery.,4/1/2026 19:57
+,909,50,329,25,23.59,1,Routine experimental usage: 1.41 units consumed.,4/1/2026 14:06
+,731,91,259,41,37.87,1,Routine experimental usage: 3.13 units consumed.,4/1/2026 18:20
+,782,95,164,191,186.78,1,Routine experimental usage: 4.22 units consumed.,4/1/2026 17:16
+,276,52,4,239,235.55,1,Routine experimental usage: 3.45 units consumed.,4/1/2026 9:17
+,64,75,194,315,415,2,Restock event: Added 100 units from delivery.,4/1/2026 13:51
+,290,43,124,219,215.48,1,Routine experimental usage: 3.52 units consumed.,4/1/2026 18:49
+,571,63,21,58.66,56.42,1,Routine experimental usage: 2.24 units consumed.,4/1/2026 15:32
+,858,97,145,475,473.53,1,Routine experimental usage: 1.47 units consumed.,4/1/2026 13:20
+,831,52,32,246,244.81,1,Routine experimental usage: 1.19 units consumed.,4/1/2026 19:38
+,799,74,183,66,62.6,1,Routine experimental usage: 3.4 units consumed.,4/1/2026 17:13
+,650,97,3,105.21,104.11,1,Routine experimental usage: 1.1 units consumed.,4/1/2026 9:45
+,572,72,253,49,47.64,1,Routine experimental usage: 1.36 units consumed.,4/1/2026 16:45
+,791,111,23,39.06,40.54,6,Sterile return: unused reagent returned to stock.,4/1/2026 11:06
+,238,9,215,391,391,3,Inventory transfer to Location ID 9.,4/1/2026 18:58
+,99,85,148,317,367,2,Restock event: Added 50 units from delivery.,4/1/2026 15:13
+,365,95,188,445,441.68,1,Routine experimental usage: 3.32 units consumed.,4/1/2026 8:22
+,587,89,318,300,550,2,Restock event: Added 250 units from delivery.,4/1/2026 12:00
+,386,13,78,144.82,144.82,3,Inventory transfer to Location ID 13.,4/1/2026 11:49
+,142,91,278,398,397.76,5,Cycle count correction after physical audit.,4/1/2026 13:37
+,124,13,223,394,894,2,Restock event: Added 500 units from delivery.,4/1/2026 12:10
+,598,96,26,208,708,2,Restock event: Added 500 units from delivery.,4/1/2026 19:55
+,385,60,34,461,456.26,1,Routine experimental usage: 4.74 units consumed.,4/1/2026 19:09
+,566,25,281,23,22.01,1,Routine experimental usage: 0.99 units consumed.,4/1/2026 19:49
+,755,19,279,58,54.86,1,Routine experimental usage: 3.14 units consumed.,4/1/2026 17:55
+,110,34,301,101,96.44,1,Routine experimental usage: 4.56 units consumed.,4/1/2026 10:22
+,719,10,285,245,244.1,4,Material disposal: 0.9 units discarded due to contamination risk.,4/1/2026 18:10
+,897,38,241,163.73,163.31,4,Material disposal: 0.42 units discarded due to contamination risk.,4/1/2026 14:05
+,375,4,129,236,235.79,4,Material disposal: 0.21 units discarded due to contamination risk.,4/1/2026 18:10
+,144,79,284,112,110.88,1,Routine experimental usage: 1.12 units consumed.,4/1/2026 16:51
+,755,19,282,54.86,53.28,1,Routine experimental usage: 1.58 units consumed.,4/1/2026 10:57
+,990,53,64,207,204.09,1,Routine experimental usage: 2.91 units consumed.,4/1/2026 14:33
+,216,111,251,361,0,7,Inventory purge: item expired and removed.,4/1/2026 9:57
+,416,54,8,151,146.47,1,Routine experimental usage: 4.53 units consumed.,4/1/2026 10:27
+,647,17,282,424,422.15,1,Routine experimental usage: 1.85 units consumed.,4/1/2026 16:28
+,101,73,28,47,43.04,1,Routine experimental usage: 3.96 units consumed.,4/1/2026 14:37
+,349,110,83,150,146.99,1,Routine experimental usage: 3.01 units consumed.,4/1/2026 19:54
+,251,32,124,427,423.2,1,Routine experimental usage: 3.8 units consumed.,4/1/2026 19:45
+,20,104,207,473,470.79,1,Routine experimental usage: 2.21 units consumed.,4/1/2026 10:20
+,501,109,274,443.3,439.53,1,Routine experimental usage: 3.77 units consumed.,4/1/2026 12:28
+,912,66,169,139,135.63,1,Routine experimental usage: 3.37 units consumed.,4/1/2026 19:10
+,555,34,206,33.37,34.15,6,Sterile return: unused reagent returned to stock.,4/1/2026 14:53
+,526,106,29,135.34,131.64,1,Routine experimental usage: 3.7 units consumed.,4/1/2026 18:01
+,546,4,17,317,312.41,1,Routine experimental usage: 4.59 units consumed.,4/1/2026 16:56
+,557,36,51,421,419.33,1,Routine experimental usage: 1.67 units consumed.,4/1/2026 13:31
+,861,57,58,355,351.21,1,Routine experimental usage: 3.79 units consumed.,4/1/2026 15:59
+,138,21,243,440,436.87,1,Routine experimental usage: 3.13 units consumed.,4/1/2026 19:52
+,285,57,137,288,288,3,Inventory transfer to Location ID 57.,4/1/2026 13:11
+,516,67,301,198.48,193.55,1,Routine experimental usage: 4.93 units consumed.,4/1/2026 11:03
+,174,65,64,255.77,0,7,Inventory purge: item expired and removed.,4/1/2026 12:12
+,864,27,297,92,88.45,1,Routine experimental usage: 3.55 units consumed.,4/1/2026 12:42
+,656,37,323,168,167.25,1,Routine experimental usage: 0.75 units consumed.,4/1/2026 19:49
+,829,37,217,79,78.64,4,Material disposal: 0.36 units discarded due to contamination risk.,4/1/2026 10:21
+,232,31,210,299,295.89,1,Routine experimental usage: 3.11 units consumed.,4/1/2026 11:34
+,967,78,159,412,410.6,1,Routine experimental usage: 1.4 units consumed.,4/1/2026 16:53
+,414,97,307,151,149.33,1,Routine experimental usage: 1.67 units consumed.,4/1/2026 8:11
+,431,108,92,466,466,3,Inventory transfer to Location ID 108.,4/1/2026 15:45
+,262,29,154,162,157.07,1,Routine experimental usage: 4.93 units consumed.,4/1/2026 16:01
+,457,15,41,67.44,63.64,1,Routine experimental usage: 3.8 units consumed.,4/1/2026 14:00
+,953,31,308,3,503,2,Restock event: Added 500 units from delivery.,4/1/2026 8:46
+,368,78,178,349,347.28,1,Routine experimental usage: 1.72 units consumed.,4/1/2026 18:34
+,133,9,24,331.08,831.08,2,Restock event: Added 500 units from delivery.,4/1/2026 9:06
+,136,48,30,457,452.94,1,Routine experimental usage: 4.06 units consumed.,4/1/2026 9:35
+,793,76,51,215.55,212.36,1,Routine experimental usage: 3.19 units consumed.,4/1/2026 8:35
+,73,96,331,108.57,104.62,1,Routine experimental usage: 3.95 units consumed.,4/1/2026 14:17
+,833,98,233,433,431.6,1,Routine experimental usage: 1.4 units consumed.,4/1/2026 11:48
+,915,18,62,217,0,7,Inventory purge: item expired and removed.,4/1/2026 18:18
+,196,55,54,320,317.3,1,Routine experimental usage: 2.7 units consumed.,4/1/2026 10:47
+,779,77,242,160,210,2,Restock event: Added 50 units from delivery.,4/1/2026 13:07
+,998,44,172,235,234.97,5,Cycle count correction after physical audit.,4/1/2026 9:58
+,660,44,103,461,461,3,Inventory transfer to Location ID 44.,4/1/2026 19:42
+,535,36,185,299,296.92,1,Routine experimental usage: 2.08 units consumed.,4/1/2026 18:43
+,837,12,86,281.46,381.46,2,Restock event: Added 100 units from delivery.,4/1/2026 8:49
+,364,96,327,312,312.2,6,Sterile return: unused reagent returned to stock.,4/1/2026 9:19
+,545,44,320,12,8.02,1,Routine experimental usage: 3.98 units consumed.,4/1/2026 14:38
+,745,2,176,297.71,297.71,3,Inventory transfer to Location ID 2.,4/1/2026 14:43
+,628,37,3,421,420.27,1,Routine experimental usage: 0.73 units consumed.,4/1/2026 14:33
+,905,32,207,76.08,74.33,1,Routine experimental usage: 1.75 units consumed.,4/1/2026 13:40
+,635,23,108,305,355,2,Restock event: Added 50 units from delivery.,4/1/2026 17:46
+,101,73,50,43.04,43.16,5,Cycle count correction after physical audit.,4/1/2026 19:03
+,49,59,208,165.87,164.85,1,Routine experimental usage: 1.02 units consumed.,4/1/2026 9:48
+,285,57,61,288,287.81,4,Material disposal: 0.19 units discarded due to contamination risk.,4/1/2026 17:30
+,89,52,315,530.35,528.28,1,Routine experimental usage: 2.07 units consumed.,4/1/2026 19:07
+,290,43,62,215.48,212.8,1,Routine experimental usage: 2.68 units consumed.,4/1/2026 18:19
+,169,27,125,226,226.37,6,Sterile return: unused reagent returned to stock.,4/1/2026 11:03
+,204,5,32,139,135.26,1,Routine experimental usage: 3.74 units consumed.,4/1/2026 13:46
+,675,7,76,67,64.29,1,Routine experimental usage: 2.71 units consumed.,4/1/2026 16:29
+,41,8,211,63,58.99,1,Routine experimental usage: 4.01 units consumed.,4/1/2026 18:28
+,248,111,116,436,433.12,1,Routine experimental usage: 2.88 units consumed.,4/1/2026 16:31
+,417,33,46,11,6.21,1,Routine experimental usage: 4.79 units consumed.,4/1/2026 9:32
+,376,50,320,326,324.47,1,Routine experimental usage: 1.53 units consumed.,4/1/2026 11:16
+,380,103,171,341,337.91,1,Routine experimental usage: 3.09 units consumed.,4/1/2026 9:32
+,671,10,264,56,52.6,1,Routine experimental usage: 3.4 units consumed.,4/1/2026 14:07
+,634,47,81,327,324.83,1,Routine experimental usage: 2.17 units consumed.,4/1/2026 10:34
+,109,31,147,412,412.79,6,Sterile return: unused reagent returned to stock.,4/1/2026 15:54
+,134,113,158,352,352.6,6,Sterile return: unused reagent returned to stock.,4/1/2026 17:03
+,774,65,281,207.05,204.55,1,Routine experimental usage: 2.5 units consumed.,4/1/2026 15:16
+,683,16,89,8,3.82,1,Routine experimental usage: 4.18 units consumed.,4/1/2026 13:22
+,293,113,188,236,231.62,1,Routine experimental usage: 4.38 units consumed.,4/1/2026 16:33
+,975,17,24,0,0,5,Cycle count correction after physical audit.,4/1/2026 14:26
+,405,42,20,193.82,190.34,1,Routine experimental usage: 3.48 units consumed.,4/1/2026 8:35
+,300,77,197,332,327.74,1,Routine experimental usage: 4.26 units consumed.,4/1/2026 9:38
+,454,78,5,337,437,2,Restock event: Added 100 units from delivery.,4/1/2026 15:41
+,61,38,239,383,382.35,1,Routine experimental usage: 0.65 units consumed.,4/1/2026 8:03
+,252,35,160,214,714,2,Restock event: Added 500 units from delivery.,4/1/2026 12:23
+,586,52,210,214,210.12,1,Routine experimental usage: 3.88 units consumed.,4/1/2026 12:14
+,264,105,91,223,221.43,1,Routine experimental usage: 1.57 units consumed.,4/1/2026 15:40
+,143,39,200,217,212.13,1,Routine experimental usage: 4.87 units consumed.,4/1/2026 12:55
+,381,52,33,2.14,102.14,2,Restock event: Added 100 units from delivery.,4/1/2026 17:26
+,273,4,172,370,371.4,6,Sterile return: unused reagent returned to stock.,4/1/2026 17:19
+,856,47,127,13,13.08,5,Cycle count correction after physical audit.,4/1/2026 8:08
+,699,76,288,303,299.22,1,Routine experimental usage: 3.78 units consumed.,4/1/2026 10:01
+,215,102,234,77.87,75.33,1,Routine experimental usage: 2.54 units consumed.,4/1/2026 16:59
+,781,56,181,130,126.93,1,Routine experimental usage: 3.07 units consumed.,4/1/2026 9:40
+,193,57,150,398,394.11,1,Routine experimental usage: 3.89 units consumed.,4/1/2026 12:24
+,366,70,334,195,190.08,1,Routine experimental usage: 4.92 units consumed.,4/1/2026 8:14
+,292,1,82,438.21,438.21,3,Inventory transfer to Location ID 1.,4/1/2026 14:34
+,35,53,68,471,467.91,1,Routine experimental usage: 3.09 units consumed.,4/1/2026 18:53
+,541,73,24,55,50.38,1,Routine experimental usage: 4.62 units consumed.,4/1/2026 19:38
+,917,9,83,310,310.88,6,Sterile return: unused reagent returned to stock.,4/1/2026 11:19
+,815,12,19,216,212.43,1,Routine experimental usage: 3.57 units consumed.,4/1/2026 10:04
+,151,71,156,25,0,7,Inventory purge: item expired and removed.,4/1/2026 15:33
+,793,76,211,212.36,209.78,1,Routine experimental usage: 2.58 units consumed.,4/1/2026 18:21
+,916,111,295,248,246.91,1,Routine experimental usage: 1.09 units consumed.,4/1/2026 12:43
+,923,44,202,262,262.96,6,Sterile return: unused reagent returned to stock.,4/1/2026 11:37
+,679,73,265,903,898.6,1,Routine experimental usage: 4.4 units consumed.,4/1/2026 18:20
+,78,8,216,335,330.54,1,Routine experimental usage: 4.46 units consumed.,4/1/2026 16:00
+,751,83,159,220,216.5,1,Routine experimental usage: 3.5 units consumed.,4/1/2026 12:07
+,151,71,231,0,250,2,Restock event: Added 250 units from delivery.,4/1/2026 10:42
+,574,31,16,454,454.21,6,Sterile return: unused reagent returned to stock.,4/1/2026 14:53
+,299,2,135,108,608,2,Restock event: Added 500 units from delivery.,4/1/2026 10:26
+,808,36,52,62,58.53,1,Routine experimental usage: 3.47 units consumed.,4/1/2026 12:46
+,524,60,37,202,200.92,1,Routine experimental usage: 1.08 units consumed.,4/1/2026 18:45
+,866,71,228,359,358.3,1,Routine experimental usage: 0.7 units consumed.,4/1/2026 19:35
+,773,35,182,204,202.19,1,Routine experimental usage: 1.81 units consumed.,4/1/2026 12:33
+,525,56,294,7,57,2,Restock event: Added 50 units from delivery.,4/1/2026 15:41
+,769,89,311,209.86,0,7,Inventory purge: item expired and removed.,4/1/2026 19:16
+,229,80,228,199,200.75,6,Sterile return: unused reagent returned to stock.,4/1/2026 10:52
+,833,98,295,431.6,427.14,1,Routine experimental usage: 4.46 units consumed.,4/1/2026 14:36
+,503,106,300,411,410.28,1,Routine experimental usage: 0.72 units consumed.,4/1/2026 10:57
+,657,44,2,396,396,3,Inventory transfer to Location ID 44.,4/1/2026 12:37
+,983,57,310,293,543,2,Restock event: Added 250 units from delivery.,4/1/2026 19:36
+,904,61,240,26,21.42,1,Routine experimental usage: 4.58 units consumed.,4/1/2026 9:25
+,700,55,66,49.14,47.01,1,Routine experimental usage: 2.13 units consumed.,4/1/2026 9:58
+,614,69,174,188,183.1,1,Routine experimental usage: 4.9 units consumed.,4/1/2026 12:43
+,251,32,67,423.2,423.07,4,Material disposal: 0.13 units discarded due to contamination risk.,4/1/2026 17:49
+,674,88,126,13,13.53,6,Sterile return: unused reagent returned to stock.,4/1/2026 15:49
+,942,45,149,104,204,2,Restock event: Added 100 units from delivery.,4/1/2026 15:27
+,70,86,275,0,0,3,Inventory transfer to Location ID 86.,4/1/2026 15:18
+,629,13,148,232,230.29,1,Routine experimental usage: 1.71 units consumed.,4/1/2026 18:09
+,640,100,145,170,169.52,4,Material disposal: 0.48 units discarded due to contamination risk.,4/1/2026 13:27
+,599,71,71,476.57,474.75,1,Routine experimental usage: 1.82 units consumed.,4/1/2026 12:30
+,89,52,188,528.28,523.8,1,Routine experimental usage: 4.48 units consumed.,4/1/2026 14:48
+,805,67,30,287,283.67,1,Routine experimental usage: 3.33 units consumed.,4/1/2026 8:28
+,534,12,250,132.59,130.53,1,Routine experimental usage: 2.06 units consumed.,4/1/2026 9:27
+,803,35,14,489,489,3,Inventory transfer to Location ID 35.,4/1/2026 12:20
+,513,56,155,346,342.55,1,Routine experimental usage: 3.45 units consumed.,4/1/2026 12:44
+,412,49,178,683,678.12,1,Routine experimental usage: 4.88 units consumed.,4/1/2026 19:23
+,291,4,18,69,68.36,4,Material disposal: 0.64 units discarded due to contamination risk.,4/1/2026 10:35
+,448,90,323,313.25,309.11,1,Routine experimental usage: 4.14 units consumed.,4/1/2026 16:35
+,841,15,113,142,137.22,1,Routine experimental usage: 4.78 units consumed.,4/1/2026 10:19
+,134,3,248,352.6,352.6,3,Inventory transfer to Location ID 3.,4/1/2026 18:13
+,176,33,307,420.78,418.06,1,Routine experimental usage: 2.72 units consumed.,4/1/2026 9:04
+,9,69,32,59,57.94,1,Routine experimental usage: 1.06 units consumed.,4/1/2026 10:57
+,625,46,74,61.84,61.84,3,Inventory transfer to Location ID 46.,4/1/2026 17:09
+,96,80,200,258.61,508.61,2,Restock event: Added 250 units from delivery.,4/1/2026 10:04
+,955,50,218,382,382.94,6,Sterile return: unused reagent returned to stock.,4/1/2026 16:17
+,127,28,74,353,350.13,1,Routine experimental usage: 2.87 units consumed.,4/1/2026 13:13
+,362,54,132,85.96,81.58,1,Routine experimental usage: 4.38 units consumed.,4/1/2026 10:27
+,135,32,231,2,0.03,1,Routine experimental usage: 1.97 units consumed.,4/1/2026 19:46
+,729,30,310,37,35.66,1,Routine experimental usage: 1.34 units consumed.,4/1/2026 17:23
+,221,32,333,169,165.8,1,Routine experimental usage: 3.2 units consumed.,4/1/2026 18:43
+,635,23,79,355,354.29,1,Routine experimental usage: 0.71 units consumed.,4/1/2026 14:14
+,670,32,110,89,89,3,Inventory transfer to Location ID 32.,4/1/2026 14:31
+,660,44,71,461,961,2,Restock event: Added 500 units from delivery.,4/1/2026 16:09
+,118,97,68,393,392.62,4,Material disposal: 0.38 units discarded due to contamination risk.,4/1/2026 12:53
+,769,89,87,0,100,2,Restock event: Added 100 units from delivery.,4/1/2026 12:53
+,974,5,207,223,218.05,1,Routine experimental usage: 4.95 units consumed.,4/1/2026 8:31
+,738,58,281,314.23,314.23,3,Inventory transfer to Location ID 58.,4/1/2026 16:09
+,220,88,57,208,204.64,1,Routine experimental usage: 3.36 units consumed.,4/1/2026 9:43
+,147,68,102,490,485.69,1,Routine experimental usage: 4.31 units consumed.,4/1/2026 17:25
+,775,70,113,371.49,366.9,1,Routine experimental usage: 4.59 units consumed.,4/1/2026 12:57
+,692,100,271,381,381.08,5,Cycle count correction after physical audit.,4/1/2026 19:27
+,912,66,211,135.63,133.21,1,Routine experimental usage: 2.42 units consumed.,4/1/2026 15:42
+,720,21,40,433,430.27,1,Routine experimental usage: 2.73 units consumed.,4/1/2026 9:48
+,781,56,143,126.93,124.64,1,Routine experimental usage: 2.29 units consumed.,4/1/2026 9:01
+,714,11,121,234,234.05,5,Cycle count correction after physical audit.,4/1/2026 15:46
+,217,6,215,109,105.51,1,Routine experimental usage: 3.49 units consumed.,4/1/2026 12:07
+,975,17,196,0,250,2,Restock event: Added 250 units from delivery.,4/1/2026 8:45
+,824,26,320,180,180,3,Inventory transfer to Location ID 26.,4/1/2026 12:01
+,326,20,3,470.1,469.58,1,Routine experimental usage: 0.52 units consumed.,4/1/2026 11:56
+,830,85,172,336,331.88,1,Routine experimental usage: 4.12 units consumed.,4/1/2026 15:20
+,316,2,273,384.77,384.77,3,Inventory transfer to Location ID 2.,4/1/2026 15:32
+,558,113,55,234.01,232.57,1,Routine experimental usage: 1.44 units consumed.,4/1/2026 8:29
+,445,73,157,112,108.71,1,Routine experimental usage: 3.29 units consumed.,4/1/2026 9:23
+,326,20,280,469.58,969.58,2,Restock event: Added 500 units from delivery.,4/1/2026 14:39
+,116,36,153,312,312.63,6,Sterile return: unused reagent returned to stock.,4/1/2026 10:44
+,59,20,138,194,190.56,1,Routine experimental usage: 3.44 units consumed.,4/1/2026 19:25
+,307,88,26,345,343.53,1,Routine experimental usage: 1.47 units consumed.,4/1/2026 19:15
+,178,7,24,276.9,275.96,1,Routine experimental usage: 0.94 units consumed.,4/1/2026 17:17
+,317,92,66,249,249.05,5,Cycle count correction after physical audit.,4/1/2026 12:24
+,906,59,188,80,75.09,1,Routine experimental usage: 4.91 units consumed.,4/1/2026 8:14
+,144,79,193,110.88,108.01,1,Routine experimental usage: 2.87 units consumed.,4/1/2026 11:51
+,49,10,23,164.85,164.85,3,Inventory transfer to Location ID 10.,4/1/2026 13:37
+,110,34,112,96.44,196.44,2,Restock event: Added 100 units from delivery.,4/1/2026 12:01
+,208,71,154,276,275.33,1,Routine experimental usage: 0.67 units consumed.,4/1/2026 11:16
+,215,102,9,75.33,325.33,2,Restock event: Added 250 units from delivery.,4/1/2026 14:18
+,492,69,173,131,129.64,1,Routine experimental usage: 1.36 units consumed.,4/1/2026 13:27
+,763,106,316,439.13,539.13,2,Restock event: Added 100 units from delivery.,4/1/2026 18:04
+,953,31,181,503,501.92,1,Routine experimental usage: 1.08 units consumed.,4/1/2026 19:26
+,665,62,93,74,72.04,1,Routine experimental usage: 1.96 units consumed.,4/1/2026 11:35
+,917,9,23,310.88,309.08,1,Routine experimental usage: 1.8 units consumed.,4/1/2026 9:17
+,271,30,108,408,658,2,Restock event: Added 250 units from delivery.,4/1/2026 8:25
+,274,85,322,84,79.34,1,Routine experimental usage: 4.66 units consumed.,4/1/2026 18:22
+,343,54,29,460.47,458.58,1,Routine experimental usage: 1.89 units consumed.,4/1/2026 18:46
+,305,62,100,166.66,166.66,3,Inventory transfer to Location ID 62.,4/1/2026 12:55
+,685,98,105,133.42,131.6,1,Routine experimental usage: 1.82 units consumed.,4/1/2026 17:43
+,820,42,119,491.75,488.15,1,Routine experimental usage: 3.6 units consumed.,4/1/2026 17:10
+,814,63,193,384,381.67,1,Routine experimental usage: 2.33 units consumed.,4/1/2026 12:27
+,611,61,242,185.35,185.35,3,Inventory transfer to Location ID 61.,4/1/2026 18:29
+,556,44,205,325,322.67,1,Routine experimental usage: 2.33 units consumed.,4/1/2026 11:32
+,105,27,110,120,170,2,Restock event: Added 50 units from delivery.,4/1/2026 11:32
+,64,75,54,415,411.66,1,Routine experimental usage: 3.34 units consumed.,4/1/2026 14:06
+,90,16,162,405.97,455.97,2,Restock event: Added 50 units from delivery.,4/1/2026 19:22
+,585,29,118,276,274.74,1,Routine experimental usage: 1.26 units consumed.,4/1/2026 11:33
+,784,78,44,78,0,7,Inventory purge: item expired and removed.,4/1/2026 18:37
+,176,33,161,418.06,413.84,1,Routine experimental usage: 4.22 units consumed.,4/1/2026 9:17
+,583,12,238,356,352.56,1,Routine experimental usage: 3.44 units consumed.,4/1/2026 10:32
+,497,65,192,495,995,2,Restock event: Added 500 units from delivery.,4/1/2026 19:10
+,975,17,96,250,245.82,1,Routine experimental usage: 4.18 units consumed.,4/1/2026 19:43
+,535,36,80,296.92,297.9,6,Sterile return: unused reagent returned to stock.,4/1/2026 19:17
+,367,103,110,317,313.92,1,Routine experimental usage: 3.08 units consumed.,4/1/2026 11:14
+,78,8,69,330.54,326.97,1,Routine experimental usage: 3.57 units consumed.,4/1/2026 13:00
+,898,66,262,497,493.81,1,Routine experimental usage: 3.19 units consumed.,4/1/2026 17:04
+,730,37,74,460,455.91,1,Routine experimental usage: 4.09 units consumed.,4/1/2026 11:55
+,655,4,281,119,119,3,Inventory transfer to Location ID 4.,4/1/2026 19:54
+,253,21,266,275,275.6,6,Sterile return: unused reagent returned to stock.,4/1/2026 8:51
+,892,83,112,174,173.26,4,Material disposal: 0.74 units discarded due to contamination risk.,4/1/2026 8:42
+,684,72,116,89,87.71,1,Routine experimental usage: 1.29 units consumed.,4/1/2026 16:47
+,469,101,271,186,184.03,1,Routine experimental usage: 1.97 units consumed.,4/1/2026 9:51
+,380,103,54,337.91,0,7,Inventory purge: item expired and removed.,4/1/2026 8:30
+,331,91,284,222,217.97,1,Routine experimental usage: 4.03 units consumed.,4/1/2026 15:13
+,50,37,171,206,206.02,5,Cycle count correction after physical audit.,4/1/2026 9:45
+,345,99,44,23,21.13,1,Routine experimental usage: 1.87 units consumed.,4/1/2026 9:33
+,308,99,2,439,436.17,1,Routine experimental usage: 2.83 units consumed.,4/1/2026 9:46
+,532,32,281,383,380.3,1,Routine experimental usage: 2.7 units consumed.,4/1/2026 14:34
+,793,76,158,209.78,207.43,1,Routine experimental usage: 2.35 units consumed.,4/1/2026 10:12
+,842,99,246,293,291.56,1,Routine experimental usage: 1.44 units consumed.,4/1/2026 11:24
+,370,63,284,254,249.3,1,Routine experimental usage: 4.7 units consumed.,4/1/2026 10:20
+,477,32,317,212,0,7,Inventory purge: item expired and removed.,4/1/2026 8:29
+,682,32,47,165,163.48,1,Routine experimental usage: 1.52 units consumed.,4/1/2026 10:36
+,20,84,326,470.79,470.79,3,Inventory transfer to Location ID 84.,4/1/2026 15:18
+,826,53,314,290.08,286.11,1,Routine experimental usage: 3.97 units consumed.,4/1/2026 13:23
+,868,37,213,158,156.82,1,Routine experimental usage: 1.18 units consumed.,4/1/2026 16:26
+,957,110,19,89,84.1,1,Routine experimental usage: 4.9 units consumed.,4/1/2026 18:58
+,539,97,91,481,478.06,1,Routine experimental usage: 2.94 units consumed.,4/1/2026 8:29
+,473,76,245,465,462.43,1,Routine experimental usage: 2.57 units consumed.,4/1/2026 11:09
+,790,1,71,425,675,2,Restock event: Added 250 units from delivery.,4/1/2026 9:06
+,717,23,43,10,9.87,5,Cycle count correction after physical audit.,4/1/2026 9:30
+,131,45,188,124,123.63,4,Material disposal: 0.37 units discarded due to contamination risk.,4/1/2026 10:08
+,431,108,34,466,465.65,5,Cycle count correction after physical audit.,4/1/2026 10:13
+,235,103,122,10,10.03,5,Cycle count correction after physical audit.,4/1/2026 11:21
+,621,62,229,203,198.49,1,Routine experimental usage: 4.51 units consumed.,4/1/2026 12:56
+,799,74,205,62.6,312.6,2,Restock event: Added 250 units from delivery.,4/1/2026 11:52
+,521,69,106,187,184.06,1,Routine experimental usage: 2.94 units consumed.,4/1/2026 16:00
+,281,99,242,13,8.69,1,Routine experimental usage: 4.31 units consumed.,4/1/2026 13:27
+,158,15,222,68,568,2,Restock event: Added 500 units from delivery.,4/1/2026 10:03
+,147,111,206,485.69,485.69,3,Inventory transfer to Location ID 111.,4/1/2026 10:45
+,362,54,133,81.58,81.24,4,Material disposal: 0.34 units discarded due to contamination risk.,4/1/2026 16:27
+,7,25,8,308.73,309.37,6,Sterile return: unused reagent returned to stock.,4/1/2026 14:46
+,466,74,313,225,223.61,1,Routine experimental usage: 1.39 units consumed.,4/1/2026 18:37
+,756,10,263,436,435.08,4,Material disposal: 0.92 units discarded due to contamination risk.,4/1/2026 19:21
+,673,81,22,443,442.99,5,Cycle count correction after physical audit.,4/1/2026 17:04
+,862,98,169,136,236,2,Restock event: Added 100 units from delivery.,4/1/2026 14:52
+,361,107,73,87,88.75,6,Sterile return: unused reagent returned to stock.,4/1/2026 15:37
+,76,68,326,296,295.34,4,Material disposal: 0.66 units discarded due to contamination risk.,4/1/2026 14:08
+,547,64,190,448.03,447.7,4,Material disposal: 0.33 units discarded due to contamination risk.,4/1/2026 18:12
+,234,21,16,356,353.8,1,Routine experimental usage: 2.2 units consumed.,4/1/2026 16:55
+,767,16,204,454,453.05,1,Routine experimental usage: 0.95 units consumed.,4/1/2026 12:01
+,433,4,125,381,377.34,1,Routine experimental usage: 3.66 units consumed.,4/1/2026 18:23
+,156,63,203,62,62,3,Inventory transfer to Location ID 63.,4/1/2026 11:33
+,698,111,115,262,362,2,Restock event: Added 100 units from delivery.,4/1/2026 17:20
+,401,24,51,233,230.97,1,Routine experimental usage: 2.03 units consumed.,4/1/2026 9:19
+,127,28,121,350.13,349.56,4,Material disposal: 0.57 units discarded due to contamination risk.,4/1/2026 15:43
+,200,10,305,39,35.07,1,Routine experimental usage: 3.93 units consumed.,4/1/2026 17:55
+,965,104,310,426,425.44,1,Routine experimental usage: 0.56 units consumed.,4/1/2026 17:45
+,922,54,175,386,383.71,1,Routine experimental usage: 2.29 units consumed.,4/1/2026 17:29
+,984,13,202,207,205.22,1,Routine experimental usage: 1.78 units consumed.,4/1/2026 17:24
+,105,27,108,170,166.05,1,Routine experimental usage: 3.95 units consumed.,4/1/2026 11:44
+,15,24,116,18.07,18.07,3,Inventory transfer to Location ID 24.,4/1/2026 16:01
+,698,111,128,362,360.39,1,Routine experimental usage: 1.61 units consumed.,4/1/2026 9:11
+,783,42,50,488,486.57,1,Routine experimental usage: 1.43 units consumed.,4/1/2026 9:51
+,937,111,272,112,111.29,4,Material disposal: 0.71 units discarded due to contamination risk.,4/1/2026 19:48
+,246,103,277,385,381.06,1,Routine experimental usage: 3.94 units consumed.,4/1/2026 12:52
+,169,27,276,226.37,276.37,2,Restock event: Added 50 units from delivery.,4/1/2026 16:48
+,749,70,137,254.45,254.08,5,Cycle count correction after physical audit.,4/1/2026 15:01
+,786,4,313,472,470.5,1,Routine experimental usage: 1.5 units consumed.,4/1/2026 17:48
+,405,42,160,190.34,187.64,1,Routine experimental usage: 2.7 units consumed.,4/1/2026 16:50
+,462,14,51,330,328.9,1,Routine experimental usage: 1.1 units consumed.,4/1/2026 10:43
+,626,68,227,485,480.77,1,Routine experimental usage: 4.23 units consumed.,4/1/2026 11:05
+,86,87,83,242,239.61,1,Routine experimental usage: 2.39 units consumed.,4/1/2026 19:49
+,948,59,298,391,389.99,1,Routine experimental usage: 1.01 units consumed.,4/1/2026 11:54
+,406,16,308,436,436,3,Inventory transfer to Location ID 16.,4/1/2026 13:29
+,185,1,32,230,225.48,1,Routine experimental usage: 4.52 units consumed.,4/1/2026 15:19
+,698,111,134,360.39,359.86,1,Routine experimental usage: 0.53 units consumed.,4/1/2026 14:56
+,250,34,176,488,488,3,Inventory transfer to Location ID 34.,4/1/2026 19:18
+,539,97,133,478.06,476.1,1,Routine experimental usage: 1.96 units consumed.,4/1/2026 12:19
+,122,25,114,453,453,3,Inventory transfer to Location ID 25.,4/1/2026 18:47
+,36,63,221,169,168.46,4,Material disposal: 0.54 units discarded due to contamination risk.,4/1/2026 15:46
+,547,64,251,447.7,445.61,1,Routine experimental usage: 2.09 units consumed.,4/1/2026 18:25
+,603,59,144,348.16,344.95,1,Routine experimental usage: 3.21 units consumed.,4/1/2026 16:10
+,734,111,277,71.84,67.84,1,Routine experimental usage: 4.0 units consumed.,4/1/2026 14:54
+,141,70,265,302.4,299.69,1,Routine experimental usage: 2.71 units consumed.,4/1/2026 18:56
+,457,15,125,63.64,60.69,1,Routine experimental usage: 2.95 units consumed.,4/1/2026 17:21
+,678,104,155,400.12,399.2,1,Routine experimental usage: 0.92 units consumed.,4/1/2026 15:10
+,195,91,249,248,245.21,1,Routine experimental usage: 2.79 units consumed.,4/1/2026 12:21
+,333,9,269,45.42,46.35,6,Sterile return: unused reagent returned to stock.,4/1/2026 16:17
+,9,69,80,57.94,58.95,6,Sterile return: unused reagent returned to stock.,4/1/2026 12:03
+,930,93,110,347,343.96,1,Routine experimental usage: 3.04 units consumed.,4/1/2026 10:08
+,488,73,150,467,468.8,6,Sterile return: unused reagent returned to stock.,4/1/2026 16:09
+,975,65,58,245.82,245.82,3,Inventory transfer to Location ID 65.,4/1/2026 13:14
+,424,7,201,289,285.29,1,Routine experimental usage: 3.71 units consumed.,4/1/2026 12:20
+,872,32,145,3,3,3,Inventory transfer to Location ID 32.,4/1/2026 19:09
+,249,95,299,456,451.32,1,Routine experimental usage: 4.68 units consumed.,4/1/2026 10:47
+,3,103,101,373,370.24,1,Routine experimental usage: 2.76 units consumed.,4/1/2026 19:16
+,911,77,241,41,39.25,1,Routine experimental usage: 1.75 units consumed.,4/1/2026 19:23
+,503,106,49,410.28,409.14,1,Routine experimental usage: 1.14 units consumed.,4/1/2026 8:42
+,157,34,61,233,230.02,1,Routine experimental usage: 2.98 units consumed.,4/1/2026 14:11
+,522,100,259,46,43.12,1,Routine experimental usage: 2.88 units consumed.,4/1/2026 9:35
+,972,20,316,379,376.43,1,Routine experimental usage: 2.57 units consumed.,4/1/2026 18:59
+,759,102,128,449,449.39,5,Cycle count correction after physical audit.,4/1/2026 8:21
+,804,61,230,287,284.04,1,Routine experimental usage: 2.96 units consumed.,4/1/2026 15:45
+,506,56,327,493,493.54,6,Sterile return: unused reagent returned to stock.,4/1/2026 18:04
+,564,2,117,54.43,53.61,1,Routine experimental usage: 0.82 units consumed.,4/1/2026 10:33
+,234,21,162,353.8,353.55,5,Cycle count correction after physical audit.,4/1/2026 13:31
+,535,51,227,297.9,297.9,3,Inventory transfer to Location ID 51.,4/1/2026 15:36
+,96,110,270,508.61,508.61,3,Inventory transfer to Location ID 110.,4/1/2026 17:16
+,870,63,234,173,173,3,Inventory transfer to Location ID 63.,4/1/2026 17:35
+,248,111,28,433.12,0,7,Inventory purge: item expired and removed.,4/1/2026 15:21
+,571,63,200,56.42,52.22,1,Routine experimental usage: 4.2 units consumed.,4/1/2026 12:20
+,471,26,192,67,117,2,Restock event: Added 50 units from delivery.,4/1/2026 9:57
+,585,29,282,274.74,271.11,1,Routine experimental usage: 3.63 units consumed.,4/1/2026 8:31
+,307,88,168,343.53,342.94,1,Routine experimental usage: 0.59 units consumed.,4/1/2026 9:48
+,704,8,125,484,479.47,1,Routine experimental usage: 4.53 units consumed.,4/1/2026 8:37
+,825,43,271,53,49.62,1,Routine experimental usage: 3.38 units consumed.,4/1/2026 8:49
+,463,75,68,20,19.34,1,Routine experimental usage: 0.66 units consumed.,4/1/2026 14:40
+,576,61,19,69,68.28,1,Routine experimental usage: 0.72 units consumed.,4/1/2026 12:29
+,478,14,33,85.05,82.01,1,Routine experimental usage: 3.04 units consumed.,4/1/2026 18:06
+,494,85,247,419.51,919.51,2,Restock event: Added 500 units from delivery.,4/1/2026 14:52
+,164,37,140,1054,1052.59,1,Routine experimental usage: 1.41 units consumed.,4/1/2026 13:20
+,31,97,133,220,215.52,1,Routine experimental usage: 4.48 units consumed.,4/1/2026 8:06
+,561,113,159,154,153.15,1,Routine experimental usage: 0.85 units consumed.,4/1/2026 8:44
+,15,24,50,18.07,17.41,1,Routine experimental usage: 0.66 units consumed.,4/1/2026 16:02
+,46,34,193,158,157.36,1,Routine experimental usage: 0.64 units consumed.,4/1/2026 14:53
+,782,95,130,186.78,182.71,1,Routine experimental usage: 4.07 units consumed.,4/1/2026 8:45
+,859,70,137,332.84,332.84,3,Inventory transfer to Location ID 70.,4/1/2026 11:51
+,184,6,39,243,240.55,1,Routine experimental usage: 2.45 units consumed.,4/1/2026 15:10
+,712,34,171,266,265.59,5,Cycle count correction after physical audit.,4/1/2026 19:59
+,946,70,274,392,390.73,1,Routine experimental usage: 1.27 units consumed.,4/1/2026 14:40
+,670,32,279,89,85.86,1,Routine experimental usage: 3.14 units consumed.,4/1/2026 19:57
+,157,34,274,230.02,225.17,1,Routine experimental usage: 4.85 units consumed.,4/1/2026 11:11
+,407,59,290,242.29,241.26,1,Routine experimental usage: 1.03 units consumed.,4/1/2026 9:43
+,431,108,87,465.65,965.65,2,Restock event: Added 500 units from delivery.,4/1/2026 13:59
+,391,76,293,226,221.85,1,Routine experimental usage: 4.15 units consumed.,4/1/2026 8:25
+,40,52,186,434,429.12,1,Routine experimental usage: 4.88 units consumed.,4/1/2026 14:22
+,837,12,259,381.46,381.85,6,Sterile return: unused reagent returned to stock.,4/1/2026 14:17
+,326,20,147,969.58,964.91,1,Routine experimental usage: 4.67 units consumed.,4/1/2026 19:36
+,916,111,290,246.91,242.79,1,Routine experimental usage: 4.12 units consumed.,4/1/2026 11:46
+,882,71,312,324,320.35,1,Routine experimental usage: 3.65 units consumed.,4/1/2026 17:47
+,948,59,152,389.99,389.11,4,Material disposal: 0.88 units discarded due to contamination risk.,4/1/2026 8:57
+,86,87,169,239.61,235.93,1,Routine experimental usage: 3.68 units consumed.,4/1/2026 11:07
+,699,76,31,299.22,296.34,1,Routine experimental usage: 2.88 units consumed.,4/1/2026 19:52
+,239,37,193,294,291.42,1,Routine experimental usage: 2.58 units consumed.,4/1/2026 17:34
+,415,101,73,358,353.02,1,Routine experimental usage: 4.98 units consumed.,4/1/2026 19:53
+,54,101,193,62.26,61.39,1,Routine experimental usage: 0.87 units consumed.,4/1/2026 17:05
+,933,76,21,269,268.11,1,Routine experimental usage: 0.89 units consumed.,4/1/2026 15:19
+,682,32,152,163.48,163.63,6,Sterile return: unused reagent returned to stock.,4/1/2026 11:27
+,615,98,50,278,275.25,1,Routine experimental usage: 2.75 units consumed.,4/1/2026 17:34
+,731,91,94,37.87,33.44,1,Routine experimental usage: 4.43 units consumed.,4/1/2026 10:54
+,653,112,108,416,416.27,5,Cycle count correction after physical audit.,4/1/2026 8:47
+,536,113,254,195,190.31,1,Routine experimental usage: 4.69 units consumed.,4/1/2026 12:06
+,522,100,332,43.12,40.94,1,Routine experimental usage: 2.18 units consumed.,4/1/2026 13:13
+,843,88,3,115,215,2,Restock event: Added 100 units from delivery.,4/1/2026 8:28
+,396,83,156,327,322.53,1,Routine experimental usage: 4.47 units consumed.,4/1/2026 14:44
+,570,53,49,252,248.38,1,Routine experimental usage: 3.62 units consumed.,4/1/2026 13:40
+,948,59,21,389.11,385.13,1,Routine experimental usage: 3.98 units consumed.,4/1/2026 15:47
+,733,2,214,311,311,3,Inventory transfer to Location ID 2.,4/1/2026 13:06
+,365,95,190,441.68,436.95,1,Routine experimental usage: 4.73 units consumed.,4/1/2026 18:27
+,819,43,190,26,24.37,1,Routine experimental usage: 1.63 units consumed.,4/1/2026 13:01
+,97,11,20,336.52,335.39,1,Routine experimental usage: 1.13 units consumed.,4/1/2026 19:01
+,364,96,63,312.2,311.99,5,Cycle count correction after physical audit.,4/1/2026 9:06
+,119,10,127,37,37.51,6,Sterile return: unused reagent returned to stock.,4/1/2026 17:50
+,485,104,219,187,184.74,1,Routine experimental usage: 2.26 units consumed.,4/1/2026 12:45
+,851,69,253,318,318,3,Inventory transfer to Location ID 69.,4/1/2026 19:03
+,371,29,174,467,464.13,1,Routine experimental usage: 2.87 units consumed.,4/1/2026 8:03
+,484,77,114,497,496.08,1,Routine experimental usage: 0.92 units consumed.,4/1/2026 12:31
+,392,29,218,483.84,480.75,1,Routine experimental usage: 3.09 units consumed.,4/1/2026 14:31
+,447,60,186,97,94.64,1,Routine experimental usage: 2.36 units consumed.,4/1/2026 8:43
+,66,70,148,152.09,151.81,5,Cycle count correction after physical audit.,4/1/2026 12:22
+,330,28,205,45.65,45.65,3,Inventory transfer to Location ID 28.,4/1/2026 11:32
+,234,21,286,353.55,349.56,1,Routine experimental usage: 3.99 units consumed.,4/1/2026 11:31
+,140,107,140,451.05,450.04,1,Routine experimental usage: 1.01 units consumed.,4/1/2026 14:51
+,152,39,252,285,282.8,1,Routine experimental usage: 2.2 units consumed.,4/1/2026 14:02
+,119,10,110,37.51,32.94,1,Routine experimental usage: 4.57 units consumed.,4/1/2026 12:36
+,30,12,234,184.46,181.13,1,Routine experimental usage: 3.33 units consumed.,4/1/2026 12:18
+,88,81,259,460.65,460.65,3,Inventory transfer to Location ID 81.,4/1/2026 15:02
+,558,113,94,232.57,233.52,6,Sterile return: unused reagent returned to stock.,4/1/2026 13:14
+,407,99,67,241.26,241.26,3,Inventory transfer to Location ID 99.,4/1/2026 12:14
+,776,64,202,48,44.71,1,Routine experimental usage: 3.29 units consumed.,4/1/2026 17:56
+,540,60,82,190,186.16,1,Routine experimental usage: 3.84 units consumed.,4/1/2026 10:39
+,455,96,223,348,348.39,6,Sterile return: unused reagent returned to stock.,4/1/2026 18:23
+,575,89,230,271.95,0,7,Inventory purge: item expired and removed.,4/1/2026 16:42
+,602,90,322,16,11.21,1,Routine experimental usage: 4.79 units consumed.,4/1/2026 10:03
+,715,21,241,328.04,324.03,1,Routine experimental usage: 4.01 units consumed.,4/1/2026 18:09
+,781,56,44,124.64,123.48,1,Routine experimental usage: 1.16 units consumed.,4/1/2026 8:03
+,642,6,69,64,62.37,1,Routine experimental usage: 1.63 units consumed.,4/1/2026 10:28
+,698,111,124,359.86,358.78,1,Routine experimental usage: 1.08 units consumed.,4/1/2026 15:45
+,629,13,171,230.29,226.88,1,Routine experimental usage: 3.41 units consumed.,4/1/2026 11:15
+,705,79,60,314,312.74,1,Routine experimental usage: 1.26 units consumed.,4/1/2026 8:30
+,297,34,91,194,192,1,Routine experimental usage: 2.0 units consumed.,4/1/2026 8:17
+,786,4,138,470.5,467.63,1,Routine experimental usage: 2.87 units consumed.,4/1/2026 10:08
+,644,71,19,289,789,2,Restock event: Added 500 units from delivery.,4/1/2026 14:43
+,646,90,109,35,30.65,1,Routine experimental usage: 4.35 units consumed.,4/1/2026 9:23
+,217,6,138,105.51,105.14,4,Material disposal: 0.37 units discarded due to contamination risk.,4/1/2026 11:06
+,899,91,311,482,477.96,1,Routine experimental usage: 4.04 units consumed.,4/1/2026 9:50
+,381,52,41,102.14,98.42,1,Routine experimental usage: 3.72 units consumed.,4/1/2026 10:23
+,386,13,93,144.82,142.6,1,Routine experimental usage: 2.22 units consumed.,4/1/2026 18:41
+,851,69,200,318,317.4,1,Routine experimental usage: 0.6 units consumed.,4/1/2026 11:25
+,282,36,274,464,461.67,1,Routine experimental usage: 2.33 units consumed.,4/1/2026 18:08
+,121,33,160,212,212,3,Inventory transfer to Location ID 33.,4/1/2026 11:29
+,316,2,106,384.77,434.77,2,Restock event: Added 50 units from delivery.,4/1/2026 10:11
+,723,58,282,351,347.16,1,Routine experimental usage: 3.84 units consumed.,4/1/2026 18:23
+,79,66,37,163.41,161.59,1,Routine experimental usage: 1.82 units consumed.,4/1/2026 11:01
+,990,53,11,204.09,200.13,1,Routine experimental usage: 3.96 units consumed.,4/1/2026 18:07
+,190,34,171,326,324.2,1,Routine experimental usage: 1.8 units consumed.,4/1/2026 11:32
+,705,79,179,312.74,310.84,1,Routine experimental usage: 1.9 units consumed.,4/1/2026 18:17
+,630,107,157,46,41.6,1,Routine experimental usage: 4.4 units consumed.,4/1/2026 18:45
+,312,81,80,159.6,156.44,1,Routine experimental usage: 3.16 units consumed.,4/1/2026 9:24
+,425,45,131,442,438.14,1,Routine experimental usage: 3.86 units consumed.,4/1/2026 8:44
+,332,28,152,500,498.95,1,Routine experimental usage: 1.05 units consumed.,4/1/2026 12:44
+,332,28,73,498.95,496.67,1,Routine experimental usage: 2.28 units consumed.,4/1/2026 13:39
+,968,85,145,681,680.23,4,Material disposal: 0.77 units discarded due to contamination risk.,4/1/2026 9:31
+,305,62,290,166.66,165.35,1,Routine experimental usage: 1.31 units consumed.,4/1/2026 11:51
+,441,17,10,117,112.89,1,Routine experimental usage: 4.11 units consumed.,4/1/2026 13:25
+,137,87,83,381.28,378.72,1,Routine experimental usage: 2.56 units consumed.,4/1/2026 17:15
+,548,109,273,482,480.72,1,Routine experimental usage: 1.28 units consumed.,4/1/2026 10:13
+,50,37,301,206.02,202.11,1,Routine experimental usage: 3.91 units consumed.,4/1/2026 12:26
+,287,87,109,13,11.83,1,Routine experimental usage: 1.17 units consumed.,4/1/2026 12:17
+,485,104,124,184.74,184.03,1,Routine experimental usage: 0.71 units consumed.,4/1/2026 19:58
+,943,43,83,154,151.56,1,Routine experimental usage: 2.44 units consumed.,4/1/2026 14:59
+,751,83,265,216.5,211.75,1,Routine experimental usage: 4.75 units consumed.,4/1/2026 12:36
+,456,92,30,426.14,421.73,1,Routine experimental usage: 4.41 units consumed.,4/1/2026 15:20
+,232,31,65,295.89,291.5,1,Routine experimental usage: 4.39 units consumed.,4/1/2026 10:40
+,691,29,99,58,54.74,1,Routine experimental usage: 3.26 units consumed.,4/1/2026 19:37
+,861,57,43,351.21,349.2,1,Routine experimental usage: 2.01 units consumed.,4/1/2026 13:26
+,351,98,310,191,190.48,1,Routine experimental usage: 0.52 units consumed.,4/1/2026 13:29
+,460,88,220,462,462,3,Inventory transfer to Location ID 88.,4/1/2026 19:01
+,373,56,294,73,69.71,1,Routine experimental usage: 3.29 units consumed.,4/1/2026 15:43
+,19,57,165,266,262.47,1,Routine experimental usage: 3.53 units consumed.,4/1/2026 9:02
+,443,106,236,410,408.75,1,Routine experimental usage: 1.25 units consumed.,4/1/2026 14:50
+,887,29,7,271,266.65,1,Routine experimental usage: 4.35 units consumed.,4/1/2026 9:41
+,75,110,332,398.74,397.77,4,Material disposal: 0.97 units discarded due to contamination risk.,4/1/2026 18:07
+,301,58,9,204.79,201.37,1,Routine experimental usage: 3.42 units consumed.,4/1/2026 9:01
+,874,33,202,445,440.74,1,Routine experimental usage: 4.26 units consumed.,4/1/2026 16:14
+,529,35,311,232,231.38,1,Routine experimental usage: 0.62 units consumed.,4/1/2026 19:31
+,672,74,287,338,337.79,4,Material disposal: 0.21 units discarded due to contamination risk.,4/1/2026 17:58
+,47,101,299,341,336.21,1,Routine experimental usage: 4.79 units consumed.,4/1/2026 18:10
+,242,95,231,3,103,2,Restock event: Added 100 units from delivery.,4/1/2026 13:47
+,591,60,292,453,453,3,Inventory transfer to Location ID 60.,4/1/2026 11:20
+,659,57,48,403,399.86,1,Routine experimental usage: 3.14 units consumed.,4/1/2026 12:34
+,157,34,6,225.17,225.5,5,Cycle count correction after physical audit.,4/1/2026 18:10
+,249,99,280,451.32,451.32,3,Inventory transfer to Location ID 99.,4/1/2026 8:02
+,800,6,293,284,0,7,Inventory purge: item expired and removed.,4/1/2026 13:14
+,893,107,29,80,78.81,1,Routine experimental usage: 1.19 units consumed.,4/1/2026 19:39
+,921,110,237,110,105.25,1,Routine experimental usage: 4.75 units consumed.,4/1/2026 17:55
+,748,100,128,232,232,3,Inventory transfer to Location ID 100.,4/1/2026 13:28
+,301,58,141,201.37,196.67,1,Routine experimental usage: 4.7 units consumed.,4/1/2026 12:09
+,670,32,114,85.86,83.74,1,Routine experimental usage: 2.12 units consumed.,4/1/2026 19:20
+,130,17,319,204,201.91,1,Routine experimental usage: 2.09 units consumed.,4/1/2026 18:34
+,328,50,65,114.21,113.97,5,Cycle count correction after physical audit.,4/1/2026 8:38
+,249,99,333,451.32,451.21,4,Material disposal: 0.11 units discarded due to contamination risk.,4/1/2026 17:38
+,961,41,233,360,361.51,6,Sterile return: unused reagent returned to stock.,4/1/2026 9:22
+,423,70,289,4,5.65,6,Sterile return: unused reagent returned to stock.,4/1/2026 15:48
+,45,50,92,259,254.46,1,Routine experimental usage: 4.54 units consumed.,4/1/2026 14:23
+,934,75,248,341,339.46,1,Routine experimental usage: 1.54 units consumed.,4/1/2026 19:09
+,807,57,197,343,339.2,1,Routine experimental usage: 3.8 units consumed.,4/1/2026 17:20
+,682,32,279,163.63,163.08,1,Routine experimental usage: 0.55 units consumed.,4/1/2026 15:26
+,322,41,257,35,34.79,4,Material disposal: 0.21 units discarded due to contamination risk.,4/1/2026 13:09
+,74,65,329,220,217.79,1,Routine experimental usage: 2.21 units consumed.,4/1/2026 19:18
+,605,40,14,111,107.99,1,Routine experimental usage: 3.01 units consumed.,4/1/2026 8:09
+,460,88,316,462,460.99,1,Routine experimental usage: 1.01 units consumed.,4/1/2026 15:25
+,194,71,230,266,766,2,Restock event: Added 500 units from delivery.,4/1/2026 15:38
+,835,5,213,0,50,2,Restock event: Added 50 units from delivery.,4/1/2026 8:21
+,40,52,240,429.12,428.41,1,Routine experimental usage: 0.71 units consumed.,4/1/2026 8:32
+,100,86,53,171,166.49,1,Routine experimental usage: 4.51 units consumed.,4/1/2026 10:47
+,165,91,236,162,162,3,Inventory transfer to Location ID 91.,4/1/2026 14:21
+,548,109,103,480.72,0,7,Inventory purge: item expired and removed.,4/1/2026 13:24
+,853,7,59,345,342.96,1,Routine experimental usage: 2.04 units consumed.,4/1/2026 16:47
+,808,36,257,58.53,56.35,1,Routine experimental usage: 2.18 units consumed.,4/1/2026 11:22
+,818,53,230,369,367.73,1,Routine experimental usage: 1.27 units consumed.,4/1/2026 10:12
+,952,90,26,58.27,58.66,5,Cycle count correction after physical audit.,4/1/2026 9:36
+,123,73,23,322,572,2,Restock event: Added 250 units from delivery.,4/1/2026 9:34
+,770,39,2,173,171.09,1,Routine experimental usage: 1.91 units consumed.,4/1/2026 10:13
+,626,68,121,480.77,479.8,1,Routine experimental usage: 0.97 units consumed.,4/1/2026 9:24
+,596,45,273,250,350,2,Restock event: Added 100 units from delivery.,4/1/2026 12:50
+,375,4,37,235.79,234.97,1,Routine experimental usage: 0.82 units consumed.,4/1/2026 18:20
+,904,61,271,21.42,20.36,1,Routine experimental usage: 1.06 units consumed.,4/1/2026 19:10
+,781,56,166,123.48,123.34,5,Cycle count correction after physical audit.,4/1/2026 14:21
+,277,43,70,470,466.51,1,Routine experimental usage: 3.49 units consumed.,4/1/2026 14:51
+,698,73,9,358.78,358.78,3,Inventory transfer to Location ID 73.,4/1/2026 19:09
+,34,22,127,340,339.52,4,Material disposal: 0.48 units discarded due to contamination risk.,4/1/2026 18:23
+,629,13,239,226.88,222.66,1,Routine experimental usage: 4.22 units consumed.,4/1/2026 12:20
+,684,72,205,87.71,86.94,1,Routine experimental usage: 0.77 units consumed.,4/1/2026 17:00
+,520,104,160,280.25,278.24,1,Routine experimental usage: 2.01 units consumed.,4/1/2026 15:45
+,531,110,119,344,342.02,1,Routine experimental usage: 1.98 units consumed.,4/1/2026 13:46
+,429,100,280,498,495.49,1,Routine experimental usage: 2.51 units consumed.,4/1/2026 17:07
+,662,7,210,1,101,2,Restock event: Added 100 units from delivery.,4/1/2026 19:44
+,299,2,95,608,603.89,1,Routine experimental usage: 4.11 units consumed.,4/1/2026 15:34
+,941,62,7,3,0.63,1,Routine experimental usage: 2.37 units consumed.,4/1/2026 12:38
+,942,45,243,204,202.44,1,Routine experimental usage: 1.56 units consumed.,4/1/2026 11:12
+,127,28,334,349.56,347.59,1,Routine experimental usage: 1.97 units consumed.,4/1/2026 9:12
+,297,34,249,192,188.1,1,Routine experimental usage: 3.9 units consumed.,4/1/2026 10:29
+,677,20,192,183,180.49,1,Routine experimental usage: 2.51 units consumed.,4/1/2026 10:13
+,587,89,226,550,547.12,1,Routine experimental usage: 2.88 units consumed.,4/1/2026 14:28
+,75,110,229,397.77,393.72,1,Routine experimental usage: 4.05 units consumed.,4/1/2026 13:54
+,825,43,86,49.62,46.96,1,Routine experimental usage: 2.66 units consumed.,4/1/2026 13:57
+,831,52,85,244.81,243,1,Routine experimental usage: 1.81 units consumed.,4/1/2026 18:09
+,31,97,24,215.52,210.55,1,Routine experimental usage: 4.97 units consumed.,4/1/2026 18:27
+,465,40,18,403,402.81,4,Material disposal: 0.19 units discarded due to contamination risk.,4/1/2026 13:56
+,70,86,274,0,250,2,Restock event: Added 250 units from delivery.,4/1/2026 14:35
+,472,10,185,46,45.19,1,Routine experimental usage: 0.81 units consumed.,4/1/2026 13:44
+,113,86,101,23,18.79,1,Routine experimental usage: 4.21 units consumed.,4/1/2026 19:04
+,914,113,46,333.85,329.38,1,Routine experimental usage: 4.47 units consumed.,4/1/2026 12:55
+,278,36,95,65,60.55,1,Routine experimental usage: 4.45 units consumed.,4/1/2026 16:35
+,723,58,276,347.16,397.16,2,Restock event: Added 50 units from delivery.,4/1/2026 10:43
+,182,107,196,381.59,380.88,4,Material disposal: 0.71 units discarded due to contamination risk.,4/1/2026 17:03
+,742,81,315,364,360.03,1,Routine experimental usage: 3.97 units consumed.,4/1/2026 14:29
+,840,42,119,390,490,2,Restock event: Added 100 units from delivery.,4/1/2026 8:26
+,105,27,146,166.05,161.29,1,Routine experimental usage: 4.76 units consumed.,4/1/2026 15:41
+,608,16,100,486,485.22,1,Routine experimental usage: 0.78 units consumed.,4/1/2026 11:50
+,94,77,9,43,42.18,4,Material disposal: 0.82 units discarded due to contamination risk.,4/1/2026 17:33
+,705,79,74,310.84,311.34,5,Cycle count correction after physical audit.,4/1/2026 11:37
+,308,20,15,436.17,436.17,3,Inventory transfer to Location ID 20.,4/1/2026 12:33
+,493,55,178,467,462.7,1,Routine experimental usage: 4.3 units consumed.,4/1/2026 13:30
+,661,24,7,305,303.28,1,Routine experimental usage: 1.72 units consumed.,4/1/2026 8:05
+,299,2,294,603.89,603.68,5,Cycle count correction after physical audit.,4/1/2026 13:09
+,948,59,129,385.13,384.42,4,Material disposal: 0.71 units discarded due to contamination risk.,4/1/2026 15:08
+,512,20,105,440,438.72,1,Routine experimental usage: 1.28 units consumed.,4/1/2026 18:03
+,715,21,310,324.03,319.06,1,Routine experimental usage: 4.97 units consumed.,4/1/2026 10:41
+,749,70,224,254.08,250.01,1,Routine experimental usage: 4.07 units consumed.,4/1/2026 11:06
+,854,25,148,326.14,321.55,1,Routine experimental usage: 4.59 units consumed.,4/1/2026 10:44
+,994,10,269,87,84.86,1,Routine experimental usage: 2.14 units consumed.,4/1/2026 14:10
+,381,52,261,98.42,94.46,1,Routine experimental usage: 3.96 units consumed.,4/1/2026 16:08
+,979,112,187,441,439.81,1,Routine experimental usage: 1.19 units consumed.,4/1/2026 15:56
+,840,38,138,490,490,3,Inventory transfer to Location ID 38.,4/1/2026 13:56
+,541,73,298,50.38,45.66,1,Routine experimental usage: 4.72 units consumed.,4/1/2026 13:22
+,461,40,32,321,317,1,Routine experimental usage: 4.0 units consumed.,4/1/2026 8:44
+,955,50,217,382.94,882.94,2,Restock event: Added 500 units from delivery.,4/1/2026 13:34
+,673,81,262,442.99,492.99,2,Restock event: Added 50 units from delivery.,4/1/2026 17:10
+,586,52,201,210.12,208.98,1,Routine experimental usage: 1.14 units consumed.,4/1/2026 15:28
+,402,7,233,432,427.62,1,Routine experimental usage: 4.38 units consumed.,4/1/2026 10:26
+,150,83,315,237,237,3,Inventory transfer to Location ID 83.,4/1/2026 13:58
+,936,63,246,23,73,2,Restock event: Added 50 units from delivery.,4/1/2026 9:38
+,778,11,216,218,217.26,1,Routine experimental usage: 0.74 units consumed.,4/1/2026 13:55
+,394,4,107,300,298.59,1,Routine experimental usage: 1.41 units consumed.,4/1/2026 15:10
+,245,69,24,147.94,147.94,3,Inventory transfer to Location ID 69.,4/1/2026 8:39
+,58,63,167,481,480.44,1,Routine experimental usage: 0.56 units consumed.,4/1/2026 19:27
+,428,9,160,378.26,375.22,1,Routine experimental usage: 3.04 units consumed.,4/1/2026 16:58
+,118,97,118,392.62,389.47,1,Routine experimental usage: 3.15 units consumed.,4/1/2026 19:36
+,7,35,302,309.37,309.37,3,Inventory transfer to Location ID 35.,4/1/2026 18:35
+,971,84,171,439.3,438.35,4,Material disposal: 0.95 units discarded due to contamination risk.,4/1/2026 12:08
+,844,111,38,413,408.14,1,Routine experimental usage: 4.86 units consumed.,4/1/2026 8:48
+,769,89,148,100,97.24,1,Routine experimental usage: 2.76 units consumed.,4/1/2026 13:39
+,133,9,143,831.08,828.19,1,Routine experimental usage: 2.89 units consumed.,4/1/2026 12:32
+,503,106,179,409.14,408.19,1,Routine experimental usage: 0.95 units consumed.,4/1/2026 15:32
+,761,77,134,282,278.12,1,Routine experimental usage: 3.88 units consumed.,4/1/2026 15:08
+,201,89,144,365,364.17,1,Routine experimental usage: 0.83 units consumed.,4/1/2026 13:00
+,598,96,193,708,704.91,1,Routine experimental usage: 3.09 units consumed.,4/1/2026 12:21
+,503,106,144,408.19,405.46,1,Routine experimental usage: 2.73 units consumed.,4/1/2026 8:09
+,212,6,145,119.66,114.96,1,Routine experimental usage: 4.7 units consumed.,4/1/2026 18:05
+,511,91,32,115,112.23,1,Routine experimental usage: 2.77 units consumed.,4/1/2026 18:33
+,397,55,251,492,487.71,1,Routine experimental usage: 4.29 units consumed.,4/1/2026 13:35
+,603,59,36,344.95,342.72,1,Routine experimental usage: 2.23 units consumed.,4/1/2026 12:37
+,41,8,65,58.99,56.21,1,Routine experimental usage: 2.78 units consumed.,4/1/2026 8:30
+,549,42,183,285.3,286.58,6,Sterile return: unused reagent returned to stock.,4/1/2026 13:22
+,508,82,218,72,0,7,Inventory purge: item expired and removed.,4/1/2026 12:04
+,829,37,117,78.64,79.26,6,Sterile return: unused reagent returned to stock.,4/1/2026 9:27
+,365,95,289,436.95,435.02,1,Routine experimental usage: 1.93 units consumed.,4/1/2026 8:46
+,714,11,193,234.05,0,7,Inventory purge: item expired and removed.,4/1/2026 11:03
+,464,4,122,158,154.5,1,Routine experimental usage: 3.5 units consumed.,4/1/2026 14:18
+,465,40,64,402.81,402.51,5,Cycle count correction after physical audit.,4/1/2026 15:19
+,69,41,181,426,424.93,1,Routine experimental usage: 1.07 units consumed.,4/1/2026 13:11
+,259,5,24,459,457.4,1,Routine experimental usage: 1.6 units consumed.,4/1/2026 8:26
+,880,21,301,72,68.72,1,Routine experimental usage: 3.28 units consumed.,4/1/2026 14:33
+,396,46,13,322.53,322.53,3,Inventory transfer to Location ID 46.,4/1/2026 9:16
+,190,34,153,324.2,320.33,1,Routine experimental usage: 3.87 units consumed.,4/1/2026 14:40
+,966,49,165,342,337.96,1,Routine experimental usage: 4.04 units consumed.,4/1/2026 18:53
+,458,13,161,321,321,3,Inventory transfer to Location ID 13.,4/1/2026 11:14
+,266,45,169,14,13.48,1,Routine experimental usage: 0.52 units consumed.,4/1/2026 18:39
+,974,5,207,218.05,216.3,1,Routine experimental usage: 1.75 units consumed.,4/1/2026 18:55
+,783,42,108,486.57,485.15,1,Routine experimental usage: 1.42 units consumed.,4/1/2026 15:32
+,232,31,4,291.5,292.29,6,Sterile return: unused reagent returned to stock.,4/1/2026 18:06
+,740,101,182,299,296.17,1,Routine experimental usage: 2.83 units consumed.,4/1/2026 8:19
+,164,37,326,1052.59,1050.24,1,Routine experimental usage: 2.35 units consumed.,4/1/2026 13:43
+,863,21,206,14,14,3,Inventory transfer to Location ID 21.,4/1/2026 18:04
+,569,93,131,155,155.23,5,Cycle count correction after physical audit.,4/1/2026 9:41
+,779,77,74,210,208.11,1,Routine experimental usage: 1.89 units consumed.,4/1/2026 15:37
+,80,11,148,238,235.31,1,Routine experimental usage: 2.69 units consumed.,4/1/2026 9:45
+,472,32,57,45.19,45.19,3,Inventory transfer to Location ID 32.,4/1/2026 12:03
+,108,70,37,115,115.48,6,Sterile return: unused reagent returned to stock.,4/1/2026 16:43
+,378,27,1,234.38,234.38,3,Inventory transfer to Location ID 27.,4/1/2026 8:10
+,465,105,233,402.51,402.51,3,Inventory transfer to Location ID 105.,4/1/2026 17:08
+,525,56,95,57,52.09,1,Routine experimental usage: 4.91 units consumed.,4/1/2026 14:34
+,677,20,291,180.49,177.29,1,Routine experimental usage: 3.2 units consumed.,4/1/2026 11:57
+,588,91,72,380,380,3,Inventory transfer to Location ID 91.,4/1/2026 18:22
+,532,32,91,380.3,380.91,6,Sterile return: unused reagent returned to stock.,4/1/2026 16:16
+,187,99,153,384,379.92,1,Routine experimental usage: 4.08 units consumed.,4/1/2026 10:58
+,103,41,269,487,737,2,Restock event: Added 250 units from delivery.,4/1/2026 11:34
+,310,67,165,194,294,2,Restock event: Added 100 units from delivery.,4/1/2026 14:57
+,738,58,272,314.23,312.51,1,Routine experimental usage: 1.72 units consumed.,4/1/2026 17:00
+,181,55,118,81,77.19,1,Routine experimental usage: 3.81 units consumed.,4/1/2026 8:31
+,740,101,185,296.17,294.95,1,Routine experimental usage: 1.22 units consumed.,4/1/2026 9:52
+,102,67,79,419,415.67,1,Routine experimental usage: 3.33 units consumed.,4/1/2026 16:19
+,502,54,114,173,172.41,1,Routine experimental usage: 0.59 units consumed.,4/1/2026 11:03
+,359,50,299,405,402.47,1,Routine experimental usage: 2.53 units consumed.,4/1/2026 18:03
+,894,96,77,189,189,3,Inventory transfer to Location ID 96.,4/1/2026 11:59
+,662,34,93,101,101,3,Inventory transfer to Location ID 34.,4/1/2026 10:34
+,786,4,214,467.63,466.49,1,Routine experimental usage: 1.14 units consumed.,4/1/2026 16:45
+,915,18,49,0,1.64,6,Sterile return: unused reagent returned to stock.,4/1/2026 14:13
+,557,36,220,419.33,919.33,2,Restock event: Added 500 units from delivery.,4/1/2026 17:43
+,813,105,264,481,477.08,1,Routine experimental usage: 3.92 units consumed.,4/1/2026 16:13
+,215,102,256,325.33,321.96,1,Routine experimental usage: 3.37 units consumed.,4/1/2026 16:22
+,318,37,330,446,441.76,1,Routine experimental usage: 4.24 units consumed.,4/1/2026 17:11
+,185,1,160,225.48,222.87,1,Routine experimental usage: 2.61 units consumed.,4/1/2026 16:45
+,54,101,326,61.39,60.66,1,Routine experimental usage: 0.73 units consumed.,4/1/2026 11:00
+,872,32,311,3,1.95,1,Routine experimental usage: 1.05 units consumed.,4/1/2026 13:08
+,306,82,221,436,434.75,1,Routine experimental usage: 1.25 units consumed.,4/1/2026 19:07
+,341,27,2,354.39,0,7,Inventory purge: item expired and removed.,4/1/2026 12:33
+,286,52,287,339,338.17,4,Material disposal: 0.83 units discarded due to contamination risk.,4/1/2026 18:47
+,145,104,322,90,85.4,1,Routine experimental usage: 4.6 units consumed.,4/1/2026 8:11
+,53,94,122,283,280.61,1,Routine experimental usage: 2.39 units consumed.,4/1/2026 18:43
+,881,68,192,379,379,3,Inventory transfer to Location ID 68.,4/1/2026 19:39
+,302,34,104,332,832,2,Restock event: Added 500 units from delivery.,4/1/2026 8:36
+,302,34,164,832,829.35,1,Routine experimental usage: 2.65 units consumed.,4/1/2026 8:35
+,627,77,179,431.65,428.96,1,Routine experimental usage: 2.69 units consumed.,4/1/2026 14:34
+,702,73,131,257,0,7,Inventory purge: item expired and removed.,4/1/2026 15:11
+,454,110,171,437,437,3,Inventory transfer to Location ID 110.,4/1/2026 8:19
+,451,48,81,386,0,7,Inventory purge: item expired and removed.,4/1/2026 14:19
+,83,9,169,345,343.12,1,Routine experimental usage: 1.88 units consumed.,4/1/2026 10:21
+,589,40,82,372,368.49,1,Routine experimental usage: 3.51 units consumed.,4/1/2026 8:13
+,144,79,122,108.01,107.31,1,Routine experimental usage: 0.7 units consumed.,4/1/2026 17:28
+,520,104,163,278.24,277.07,1,Routine experimental usage: 1.17 units consumed.,4/1/2026 14:48
+,310,67,78,294,292.76,1,Routine experimental usage: 1.24 units consumed.,4/1/2026 13:07
+,157,75,172,225.5,225.5,3,Inventory transfer to Location ID 75.,4/1/2026 10:13
+,86,87,153,235.93,231.3,1,Routine experimental usage: 4.63 units consumed.,4/1/2026 19:10
+,283,45,204,201,197.52,1,Routine experimental usage: 3.48 units consumed.,4/1/2026 19:48
+,33,31,303,485,535,2,Restock event: Added 50 units from delivery.,4/1/2026 8:40
+,544,49,13,241,238.08,1,Routine experimental usage: 2.92 units consumed.,4/1/2026 16:59
+,253,21,86,275.6,271.38,1,Routine experimental usage: 4.22 units consumed.,4/1/2026 11:42
+,64,75,128,411.66,408.83,1,Routine experimental usage: 2.83 units consumed.,4/1/2026 17:07
+,646,90,124,30.65,26.99,1,Routine experimental usage: 3.66 units consumed.,4/1/2026 15:59
+,159,14,189,408.46,407.11,1,Routine experimental usage: 1.35 units consumed.,4/1/2026 18:48
+,341,27,115,0,100,2,Restock event: Added 100 units from delivery.,4/1/2026 19:07
+,810,75,273,181,179.78,1,Routine experimental usage: 1.22 units consumed.,4/1/2026 17:33
+,824,26,15,180,176.52,1,Routine experimental usage: 3.48 units consumed.,4/1/2026 13:30
+,992,84,6,494,491.37,1,Routine experimental usage: 2.63 units consumed.,4/1/2026 8:54
+,523,62,1,404,402.36,1,Routine experimental usage: 1.64 units consumed.,4/1/2026 19:05
+,397,55,92,487.71,487.22,4,Material disposal: 0.49 units discarded due to contamination risk.,4/1/2026 16:12
+,128,29,115,196,191.31,1,Routine experimental usage: 4.69 units consumed.,4/1/2026 14:32
+,231,20,277,394,393.23,4,Material disposal: 0.77 units discarded due to contamination risk.,4/1/2026 12:07
+,698,24,24,358.78,358.78,3,Inventory transfer to Location ID 24.,4/1/2026 14:58
+,194,71,255,766,765.84,5,Cycle count correction after physical audit.,4/1/2026 12:26
+,295,23,64,25,20.54,1,Routine experimental usage: 4.46 units consumed.,4/1/2026 10:47
+,535,51,116,297.9,294.31,1,Routine experimental usage: 3.59 units consumed.,4/1/2026 16:10
+,79,66,297,161.59,160.26,1,Routine experimental usage: 1.33 units consumed.,4/1/2026 16:35
+,789,87,247,46,42.51,1,Routine experimental usage: 3.49 units consumed.,4/1/2026 12:15
+,334,54,326,389,384.35,1,Routine experimental usage: 4.65 units consumed.,4/1/2026 10:10
+,767,16,74,453.05,553.05,2,Restock event: Added 100 units from delivery.,4/1/2026 11:29
+,366,70,65,190.08,185.28,1,Routine experimental usage: 4.8 units consumed.,4/1/2026 11:14
+,151,71,288,250,246.49,1,Routine experimental usage: 3.51 units consumed.,4/1/2026 19:20
+,315,57,20,448.97,448.19,1,Routine experimental usage: 0.78 units consumed.,4/1/2026 18:34
+,107,102,185,158,158,3,Inventory transfer to Location ID 102.,4/1/2026 12:37
+,471,26,272,117,367,2,Restock event: Added 250 units from delivery.,4/1/2026 11:39
+,476,81,58,382,632,2,Restock event: Added 250 units from delivery.,4/1/2026 11:36
+,836,59,87,432,431.81,5,Cycle count correction after physical audit.,4/1/2026 9:00
+,162,10,194,271,271,3,Inventory transfer to Location ID 10.,4/1/2026 13:26
+,626,68,156,479.8,478.45,1,Routine experimental usage: 1.35 units consumed.,4/1/2026 19:42
+,279,111,294,315.92,312.43,1,Routine experimental usage: 3.49 units consumed.,4/1/2026 8:01
+,192,94,10,392,392,3,Inventory transfer to Location ID 94.,4/1/2026 16:14
+,249,99,45,451.21,447.98,1,Routine experimental usage: 3.23 units consumed.,4/1/2026 9:13
+,138,21,313,436.87,433.83,1,Routine experimental usage: 3.04 units consumed.,4/1/2026 14:41
+,154,14,33,469,969,2,Restock event: Added 500 units from delivery.,4/1/2026 10:29
+,974,5,218,216.3,212.9,1,Routine experimental usage: 3.4 units consumed.,4/1/2026 14:28
+,734,111,26,67.84,66.8,1,Routine experimental usage: 1.04 units consumed.,4/1/2026 11:05
+,339,54,190,222.34,218.91,1,Routine experimental usage: 3.43 units consumed.,4/1/2026 17:42
+,978,43,306,39,37.08,1,Routine experimental usage: 1.92 units consumed.,4/1/2026 17:16
+,625,46,4,61.84,57.76,1,Routine experimental usage: 4.08 units consumed.,4/1/2026 17:55
+,265,59,60,248,244.68,1,Routine experimental usage: 3.32 units consumed.,4/1/2026 9:56
+,922,54,138,383.71,633.71,2,Restock event: Added 250 units from delivery.,4/1/2026 14:52
+,839,33,117,55.73,53.3,1,Routine experimental usage: 2.43 units consumed.,4/1/2026 12:20
+,553,46,27,113,111.72,1,Routine experimental usage: 1.28 units consumed.,4/1/2026 10:47
+,20,84,261,470.79,970.79,2,Restock event: Added 500 units from delivery.,4/1/2026 8:16
+,776,64,246,44.71,43.06,1,Routine experimental usage: 1.65 units consumed.,4/1/2026 14:01
+,432,4,301,305.72,305.72,3,Inventory transfer to Location ID 4.,4/1/2026 14:13
+,924,101,43,58,308,2,Restock event: Added 250 units from delivery.,4/1/2026 15:20
+,774,65,109,204.55,201.7,1,Routine experimental usage: 2.85 units consumed.,4/1/2026 15:08
+,702,73,6,0,500,2,Restock event: Added 500 units from delivery.,4/1/2026 18:04
+,469,101,311,184.03,183.38,1,Routine experimental usage: 0.65 units consumed.,4/1/2026 19:22
+,342,107,310,153,150.97,1,Routine experimental usage: 2.03 units consumed.,4/1/2026 16:45
+,819,43,266,24.37,19.66,1,Routine experimental usage: 4.71 units consumed.,4/1/2026 17:42
+,356,46,294,210,210.42,6,Sterile return: unused reagent returned to stock.,4/1/2026 16:01
+,472,32,232,45.19,44.13,1,Routine experimental usage: 1.06 units consumed.,4/1/2026 18:15
+,195,91,156,245.21,240.81,1,Routine experimental usage: 4.4 units consumed.,4/1/2026 14:42
+,64,68,44,408.83,408.83,3,Inventory transfer to Location ID 68.,4/1/2026 16:18
+,303,71,194,41,41,3,Inventory transfer to Location ID 71.,4/1/2026 17:29
+,930,93,76,343.96,339.5,1,Routine experimental usage: 4.46 units consumed.,4/1/2026 19:29
+,765,37,80,220,216.65,1,Routine experimental usage: 3.35 units consumed.,4/1/2026 18:16
+,145,104,78,85.4,82.1,1,Routine experimental usage: 3.3 units consumed.,4/1/2026 14:52
+,960,6,120,272,267.79,1,Routine experimental usage: 4.21 units consumed.,4/1/2026 14:29

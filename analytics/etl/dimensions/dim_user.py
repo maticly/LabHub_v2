@@ -1,12 +1,10 @@
 import logging
 import pandas as pd
-from analytics.data.connect_db import get_oltp_connection, get_warehouse_conn
+from datetime import datetime
+from analytics.warehouse.connect_db import get_oltp_connection, get_warehouse_conn
 
 # --- Logging Setup ---
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - [Dim_User] - %(message)s'
-)
+logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 # -------------------------
@@ -48,85 +46,88 @@ def transform_dim_user(df_users: pd.DataFrame) -> pd.DataFrame:
     logger.info("Transforming user data...")
     dim_user_df = df_users.copy()
     
-    # Cleans whitespace and ensures proper casing if needed
     dim_user_df['UserName'] = dim_user_df['UserName'].str.strip()
+    dim_user_df['UserRole'] = dim_user_df['UserRole'].str.strip()
+    dim_user_df['DepartmentName'] = dim_user_df['DepartmentName'].str.strip()
     
     # Enforces schema column order
-    dim_user_df = dim_user_df[["UserID", "UserName", "UserRole", "DepartmentName"]]
-    return dim_user_df
-
+    return dim_user_df[["UserID", "UserName", "UserRole", "DepartmentName"]]
 # -------------------------
 # Load
 # -------------------------
 def load_dim_user(duck_conn, dim_df: pd.DataFrame):
     """
-    Incremental SCD Type 1 upsert into dw.Dim_User.
+    SCD2
     """
-    logger.info("Upserting data into dw.Dim_User...")
+    now = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+    logger.info("SCD2 for dw.Dim_User...")
     duck_conn.register("tmp_dim_user", dim_df)
 
-    # Step 1: Update changed attributes on existing rows
-    duck_conn.execute("""
+    # expire old records
+    duck_conn.execute(f"""
         UPDATE dw.Dim_User
         SET
-            UserName       = tmp_dim_user.UserName,
-            UserRole       = tmp_dim_user.UserRole,
-            DepartmentName = tmp_dim_user.DepartmentName
+            EndDate = '{now}',
+            IsCurrent = 0
         FROM tmp_dim_user
         WHERE dw.Dim_User.UserID = tmp_dim_user.UserID
+        AND dw.Dim_User.IsCurrent = 1
           AND (
-              dw.Dim_User.UserName       IS DISTINCT FROM tmp_dim_user.UserName       OR
-              dw.Dim_User.UserRole       IS DISTINCT FROM tmp_dim_user.UserRole       OR
+              dw.Dim_User.UserName IS DISTINCT FROM tmp_dim_user.UserName OR
+              dw.Dim_User.UserRole IS DISTINCT FROM tmp_dim_user.UserRole OR
               dw.Dim_User.DepartmentName IS DISTINCT FROM tmp_dim_user.DepartmentName
           );
     """)
 
-    # Step 2: Insert new users
-    duck_conn.execute("""
-        INSERT INTO dw.Dim_User (UserID, UserName, UserRole, DepartmentName)
+    # Insert new users
+    duck_conn.execute(f"""
+        INSERT INTO dw.Dim_User (UserID, UserName, UserRole, DepartmentName, EffectiveDate, EndDate, IsCurrent)
         SELECT
             tmp_dim_user.UserID,
             tmp_dim_user.UserName,
             tmp_dim_user.UserRole,
-            tmp_dim_user.DepartmentName
+            tmp_dim_user.DepartmentName,
+            '{now}' AS EffectiveDate,
+            NULL AS EndDate,
+            1 AS IsCurrent
         FROM tmp_dim_user
         WHERE NOT EXISTS (
             SELECT 1 FROM dw.Dim_User
-            WHERE dw.Dim_User.UserID = tmp_dim_user.UserID
+            WHERE dw.Dim_User.UserID = tmp_dim_user.UserID 
+            AND dw.Dim_User.IsCurrent = 1
         );
     """)
 
-    logger.info(f"Dim_User upsert complete. Source rows: {len(dim_df)}.")
+    logger.info(f"Dim_User SCD2. Source rows: {len(dim_df)}.")
 
-
-# 4. ORCHESTRATION
+# -------------------------
+# 4. Orchestration
+# -------------------------
 def run_dim_user_etl(duck_conn):
-    """
-    Orchestrates the User Dimension ETL.
-    Accepts a shared connection — does NOT open its own or manage transactions.
-    """
     try:
         raw_users = extract_users()
         dim_user_df = transform_dim_user(raw_users)
         load_dim_user(duck_conn, dim_user_df)
-        logger.info("✅ Dim_User ETL completed successfully.")
+        logger.info("✅ Dim_User ETL completed successfully")
     except Exception as e:
         logger.error(f"❌ Dim_User ETL failed: {e}")
         raise
 
 
-# --- Standalone entry point ---
 if __name__ == "__main__":
     duck_conn = get_warehouse_conn()
     try:
         duck_conn.execute("BEGIN TRANSACTION;")
         run_dim_user_etl(duck_conn)
-        duck_conn.execute("COMMIT;")
 
         count = duck_conn.execute("SELECT COUNT(*) FROM dw.Dim_User").fetchone()[0]
-        logger.info(f"🧪 Post-load check: {count} records in Dim_User.")
+        currents = duck_conn.execute("SELECT COUNT(*) FROM dw.Dim_User WHERE IsCurrent = 1").fetchone()[0]
+        logger.info(f"Test Results: Total Rows={count}, Active Versions={currents}")
     except Exception as e:
-        duck_conn.execute("ROLLBACK;")
-        logger.error(f"Standalone run failed: {e}")
+        try:
+            duck_conn.execute("ROLLBACK;")
+        except:
+            pass
+        logger.error(f"❌ Standalone run failed: {e}")
     finally:
         duck_conn.close()

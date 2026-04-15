@@ -13,8 +13,8 @@ st.set_page_config(
 
 import pandas as pd
 import duckdb
-from analytics.data.connect_db import PROJECT_ROOT
-from analytics.data.connect_db import WAREHOUSE_DB
+from analytics.warehouse.connect_db import PROJECT_ROOT
+from analytics.warehouse.connect_db import WAREHOUSE_DB
 from app.styles import apply_custom_style
 import plotly.express as px
 from vector.search import semantic_search

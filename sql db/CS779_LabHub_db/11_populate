@@ -1,14 +1,11 @@
-USE CS779_LabHub_final;
+USE LabHub_v2;
 
-BULK INSERT inventory.StockEvent
-FROM 'C:\Users\mateu\OneDrive\Pulpit\GitHub\LabHub_final_CS779\analytics\data\generated_data_OLTP\inventory_StockEvent_03.csv'
+BULK INSERT link.VendorProductLink
+FROM 'C:\Users\mateu\OneDrive\Pulpit\GitHub\LabHub_v2\analytics\data\OLTP_data\link.VendorProductLink.csv'
 
 WITH (
     FIRSTROW = 2,           -- Skips the header row
     FIELDTERMINATOR = ',',  -- Change to ';' if that's your delimiter
-    ROWTERMINATOR = '\n',   -- Standard newline
+    ROWTERMINATOR = '0x0a',
     TABLOCK                 -- Improves performance for large uploads
 );
-
-SELECT *
-FROM inventory.StockEvent;

@@ -155,7 +155,7 @@ def inspect_warehouse(duck_conn):
 
 
 if __name__ == "__main__":
-    from analytics.data.connect_db import get_warehouse_conn
+    from analytics.warehouse.connect_db import get_warehouse_conn
     conn = get_warehouse_conn()
     try:
         inspect_warehouse(conn)

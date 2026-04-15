@@ -1,4 +1,4 @@
-USE CS779_LabHub_final;
+USE LabHub_v2;
 GO
 
 BEGIN TRAN;

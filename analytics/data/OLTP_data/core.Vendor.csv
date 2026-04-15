@@ -1,0 +1,101 @@
+VendorID,VendorName,Email,Timestamp,VendorStatus
+1,Sigma Aldrich,support@sial.com,2020-03-01T09:00:00,Active
+2,Thermo Fisher Scientific,info@thermofisher.com,2020-03-05T09:00:00,Active
+3,VWR International,orders@vwr.com,2020-03-10T09:00:00,Active
+4,New England Biolabs,tech@neb.com,2020-03-15T09:00:00,Active
+5,QIAGEN,customer-care@qiagen.com,2020-03-20T09:00:00,Active
+6,Bio Rad Laboratories,service@bio-rad.com,2020-03-25T09:00:00,Active
+7,Corning Life Sciences,support@corninglifesciences.com,2020-04-01T09:00:00,Active
+8,Eppendorf,europe@eppendorf.com,2020-04-05T09:00:00,Active
+9,GE Healthcare Life Sciences,contact@gehealthcare.com,2020-04-10T09:00:00,Active
+10,Illumina,support@illumina.com,2020-04-15T09:00:00,Active
+11,Agilent Technologies,lab@agilent.com,2020-04-20T09:00:00,Active
+12,Waters Corporation,info@waters.com,2020-04-25T09:00:00,Paused
+13,BioTek Instruments,help@biotek.com,2020-05-01T09:00:00,Active
+14,PerkinElmer,services@perkinelmer.com,2020-05-05T09:00:00,Active
+15,Beckman Coulter,orders@beckman.com,2020-05-10T09:00:00,Active
+16,MilliporeSigma,lab@milliporesigma.com,2020-05-15T09:00:00,Active
+17,Promega,support@promega.com,2020-05-20T09:00:00,Active
+18,Regeneron Inc,info@regeneron.com,2020-05-25T09:00:00,Active
+19,Sarstedt,info@sarstedt.com,2020-06-01T09:00:00,Active
+20,Greiner Bio One,service@greinerbioone.com,2020-06-05T09:00:00,Active
+21,Agilent Technologies,contact@agilenttechnologies.com,2023-07-06T00:00:00,Inactive
+22,PerkinElmer,contact@perkinelmer.com,2022-03-07T00:00:00,Active
+23,Waters Corporation,contact@waterscorporation.com,2021-05-04T00:00:00,Active
+24,Beckman Coulter,contact@beckmancoulter.com,2022-11-07T00:00:00,Inactive
+25,Bruker,contact@bruker.com,2020-05-04T00:00:00,Active
+26,Mettler Toledo,contact@mettlertoledo.com,2021-04-12T00:00:00,Inactive
+27,Sartorius,contact@sartorius.com,2022-12-18T00:00:00,Active
+28,Lonza,contact@lonza.com,2020-06-13T00:00:00,Active
+29,Charles River Laboratories,contact@charlesriverlaboratories.com,2020-02-29T00:00:00,Active
+30,Eurofins Scientific,contact@eurofinsscientific.com,2021-09-03T00:00:00,Active
+31,GenScript,contact@genscript.com,2023-03-15T00:00:00,Active
+32,Abcam,contact@abcam.com,2022-03-17T00:00:00,Active
+33,Promega,contact@promega.com,2020-07-11T00:00:00,Active
+34,Miltenyi Biotec,contact@miltenyibiotec.com,2021-12-21T00:00:00,Inactive
+35,BD Biosciences,contact@bdbiosciences.com,2020-03-19T00:00:00,Inactive
+36,Zymo Research,contact@zymoresearch.com,2020-03-22T00:00:00,Inactive
+37,Integrated DNA Technologies (IDT),contact@integrateddnatechnologiesidt.com,2021-12-24T00:00:00,Active
+38,Twist Bioscience,contact@twistbioscience.com,2023-01-21T00:00:00,Active
+39,Nanostring Technologies,contact@nanostringtechnologies.com,2023-08-02T00:00:00,Active
+40,PacBio,contact@pacbio.com,2020-02-18T00:00:00,Inactive
+41,10x Genomics,contact@10xgenomics.com,2021-06-25T00:00:00,Active
+42,Oxford Nanopore Technologies,contact@oxfordnanoporetechnologies.com,2021-05-05T00:00:00,Active
+43,Illumina,contact@illumina.com,2021-04-01T00:00:00,Active
+44,Bio-Techne,contact@bio-techne.com,2021-12-15T00:00:00,Active
+45,Novus Biologicals,contact@novusbiologicals.com,2022-11-12T00:00:00,Paused
+46,R&D Systems,contact@r&dsystems.com,2020-03-25T00:00:00,Active
+47,Tocris Bioscience,contact@tocrisbioscience.com,2020-08-14T00:00:00,Inactive
+48,Jackson ImmunoResearch,contact@jacksonimmunoresearch.com,2021-04-02T00:00:00,Active
+49,Santa Cruz Biotechnology,contact@santacruzbiotechnology.com,2022-02-17T00:00:00,Inactive
+50,Cell Signaling Technology,contact@cellsignalingtechnology.com,2023-07-21T00:00:00,Paused
+51,MilliporeSigma,contact@milliporesigma.com,2020-04-10T00:00:00,Active
+52,Merck KGaA,contact@merckkgaa.com,2022-12-16T00:00:00,Active
+53,Roche Diagnostics,contact@rochediagnostics.com,2020-05-25T00:00:00,Active
+54,Siemens Healthineers,contact@siemenshealthineers.com,2022-07-25T00:00:00,Inactive
+55,Danaher Corporation,contact@danahercorporation.com,2021-07-04T00:00:00,Inactive
+56,Becton Dickinson,contact@bectondickinson.com,2022-04-02T00:00:00,Inactive
+57,Hologic,contact@hologic.com,2022-01-18T00:00:00,Active
+58,Sysmex,contact@sysmex.com,2023-02-28T00:00:00,Active
+59,Shimadzu,contact@shimadzu.com,2021-03-28T00:00:00,Paused
+60,JEOL,contact@jeol.com,2023-05-04T00:00:00,Active
+61,Horiba,contact@horiba.com,2022-08-12T00:00:00,Active
+62,Malvern Panalytical,contact@malvernpanalytical.com,2020-02-28T00:00:00,Active
+63,Eppendorf SE,contact@eppendorfse.com,2022-10-10T00:00:00,Active
+64,Tecan,contact@tecan.com,2022-01-21T00:00:00,Active
+65,Hamilton Company,contact@hamiltoncompany.com,2022-12-18T00:00:00,Active
+66,Gilson,contact@gilson.com,2023-11-15T00:00:00,Paused
+67,Rainin (Mettler Toledo),contact@raininmettlertoledo.com,2023-11-01T00:00:00,Active
+68,BrandTech Scientific,contact@brandtechscientific.com,2022-05-30T00:00:00,Active
+69,Kimble Chase,contact@kimblechase.com,2020-05-31T00:00:00,Inactive
+70,Wheaton,contact@wheaton.com,2020-08-09T00:00:00,Active
+71,Corning Glass,contact@corningglass.com,2023-08-09T00:00:00,Inactive
+72,Schott AG,contact@schottag.com,2022-02-25T00:00:00,Paused
+73,DWK Life Sciences,contact@dwklifesciences.com,2023-06-16T00:00:00,Active
+74,Axygen,contact@axygen.com,2022-05-19T00:00:00,Active
+75,Falcon,contact@falcon.com,2022-01-06T00:00:00,Active
+76,Nunc,contact@nunc.com,2020-09-23T00:00:00,Active
+77,Nalgene,contact@nalgene.com,2021-11-14T00:00:00,Paused
+78,Fisherbrand,contact@fisherbrand.com,2021-12-14T00:00:00,Active
+79,VWR Collection,contact@vwrcollection.com,2021-04-12T00:00:00,Active
+80,Cole-Parmer,contact@cole-parmer.com,2023-03-26T00:00:00,Active
+81,Thomas Scientific,contact@thomasscientific.com,2022-01-30T00:00:00,Active
+82,Grainger,contact@grainger.com,2023-09-24T00:00:00,Inactive
+83,McMaster-Carr,contact@mcmaster-carr.com,2020-06-24T00:00:00,Active
+84,Airgas,contact@airgas.com,2022-01-28T00:00:00,Paused
+85,Praxair,contact@praxair.com,2023-01-08T00:00:00,Inactive
+86,Linde,contact@linde.com,2022-07-08T00:00:00,Inactive
+87,New England Peptides,contact@newenglandpeptides.com,2023-01-25T00:00:00,Paused
+88,AnaSpec,contact@anaspec.com,2022-07-22T00:00:00,Inactive
+89,Bachem,contact@bachem.com,2023-09-30T00:00:00,Inactive
+90,PolyPeptide Group,contact@polypeptidegroup.com,2023-09-11T00:00:00,Active
+91,Takara Bio,contact@takarabio.com,2020-12-20T00:00:00,Active
+92,Clontech,contact@clontech.com,2020-07-13T00:00:00,Active
+93,InvivoGen,contact@invivogen.com,2020-02-27T00:00:00,Active
+94,CST,contact@cst.com,2023-04-29T00:00:00,Active
+95,Origene,contact@origene.com,2020-09-05T00:00:00,Active
+96,Sino Biological,contact@sinobiological.com,2022-05-06T00:00:00,Active
+97,Proteintech,contact@proteintech.com,2020-05-31T00:00:00,Active
+98,BioLegend,contact@biolegend.com,2021-04-03T00:00:00,Active
+99,Enzo Life Sciences,contact@enzolifesciences.com,2021-01-14T00:00:00,Paused
+100,Cayman Chemical,contact@caymanchemical.com,2023-07-09T00:00:00,Inactive
