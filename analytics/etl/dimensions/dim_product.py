@@ -19,21 +19,28 @@ def extract_products():
             core.Product.ProductName,
             core.ProductCategory.CategoryName,
             core.UnitOfMeasure.UnitName AS UnitOfMeasure,
-            core.Product.Description,
+            CAST(core.Product.Description AS NVARCHAR(MAX)) AS Description,
             core.Product.IsHazardous,
-            link.VendorProductLink.ListingPrice As UnitCost,
+            AVG(supply.[Order].UnitPrice) AS UnitCost,
             core.Product.StorageConditionID
         FROM core.Product
         JOIN core.ProductCategory ON core.Product.ProductCategoryID = core.ProductCategory.CategoryID
         JOIN core.UnitOfMeasure ON core.Product.UnitID = core.UnitOfMeasure.UnitID
-        JOIN link.VendorProductLink ON core.Product.ProductID = link.VendorProductLink.ProductID
+        LEFT JOIN supply.[Order] 
+            ON supply.[Order].ProductID = core.Product.ProductID
+        GROUP BY
+            core.Product.ProductID,
+            core.Product.ProductName,
+            core.ProductCategory.CategoryName,
+            core.UnitOfMeasure.UnitName,
+            CAST(core.Product.Description AS NVARCHAR(MAX)),
+            core.Product.IsHazardous,
+            core.Product.StorageConditionID
     """
     conn = get_oltp_connection()
     try:
         df_products = pd.read_sql(query, conn)
-        df_products = pd.read_sql(query, conn)
         df_products = df_products.rename(columns={'UnitCost': 'unit_cost'})
-
         logger.info(f"Successfully extracted {len(df_products)} products.")
         return df_products
     except Exception as e:
@@ -56,40 +63,43 @@ def transform_dim_product(df_products: pd.DataFrame) -> pd.DataFrame:
     dim_product_df['Description'] = dim_product_df['Description'].fillna("").str.strip()
     dim_product_df['IsHazardous'] = dim_product_df['IsHazardous'].astype(int)
 
+    before = len(dim_product_df)
+    dim_product_df = dim_product_df.drop_duplicates(subset=['ProductID'], keep='first')
+    after = len(dim_product_df)
+    if before != after:
+        logger.warning(f"Dropped {before - after} duplicate ProductIDs in transform — check extract query.")
+
     return dim_product_df
 
 
 # -------------------------
 # 3. Load (SCD2)
 # -------------------------
-def load_dim_product(duck_conn, dim_df: pd.DataFrame):
+def load_dim_product(duck_conn, dim_df: pd.DataFrame, effective_date: str):
     
-    now = datetime.now().strftime('%Y-%m-%d %H:%M:%S') #current timestamp for SCD2
     duck_conn.register("tmp_dim_product", dim_df)
 
     # expire old records
     logger.info("Expiring changed product versions...")
     duck_conn.execute(f"""
         UPDATE dw.Dim_Product
-        SET
-            EndDate = '{now}',
-            IsCurrent = 0
+        SET EndDate = '{effective_date}', IsCurrent = 0
         FROM tmp_dim_product
         WHERE dw.Dim_Product.ProductID = tmp_dim_product.ProductID
             AND dw.Dim_Product.IsCurrent = 1
             AND (
                 dw.Dim_Product.ProductName IS DISTINCT FROM tmp_dim_product.ProductName OR
-              dw.Dim_Product.CategoryName IS DISTINCT FROM tmp_dim_product.CategoryName OR
-              dw.Dim_Product.UnitOfMeasure IS DISTINCT FROM tmp_dim_product.UnitOfMeasure OR
-              dw.Dim_Product.Description IS DISTINCT FROM tmp_dim_product.Description OR
-              dw.Dim_Product.unit_cost IS DISTINCT FROM tmp_dim_product.unit_cost OR
-              dw.Dim_Product.IsHazardous IS DISTINCT FROM tmp_dim_product.IsHazardous OR
-              dw.Dim_Product.StorageConditionID IS DISTINCT FROM tmp_dim_product.StorageConditionID
+                dw.Dim_Product.CategoryName IS DISTINCT FROM tmp_dim_product.CategoryName OR
+                dw.Dim_Product.UnitOfMeasure IS DISTINCT FROM tmp_dim_product.UnitOfMeasure OR
+                dw.Dim_Product.Description IS DISTINCT FROM tmp_dim_product.Description OR
+                dw.Dim_Product.unit_cost IS DISTINCT FROM tmp_dim_product.unit_cost OR
+                dw.Dim_Product.IsHazardous IS DISTINCT FROM tmp_dim_product.IsHazardous OR
+                dw.Dim_Product.StorageConditionID IS DISTINCT FROM tmp_dim_product.StorageConditionID
             );   
     """)
 
     # new products
-    logger.info("Inserting new current versions...")
+    logger.info("Inserting new versions only where no current row exists...")
     duck_conn.execute(f"""
         INSERT INTO dw.Dim_Product (ProductID, ProductName, CategoryName, UnitOfMeasure, 
                       Description, IsHazardous, unit_cost, StorageConditionID, 
@@ -103,14 +113,14 @@ def load_dim_product(duck_conn, dim_df: pd.DataFrame):
             tmp_dim_product.IsHazardous,
             tmp_dim_product.unit_cost,
             tmp_dim_product.StorageConditionID,
-            '{now}' AS EffectiveDate,
+            '{effective_date}' AS EffectiveDate,
             NULL AS EndDate,
             1 AS IsCurrent
         FROM tmp_dim_product
         WHERE NOT EXISTS (
             SELECT 1 FROM dw.Dim_Product
             WHERE dw.Dim_Product.ProductID = tmp_dim_product.ProductID
-                AND dw.Dim_Product.IsCurrent = 1
+              AND dw.Dim_Product.IsCurrent = 1
         );
     """)
 
@@ -120,14 +130,14 @@ def load_dim_product(duck_conn, dim_df: pd.DataFrame):
 # -------------------------
 # 4. Orchestration
 # -------------------------
-def run_dim_product_etl(duck_conn):
+def run_dim_product_etl(duck_conn, effective_date: str):
     """
     run_pipeline.py will call this function to execute the full ETL for Dim_Product.
     """
     try:
         raw_products = extract_products()
         dim_product_df = transform_dim_product(raw_products)
-        load_dim_product(duck_conn, dim_product_df)
+        load_dim_product(duck_conn, dim_product_df, effective_date)
         logger.info("✅ Dim_Product SCD2 ETL completed successfully.")
     except Exception as e:
         logger.error(f"❌ Dim_Product SCD2 ETL failed: {e}")
@@ -136,11 +146,22 @@ def run_dim_product_etl(duck_conn):
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - [Dim_Product_Test] - %(message)s')
+    from analytics.warehouse.connect_db import get_oltp_connection
+    import pandas as pd
+
+    def get_effective_date():
+        conn = get_oltp_connection()
+        try:
+            df = pd.read_sql("SELECT MIN(EventDate) AS min_date FROM inventory.StockEvent", conn)
+            return pd.to_datetime(df['min_date'].iloc[0]).strftime('%Y-%m-%d %H:%M:%S')
+        finally:
+            conn.close()
+
     duck_conn = get_warehouse_conn()
     try:
         duck_conn.execute("BEGIN TRANSACTION;")
-
-        run_dim_product_etl(duck_conn)
+        effective_date = get_effective_date()
+        run_dim_product_etl(duck_conn, effective_date)
 
         count = duck_conn.execute("SELECT COUNT(*) FROM dw.Dim_Product").fetchone()[0]
         currents = duck_conn.execute("SELECT COUNT(*) FROM dw.Dim_Product WHERE IsCurrent = 1").fetchone()[0]
@@ -148,7 +169,6 @@ if __name__ == "__main__":
 
         duck_conn.execute("ROLLBACK;")
         logger.info("Transaction ROLLED BACK.")
-
     except Exception as e:
         duck_conn.execute("ROLLBACK;")
         logger.error(f"❌ Standalone run failed: {e}")

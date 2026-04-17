@@ -21,13 +21,6 @@ CREATE TABLE link.SupplyRequestProduct
     ProductID BIGINT,
     Quantity DECIMAL(8,2),
     Priority VARCHAR(16)
-);    
-
-CREATE TABLE link.OrderProduct
-(
-    ID BIGINT IDENTITY PRIMARY KEY,
-    OrderID BIGINT,
-    ProductID BIGINT
 );
 
 CREATE TABLE link.RFBProduct
@@ -42,13 +35,6 @@ CREATE TABLE link.UserSupplyRequest
     ID BIGINT IDENTITY PRIMARY KEY,
     UserID BIGINT,
     SupplyRequestID BIGINT
-);
-
-CREATE TABLE link.OrderHistoryProduct
-(
-    ID BIGINT IDENTITY PRIMARY KEY,
-    OrderHistoryID BIGINT,
-    ProductID BIGINT
 );
 
 CREATE TABLE link.OrderHistoryInventoryItem

@@ -51,6 +51,9 @@ VALUES
     ('Fulfilled'),
     ('Submitted');
 
+    use LabHub_v2
+    select * from supply.OrderStatus
+
 INSERT INTO inventory.EventReason
     (Reason)
 VALUES

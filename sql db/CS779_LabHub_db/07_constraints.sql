@@ -31,8 +31,15 @@ ADD CONSTRAINT fk_inventory_product FOREIGN KEY(ProductID) REFERENCES core.Produ
 ALTER TABLE inventory.InventoryItem
 ADD CONSTRAINT fk_inventory_location FOREIGN KEY(LocationID) REFERENCES inventory.Location(LocationID);
 
+ALTER TABLE inventory.InventoryItem
+ADD CONSTRAINT fk_inventory_order FOREIGN KEY(OrderID) REFERENCES supply.[Order](OrderID);
+
 ALTER TABLE inventory.StockEvent
 ADD CONSTRAINT fk_stock_inventory FOREIGN KEY(InventoryItemID) REFERENCES inventory.InventoryItem(InventoryItemID);
+
+
+
+
 ALTER TABLE inventory.StockEvent
 ADD CONSTRAINT fk_stock_user FOREIGN KEY([UserID]) REFERENCES core.[User](UserID);
 ALTER TABLE inventory.StockEvent
@@ -48,7 +55,6 @@ ALTER TABLE link.VendorProduct
 ADD CONSTRAINT FK_VendorProduct_Product FOREIGN KEY (ProductID) REFERENCES core.Product(ProductID);
 ALTER TABLE link.OrderHistoryProduct
 ADD CONSTRAINT FK_OrderHistoryProduct_Product FOREIGN KEY (ProductID) REFERENCES core.Product(ProductID);
-ALTER TABLE link.OrderHistoryInventoryItem
-ADD CONSTRAINT FK_OrderHistoryInventoryItem_InventoryItem FOREIGN KEY (InventoryItemID) REFERENCES inventory.InventoryItem(InventoryItemID);
+
 COMMIT;
 GO

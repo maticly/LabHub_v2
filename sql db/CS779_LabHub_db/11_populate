@@ -1,11 +1,15 @@
 USE LabHub_v2;
 
-BULK INSERT link.VendorProductLink
-FROM 'C:\Users\mateu\OneDrive\Pulpit\GitHub\LabHub_v2\analytics\data\OLTP_data\link.VendorProductLink.csv'
+SET DATEFORMAT mdy; 
+GO
+BULK INSERT supply.staging
+FROM 'C:\Users\mateu\OneDrive\Pulpit\GitHub\LabHub_v2\analytics\data\OLTP_data\to update\productID_staging_table.csv'
 
 WITH (
-    FIRSTROW = 2,           -- Skips the header row
-    FIELDTERMINATOR = ',',  -- Change to ';' if that's your delimiter
+    FORMAT = 'CSV',
+    FIRSTROW = 2,          
+    FIELDTERMINATOR = ',',  
     ROWTERMINATOR = '0x0a',
-    TABLOCK                 -- Improves performance for large uploads
+    TABLOCK                 
 );
+

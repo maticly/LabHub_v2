@@ -50,29 +50,35 @@ def transform_dim_vendor(df_vendors: pd.DataFrame) -> pd.DataFrame:
 # -------------------------
 # Load
 # -------------------------
-def load_dim_vendor(duck_conn, dim_df: pd.DataFrame):
+def load_dim_vendor(duck_conn, dim_df: pd.DataFrame, effective_date: str):
     """
     SCD3
     """
-    now = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
     logger.info("SCD3 load for dw.Dim_Vendor...")
     duck_conn.register("tmp_dim_vendor", dim_df)
 
     # Update existing records
     duck_conn.execute(f"""
         UPDATE dw.Dim_Vendor
-        SET
-            VendorPreviousName = dw.Dim_Vendor.VendorName,
-            VendorPreviousStatus = dw.Dim_Vendor.VendorStatus,
+        SET VendorPreviousName = CASE 
+                WHEN dw.Dim_Vendor.VendorName IS DISTINCT FROM tmp_dim_vendor.VendorName 
+                THEN dw.Dim_Vendor.VendorName 
+                ELSE dw.Dim_Vendor.VendorPreviousName 
+            END,
+            VendorPreviousStatus = CASE 
+                WHEN dw.Dim_Vendor.VendorStatus IS DISTINCT FROM tmp_dim_vendor.VendorStatus 
+                THEN dw.Dim_Vendor.VendorStatus 
+                ELSE dw.Dim_Vendor.VendorPreviousStatus 
+            END,
             VendorName = tmp_dim_vendor.VendorName,
             VendorStatus = tmp_dim_vendor.VendorStatus,
-            EffectiveDate = '{now}'
+            EffectiveDate = '{effective_date}'
         FROM tmp_dim_vendor
         WHERE dw.Dim_Vendor.VendorID = tmp_dim_vendor.VendorID
-          AND (
-              dw.Dim_Vendor.VendorName IS DISTINCT FROM tmp_dim_vendor.VendorName OR
-              dw.Dim_Vendor.VendorStatus IS DISTINCT FROM tmp_dim_vendor.VendorStatus
-          );
+            AND (dw.Dim_Vendor.VendorName IS DISTINCT FROM tmp_dim_vendor.VendorName
+            OR dw.Dim_Vendor.VendorStatus IS DISTINCT FROM tmp_dim_vendor.VendorStatus
+        );
+
     """)
 
     # Insert new records
@@ -87,7 +93,7 @@ def load_dim_vendor(duck_conn, dim_df: pd.DataFrame):
             '' AS VendorPreviousName,
             tmp_dim_vendor.VendorStatus,
             'N/A' AS VendorPreviousStatus,
-            '{now}' AS EffectiveDate
+            '{effective_date}' AS EffectiveDate
         FROM tmp_dim_vendor
         WHERE NOT EXISTS (
             SELECT 1 FROM dw.Dim_Vendor
@@ -100,11 +106,11 @@ def load_dim_vendor(duck_conn, dim_df: pd.DataFrame):
 # -------------------------
 # 4. Orchestration
 # -------------------------
-def run_dim_vendor_etl(duck_conn):
+def run_dim_vendor_etl(duck_conn, effective_date: str):
     try:
         raw_data = extract_vendors()
         transformed_df = transform_dim_vendor(raw_data)
-        load_dim_vendor(duck_conn, transformed_df)
+        load_dim_vendor(duck_conn, transformed_df, effective_date)
         logger.info("✅ Dim_Vendor ETL completed successfully.")
     except Exception as e:
         logger.error(f"❌ Dim_Vendor ETL failed: {e}")

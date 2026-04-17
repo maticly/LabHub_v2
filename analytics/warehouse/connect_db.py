@@ -15,8 +15,7 @@ from pathlib import Path
 # -------------------------
 # Config
 # -------------------------
-PROJECT_ROOT = Path(__file__).resolve().parents[0]
-WAREHOUSE_DB = PROJECT_ROOT / "warehouse.duckdb"
+WAREHOUSE_DB = Path(__file__).resolve().parents[2] / "analytics" / "warehouse" / "warehouse.duckdb"
 
 
 Driver = 'ODBC Driver 18 for SQL Server'

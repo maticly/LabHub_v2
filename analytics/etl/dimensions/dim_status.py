@@ -49,20 +49,18 @@ def transform_dim_status(df_status: pd.DataFrame) -> pd.DataFrame:
 # -------------------------
 # Load
 # -------------------------
-def load_dim_status(duck_conn, dim_df: pd.DataFrame):
+def load_dim_status(duck_conn, dim_df: pd.DataFrame, effective_date: str):
     """
     SCD2
     """
-    now = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+
     logger.info("SCD2 for dw.Dim_Status...")
     duck_conn.register("tmp_dim_status", dim_df)
 
     # expire old records
     duck_conn.execute(f"""
         UPDATE dw.Dim_Status
-        SET
-            EndDate = '{now}',
-            IsCurrent = 0
+        SET EndDate = '{effective_date}', IsCurrent = 0
         FROM tmp_dim_status
         WHERE dw.Dim_Status.StatusID = tmp_dim_status.StatusID
           AND dw.Dim_Status.IsCurrent = 1
@@ -82,7 +80,7 @@ def load_dim_status(duck_conn, dim_df: pd.DataFrame):
             tmp_dim_status.StatusID,
             tmp_dim_status.StatusName,
             tmp_dim_status.StatusCategory,
-            '{now}' AS EffectiveDate,
+            '{effective_date}' AS EffectiveDate,
             NULL AS EndDate,
             1 AS IsCurrent
         FROM tmp_dim_status
@@ -98,11 +96,11 @@ def load_dim_status(duck_conn, dim_df: pd.DataFrame):
 # -------------------------
 # 4. Orchestration
 # -------------------------
-def run_dim_status_etl(duck_conn):
+def run_dim_status_etl(duck_conn, effective_date: str):
     try:
         raw_data = extract_statuses()
         transformed_df = transform_dim_status(raw_data)
-        load_dim_status(duck_conn, transformed_df)
+        load_dim_status(duck_conn, transformed_df, effective_date)
         logger.info("✅ Dim_Status ETL completed successfully.")
     except Exception as e:
         logger.error(f"❌ Dim_Status ETL failed: {e}")

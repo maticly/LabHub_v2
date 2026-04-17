@@ -1,0 +1,15 @@
+from analytics.warehouse.connect_db import get_warehouse_conn
+
+duck_conn = get_warehouse_conn()
+duck_conn.execute("DELETE FROM dw.Fact_Inventory_Transactions;")
+duck_conn.execute("DELETE FROM dw.Fact_Purchase_Orders;")
+duck_conn.execute("DELETE FROM dw.Dim_Product;")
+duck_conn.execute("DELETE FROM dw.Dim_User;")
+duck_conn.execute("DELETE FROM dw.Dim_Vendor;")
+duck_conn.execute("DELETE FROM dw.Dim_Status;")
+duck_conn.execute("DELETE FROM dw.Dim_Location;")
+duck_conn.execute("DELETE FROM dw.Dim_Stock_Event;")
+duck_conn.execute("DELETE FROM dw.Dim_Storage_Conditions;")
+duck_conn.execute("DELETE FROM dw.Dim_Date;")
+duck_conn.close()
+print("Done — warehouse cleared.")

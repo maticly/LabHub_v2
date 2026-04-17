@@ -57,7 +57,8 @@ def load_dim_location(duck_conn, dim_df: pd.DataFrame):
     """
     SCD2
     """
-    now = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+    now_fixed = datetime(1900, 1, 1, 0, 0, 0)
+    now = now_fixed.strftime('%Y-%m-%d %H:%M:%S') # for SCD replace wth datetime.now() 
     logger.info(f"Upserting {len(dim_df)} rows into dw.Dim_Location...")
     duck_conn.register("tmp_dim_location", dim_df)
 
@@ -68,7 +69,9 @@ def load_dim_location(duck_conn, dim_df: pd.DataFrame):
             SiteName = tmp.SiteName,
             Building = tmp.Building,
             RoomNumber = tmp.RoomNumber,
-            StorageType = tmp.StorageType
+            StorageType = tmp.StorageType,
+            EndDate = '{now}',
+            IsCurrent = 0
         FROM tmp_dim_location AS tmp
         WHERE dw.Dim_Location.LocationID = tmp.LocationID
           AND (

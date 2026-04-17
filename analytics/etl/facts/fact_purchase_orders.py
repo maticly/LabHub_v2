@@ -19,17 +19,28 @@ def extract_purchase_order_data():
         SELECT
             supply.[Order].OrderID AS PurchaseOrderID,
             supply.[Order].ProductID,
-            supply.[Order].VendorID,
+            --core.Vendor.VendorID,
             supply.[Order].UserID AS RequesterUserID,
             supply.[Order].OrderStatusID,
+            core.StorageConditions.StorageConditionID,
             supply.[Order].Quantity AS QuantityOrdered,
             (supply.[Order].Quantity * supply.[Order].UnitPrice) AS TotalCost,
             supply.[Order].CreatedAt AS OrderDate,
-            inventory.InventoryItem.AddedAt AS DeliveryDate,
-            ABS(DATEDIFF(DAY, supply.[Order].CreatedAt, inventory.InventoryItem.AddedAt)) AS VendorLeadTimeDays
+            inv.DeliveryDate AS DeliveryDate,
+            COALESCE(ABS(DATEDIFF(DAY, supply.[Order].CreatedAt, inv.DeliveryDate)), 0) AS VendorLeadTimeDays
         FROM supply.[Order]
-        JOIN core.Product ON supply.[Order].ProductID = core.Product.ProductID
-        JOIN inventory.InventoryItem ON inventory.InventoryItem.ProductID = core.Product.ProductID
+        LEFT JOIN core.Product ON supply.[Order].ProductID = core.Product.ProductID
+        --LEFT JOIN link.VendorProductLink ON core.Product.ProductID = link.VendorProductLink.ProductID
+        --LEFT JOIN core.Vendor ON link.VendorProductLink.VendorID = core.Vendor.VendorID
+        LEFT JOIN core.StorageConditions ON core.Product.StorageConditionID = core.StorageConditions.StorageConditionID
+        LEFT JOIN (
+            SELECT OrderID, MIN(AddedAt) AS DeliveryDate
+            FROM inventory.InventoryItem
+            WHERE OrderID IS NOT NULL
+            GROUP BY OrderID
+        ) AS inv ON inv.OrderID = supply.[Order].OrderID
+
+        
     """
     conn = get_oltp_connection()
     try:
@@ -47,7 +58,7 @@ def load_fact_purchase_orders(duck_conn, df_po: pd.DataFrame):
     """
     SCD2 lookups and incremental load
     """
-    logger.info("load into Fact_Inventory_Transactions...")
+    logger.info("load into dw.Fact_Purchase_Orders...")
 
     before_count = duck_conn.execute("SELECT COUNT(*) FROM dw.Fact_Purchase_Orders").fetchone()[0]
     duck_conn.register("tmp_fact_po", df_po)
@@ -55,7 +66,7 @@ def load_fact_purchase_orders(duck_conn, df_po: pd.DataFrame):
     duck_conn.execute("""
         INSERT INTO dw.Fact_Purchase_Orders (
             PurchaseOrderID, ProductKey, OrderDateKey, DeliveryDateKey,
-            VendorKey, StatusKey, RequestedByKey,
+             StatusKey, RequestedByKey, StorageConditionKey,
             QuantityOrdered, TotalCost, VendorLeadTimeDays
         )
         SELECT
@@ -63,9 +74,10 @@ def load_fact_purchase_orders(duck_conn, df_po: pd.DataFrame):
             dw.Dim_Product.ProductKey,
             CAST(strftime(tmp_fact_po.OrderDate, '%Y%m%d') AS INT) AS OrderDateKey,
             COALESCE(CAST(strftime(tmp_fact_po.DeliveryDate, '%Y%m%d') AS INT), 19000101) AS DeliveryDateKey,
-            dw.Dim_Vendor.VendorKey,
+            --dw.Dim_Vendor.VendorKey,
             dw.Dim_Status.StatusKey,
             dw.Dim_User.UserKey AS RequestedByKey,
+            dw.Dim_Storage_Conditions.StorageConditionKey,
             tmp_fact_po.QuantityOrdered,
             tmp_fact_po.TotalCost,
             tmp_fact_po.VendorLeadTimeDays
@@ -74,8 +86,10 @@ def load_fact_purchase_orders(duck_conn, df_po: pd.DataFrame):
         JOIN dw.Dim_Product ON tmp_fact_po.ProductID = dw.Dim_Product.ProductID 
             AND tmp_fact_po.OrderDate >= dw.Dim_Product.EffectiveDate 
             AND (tmp_fact_po.OrderDate < dw.Dim_Product.EndDate OR dw.Dim_Product.EndDate IS NULL)
+                      
         -- Vendor SCD3 lookup
-        JOIN dw.Dim_Vendor ON tmp_fact_po.VendorID = dw.Dim_Vendor.VendorID
+        --JOIN dw.Dim_Vendor ON tmp_fact_po.VendorID = dw.Dim_Vendor.VendorID
+                      
         -- Status SCD2 lookup
         JOIN dw.Dim_Status ON tmp_fact_po.OrderStatusID = dw.Dim_Status.StatusID
             AND tmp_fact_po.OrderDate >= dw.Dim_Status.EffectiveDate 
@@ -84,6 +98,10 @@ def load_fact_purchase_orders(duck_conn, df_po: pd.DataFrame):
         JOIN dw.Dim_User ON tmp_fact_po.RequesterUserID = dw.Dim_User.UserID 
             AND tmp_fact_po.OrderDate >= dw.Dim_User.EffectiveDate 
             AND (tmp_fact_po.OrderDate < dw.Dim_User.EndDate OR dw.Dim_User.EndDate IS NULL)
+        
+        -- STORAGE CONDITIONS
+        JOIN dw.Dim_Storage_Conditions
+            ON tmp_fact_po.StorageConditionID = dw.Dim_Storage_Conditions.StorageConditionID
         WHERE NOT EXISTS (
             SELECT 1 FROM dw.Fact_Purchase_Orders 
             WHERE dw.Fact_Purchase_Orders.PurchaseOrderID = tmp_fact_po.PurchaseOrderID

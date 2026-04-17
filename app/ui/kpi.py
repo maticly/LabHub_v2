@@ -1,25 +1,29 @@
 import streamlit as st
 
-def kpi_card(title, value, subtitle="", bg_color="#DEE7F1"):
+def kpi_card(title, value, subtitle="", bg_color="#F2F2F7"):
+    """
+    Standard KPI Card for Warehouse Analytics.
+    Default bg_color is Apple/Google light-gray.
+    """
     st.markdown(f"""
     <div style="
-        background:{bg_color};
-        padding: 24px 22px 20px 22px;
-        border-radius:18px;
-        color:white;
-        border:1px solid #c2c2c2;
-        box-shadow:0 12px 20px rgba(0,0,0,0.10);
-        transition: box-shadow 0.2s ease, transform 0.2s ease;
-        min-height: 110px;
+        background-color: {bg_color};
+        padding: 20px;
+        border-radius: 12px;
+        border: 1px solid #E5E5EA;
+        color: #1D1D1F;
+        min-height: 100px;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;)
+        justify-content: center;
+        margin-bottom: 1rem;
     ">
-    
-    <div style="font-size:18px;font-weight:600">{title}</div>
-    <div style="font-size:32px;font-weight:700">{value}</div>
-    <div style="font-size:15px">{subtitle}</div>
-
-        
+        <div style="font-size: 14px; font-weight: 500; color: #8E8E93; margin-bottom: 4px;">
+            {title.upper()}
+        </div>
+        <div style="font-size: 28px; font-weight: 700; color: #1D1D1F;">
+            {value}
+        </div>
+        {f'<div style="font-size: 13px; color: #48484A; margin-top: 4px;">{subtitle}</div>' if subtitle else ""}
     </div>
     """, unsafe_allow_html=True)

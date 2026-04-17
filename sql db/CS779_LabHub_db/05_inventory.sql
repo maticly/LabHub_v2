@@ -23,18 +23,30 @@ CREATE TABLE inventory.LocationClosure
     PRIMARY KEY (AncestorID, DescendantID)
 );
 
+SELECT DISTINCT o.ProductID
+FROM supply.[Order] o
+LEFT JOIN core.Product p ON o.ProductID = p.ProductID
+WHERE p.ProductID IS NULL;
+
+
+SELECT COUNT(*) AS MissingInventory
+FROM supply.[Order] o
+LEFT JOIN inventory.InventoryItem i ON o.OrderID = i.OrderID
+WHERE i.OrderID IS NULL;
+
+
+
 CREATE TABLE inventory.InventoryItem
 (
     InventoryItemID BIGINT IDENTITY PRIMARY KEY,
     ProductID BIGINT,
     LocationID BIGINT,
-    PurchaseID BIGINT,
-    Quantity DECIMAL(12,2),
+    OrderID BIGINT,
     ExpirationDate DATE,
     AddedAt DATETIME2 DEFAULT SYSDATETIME(),
     LotNumber VARCHAR(64)
 );
-
+select * from inventory.StockEvent
 CREATE TABLE inventory.Chemical
 (
     InventoryItemID BIGINT PRIMARY KEY,

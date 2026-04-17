@@ -19,18 +19,23 @@ def extract_fact_source_data():
             SELECT
                 inventory.StockEvent.StockEventID AS TransactionID,
                 inventory.InventoryItem.ProductID,
+                inventory.StockEvent.EventDate,
+                inventory.InventoryItem.AddedAt,
+                inventory.InventoryItem.ExpirationDate,
                 inventory.StockEvent.LocationID,
                 inventory.StockEvent.[UserID],
-                inventory.StockEvent.EventDate,
-                inventory.InventoryItem.ExpirationDate,
                 inventory.InventoryItem.LotNumber,
+                inventory.StockEvent.StockEventID AS StockEventKey,
+                core.StorageConditions.StorageConditionID,
                 inventory.StockEvent.OldQuantity,
                 inventory.StockEvent.NewQuantity,
                 FIRST_VALUE(inventory.StockEvent.NewQuantity) OVER(PARTITION BY inventory.StockEvent.InventoryItemID
                     ORDER BY inventory.StockEvent.EventDate DESC, inventory.StockEvent.StockEventID DESC) AS CurrentStockSnapshot
             FROM inventory.StockEvent
             LEFT JOIN inventory.InventoryItem ON inventory.StockEvent.InventoryItemID = inventory.InventoryItem.InventoryItemID
-            ) SELECT * FROM Snapshots;
+            JOIN core.Product ON inventory.InventoryItem.ProductID = core.Product.ProductID
+            LEFT JOIN core.StorageConditions ON core.Product.StorageConditionID = core.StorageConditions.StorageConditionID
+            ) SELECT DISTINCT * FROM Snapshots;
     """
     conn = get_oltp_connection()
     try:
@@ -44,7 +49,9 @@ def extract_fact_source_data():
         conn.close()
 
 #3. Load
+
 def load_fact_inventory(duck_conn, df_fact_inventory: pd.DataFrame):
+
     """
     Performs dimension lookups and incrementally inserts only new rows
     into Fact_Inventory_Transactions, skipping any TransactionID that
@@ -61,32 +68,50 @@ def load_fact_inventory(duck_conn, df_fact_inventory: pd.DataFrame):
 
     duck_conn.execute("""
         INSERT INTO dw.Fact_Inventory_Transactions (
-                TransactionID, ProductKey, DeliveryDateKey, ExpirationDateKey,
-                LocationKey, UserKey, LotNumber, QuantityDelta, 
+                TransactionID, ProductKey, EventDateKey, DeliveryDateKey, ExpirationDateKey,
+                LocationKey, UserKey, LotNumber, StockEventKey, StorageConditionKey, QuantityDelta, 
                 AbsoluteQuantity, CurrentStockSnapshot
         )
-        SELECT 
+        SELECT
             tmp_fact_inventory.TransactionID,
             dw.Dim_Product.ProductKey,
-            CAST(strftime(tmp_fact_inventory.EventDate, '%Y%m%d') AS INT) AS DeliveryDateKey,
+            CAST(strftime(tmp_fact_inventory.EventDate, '%Y%m%d') AS INT) AS EventDateKey,
+            CAST(strftime(tmp_fact_inventory.AddedAt, '%Y%m%d') AS INT) AS DeliveryDateKey,
             COALESCE(CAST(strftime(tmp_fact_inventory.ExpirationDate, '%Y%m%d') AS INT), 19000101) AS ExpirationDateKey,
+            
             dw.Dim_Location.LocationKey,
             dw.Dim_User.UserKey,
+                      
             COALESCE(tmp_fact_inventory.LotNumber, 'UNKNOWN'),
+                      
+            dw.Dim_Stock_Event.StockEventKey,
+            dw.Dim_Storage_Conditions.StorageConditionKey,
             (tmp_fact_inventory.NewQuantity - tmp_fact_inventory.OldQuantity) AS QuantityDelta,
             tmp_fact_inventory.NewQuantity AS AbsoluteQuantity,
             tmp_fact_inventory.CurrentStockSnapshot
+                      
         FROM tmp_fact_inventory
+                      
         -- SCD2 lookup for product
-        JOIN dw.Dim_Product ON tmp_fact_inventory.ProductID = dw.Dim_Product.ProductID 
-            AND tmp_fact_inventory.EventDate >= dw.Dim_Product.EffectiveDate 
-            AND (tmp_fact_inventory.EventDate < dw.Dim_Product.EndDate OR dw.Dim_Product.EndDate IS NULL)
+        JOIN dw.Dim_Product ON tmp_fact_inventory.ProductID = dw.Dim_Product.ProductID
+            AND tmp_fact_inventory.EventDate >= dw.Dim_Product.EffectiveDate
+            AND (tmp_fact_inventory.EventDate < dw.Dim_Product.EndDate
+                OR dw.Dim_Product.EndDate IS NULL)
+        
         -- SCD2 lookup for user
-        JOIN dw.Dim_User ON tmp_fact_inventory.UserID = dw.Dim_User.UserID 
+        JOIN dw.Dim_User ON tmp_fact_inventory.UserID = dw.Dim_User.UserID
             AND tmp_fact_inventory.EventDate >= dw.Dim_User.EffectiveDate 
             AND (tmp_fact_inventory.EventDate < dw.Dim_User.EndDate OR dw.Dim_User.EndDate IS NULL)
-        -- SCD1 / Standard Lookups
+        
         JOIN dw.Dim_Location ON tmp_fact_inventory.LocationID = dw.Dim_Location.LocationID
+                                      
+        -- STOCK EVENT TYPE
+        JOIN dw.Dim_Stock_Event
+        ON tmp_fact_inventory.StockEventKey = dw.Dim_Stock_Event.StockEventID
+
+        -- STORAGE CONDITIONS
+        JOIN dw.Dim_Storage_Conditions
+            ON tmp_fact_inventory.StorageConditionID = dw.Dim_Storage_Conditions.StorageConditionID
         WHERE NOT EXISTS (
             SELECT 1 FROM dw.Fact_Inventory_Transactions
             WHERE dw.Fact_Inventory_Transactions.TransactionID = tmp_fact_inventory.TransactionID
@@ -110,6 +135,13 @@ def run_fact_inventory_etl(duck_conn):
     try:
         df_source = extract_fact_source_data()
         if not df_source.empty:
+            initial_count = len(df_source)
+            df_source = df_source.drop_duplicates(subset=['TransactionID'], keep='first')
+
+            cleaned_count = len(df_source)
+            if initial_count != cleaned_count:
+                logger.warning(f"Removed {initial_count - cleaned_count} duplicate TransactionIDs from source!")
+
             load_fact_inventory(duck_conn, df_source)
         else:
             logger.warning("No source data found to load into Fact table.")

@@ -11,7 +11,7 @@ CREATE SEQUENCE IF NOT EXISTS dw.seq_location_key;
 CREATE SEQUENCE IF NOT EXISTS dw.seq_user_key;
 CREATE SEQUENCE IF NOT EXISTS dw.seq_stock_event_key;
 CREATE SEQUENCE IF NOT EXISTS dw.seq_status_key;
-CREATE SEQUENCE IF NOT EXISTS dw.seq_product_conditions_key;
+CREATE SEQUENCE IF NOT EXISTS dw.seq_storage_conditions_key;
 CREATE SEQUENCE IF NOT EXISTS dw.seq_vendor_key;
 
 -- =========================
@@ -103,10 +103,10 @@ CREATE TABLE IF NOT EXISTS dw.Dim_Stock_Event (
 );
 
 -- =========================
--- Dimension: Dim_Product_Conditions
+-- Dimension: Dim_Storage_Conditions
 -- =========================
-CREATE TABLE IF NOT EXISTS dw.Dim_Product_Conditions (
-    StorageConditionKey BIGINT PRIMARY KEY DEFAULT nextval('dw.seq_product_conditions_key'),
+CREATE TABLE IF NOT EXISTS dw.Dim_Storage_Conditions (
+    StorageConditionKey BIGINT PRIMARY KEY DEFAULT nextval('dw.seq_storage_conditions_key'),
     StorageConditionID BIGINT NOT NULL,
     MaxTemp INT,
     MinTemp INT,
@@ -131,15 +131,17 @@ CREATE TABLE IF NOT EXISTS dw.Dim_Vendor (
 -- =========================
 -- Fact: Fact_Inventory_Transactions
 -- =========================
-
 CREATE TABLE IF NOT EXISTS dw.Fact_Inventory_Transactions (
     TransactionID BIGINT PRIMARY KEY,     -- From inventory.StockEvent.StockEventID
     ProductKey BIGINT NOT NULL,
+    EventDateKey INT NOT NULL,
     DeliveryDateKey INT NOT NULL,
     ExpirationDateKey INT NOT NULL,
     LocationKey BIGINT NOT NULL,
     UserKey BIGINT NOT NULL,
     LotNumber VARCHAR(64) NOT NULL,
+    StockEventKey BIGINT NOT NULL,
+    StorageConditionKey BIGINT NOT NULL,
 
     QuantityDelta DECIMAL(12,2) NOT NULL,
     AbsoluteQuantity DECIMAL(12,2) NOT NULL,
@@ -158,22 +160,28 @@ CREATE TABLE IF NOT EXISTS dw.Fact_Inventory_Transactions (
         FOREIGN KEY (LocationKey) REFERENCES dw.Dim_Location(LocationKey),
 
     CONSTRAINT fk_fact_inventory_expiration_user
-        FOREIGN KEY (UserKey) REFERENCES dw.Dim_User(UserKey)
+        FOREIGN KEY (UserKey) REFERENCES dw.Dim_User(UserKey),
+
+    CONSTRAINT fk_fact_inventory_stock_event
+        FOREIGN KEY (StockEventKey) REFERENCES dw.Dim_Stock_Event(StockEventKey),
+
+    CONSTRAINT fk_fact_inventory_storage_conditions
+        FOREIGN KEY (StorageConditionKey) REFERENCES dw.Dim_Storage_Conditions(StorageConditionKey)
 );
 
 
 -- =========================
 -- Fact: Fact_Purchase_Orders
 -- =========================
-select * from supply.[Order]
 CREATE TABLE IF NOT EXISTS dw.Fact_Purchase_Orders (
     PurchaseOrderID BIGINT PRIMARY KEY,     -- From OrderHistory
     ProductKey BIGINT NOT NULL,
     OrderDateKey INT NOT NULL,
     DeliveryDateKey INT NOT NULL,
-    VendorKey BIGINT NOT NULL,
+    VendorKey BIGINT,
     StatusKey BIGINT NOT NULL,
     RequestedByKey BIGINT NOT NULL,
+    StorageConditionKey BIGINT NOT NULL,
 
     QuantityOrdered DECIMAL(12,2) NOT NULL,
     TotalCost DECIMAL(16,2) NOT NULL,
@@ -195,5 +203,8 @@ CREATE TABLE IF NOT EXISTS dw.Fact_Purchase_Orders (
         FOREIGN KEY (StatusKey) REFERENCES dw.Dim_Status(StatusKey),
 
     CONSTRAINT fk_fact_purchase_requested_by
-        FOREIGN KEY (RequestedByKey) REFERENCES dw.Dim_User(UserKey)
+        FOREIGN KEY (RequestedByKey) REFERENCES dw.Dim_User(UserKey),
+
+    CONSTRAINT fk_fact_purchase_orders
+        FOREIGN KEY (StorageConditionKey) REFERENCES dw.Dim_Storage_Conditions(StorageConditionKey)
 );

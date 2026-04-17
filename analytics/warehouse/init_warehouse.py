@@ -8,9 +8,9 @@ IT DOES NOT LOAD ANY DATA. THAT HAPPENS IN THE ETL STEP.
 """
 
 # Paths
-PROJECT_ROOT = Path(__file__).resolve().parent
-DB_PATH = PROJECT_ROOT / "warehouse.duckdb"
-SCHEMA_SQL_PATH = PROJECT_ROOT / "warehouse_schema.sql"
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+DB_PATH = PROJECT_ROOT / "analytics" / "warehouse" / "warehouse.duckdb"
+SCHEMA_SQL_PATH = PROJECT_ROOT / "analytics" / "warehouse" / "warehouse_schema.sql"
 
 def init_warehouse():
 

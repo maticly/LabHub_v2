@@ -19,14 +19,18 @@ def extract_date_range():
     """
     query = """
         SELECT 
-            MIN(EventDate) AS MinDate,
-            MAX(EventDate) AS MaxDate 
+            MIN(AllDates) AS MinDate,
+            MAX(AllDates) AS MaxDate 
         FROM (
             SELECT EventDate AS AllDates FROM inventory.StockEvent
             UNION ALL
             SELECT CreatedAt AS AllDates FROM supply.[Order]
             UNION ALL 
-            SELECT UpdatedAt AS AllDates FROM supply.OrderHistory
+            SELECT UpdatedAt AS AllDates FROM supply.[Order]
+            UNION ALL
+            SELECT AddedAt AS AllDates FROM inventory.InventoryItem
+            UNION ALL
+            SELECT ExpirationDate AS AllDates FROM inventory.InventoryItem
         ) AS DateSource;
     """
     conn = get_oltp_connection()

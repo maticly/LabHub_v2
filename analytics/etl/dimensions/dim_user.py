@@ -55,20 +55,17 @@ def transform_dim_user(df_users: pd.DataFrame) -> pd.DataFrame:
 # -------------------------
 # Load
 # -------------------------
-def load_dim_user(duck_conn, dim_df: pd.DataFrame):
+def load_dim_user(duck_conn, dim_df: pd.DataFrame, effective_date: str):
     """
     SCD2
     """
-    now = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
     logger.info("SCD2 for dw.Dim_User...")
     duck_conn.register("tmp_dim_user", dim_df)
 
     # expire old records
     duck_conn.execute(f"""
         UPDATE dw.Dim_User
-        SET
-            EndDate = '{now}',
-            IsCurrent = 0
+        SET EndDate = '{effective_date}', IsCurrent = 0
         FROM tmp_dim_user
         WHERE dw.Dim_User.UserID = tmp_dim_user.UserID
         AND dw.Dim_User.IsCurrent = 1
@@ -87,7 +84,7 @@ def load_dim_user(duck_conn, dim_df: pd.DataFrame):
             tmp_dim_user.UserName,
             tmp_dim_user.UserRole,
             tmp_dim_user.DepartmentName,
-            '{now}' AS EffectiveDate,
+            '{effective_date}' AS EffectiveDate,
             NULL AS EndDate,
             1 AS IsCurrent
         FROM tmp_dim_user
@@ -103,11 +100,11 @@ def load_dim_user(duck_conn, dim_df: pd.DataFrame):
 # -------------------------
 # 4. Orchestration
 # -------------------------
-def run_dim_user_etl(duck_conn):
+def run_dim_user_etl(duck_conn, effective_date: str):
     try:
         raw_users = extract_users()
         dim_user_df = transform_dim_user(raw_users)
-        load_dim_user(duck_conn, dim_user_df)
+        load_dim_user(duck_conn, dim_user_df, effective_date)
         logger.info("✅ Dim_User ETL completed successfully")
     except Exception as e:
         logger.error(f"❌ Dim_User ETL failed: {e}")

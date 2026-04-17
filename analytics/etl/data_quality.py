@@ -7,9 +7,6 @@ import os
 def run_dq_checks(duck_conn, scope: str = "all")-> dict:
     """
     Runs a Data Quality audit against the provided DuckDB connection.
-
-    Args:
-        duck_conn: An active DuckDB connection (managed by the caller).
         scope: "dimensions", "facts", or "all" (default).
     """
     
@@ -43,64 +40,52 @@ def run_dq_checks(duck_conn, scope: str = "all")-> dict:
 
     # --- Dimension checks ---
     if scope in ("dimensions", "all"):
-        add_check(
-            "Dim_Product populated",
-            "SELECT COUNT(*) FROM dw.Dim_Product",
-            expected_zero=False, critical=True
-        )
-        add_check(
-            "Dim_Location populated",
-            "SELECT COUNT(*) FROM dw.Dim_Location",
-            expected_zero=False, critical=True
-        )
-        add_check(
-            "Dim_User populated",
-            "SELECT COUNT(*) FROM dw.Dim_User",
-            expected_zero=False, critical=True
-        )
-        add_check(
-            "Dim_Date populated",
-            "SELECT COUNT(*) FROM dw.Dim_Date",
-            expected_zero=False, critical=True
-        )
-        add_check(
-            "Missing AI Descriptions",
-            "SELECT COUNT(*) FROM dw.Dim_Product WHERE Description IS NULL OR length(trim(Description)) < 5",
-            critical=False
-        )
+        dim_tables = [
+            "Dim_Product", "Dim_Location", "Dim_User", "Dim_Date", 
+            "Dim_Status", "Dim_Stock_Event", "Dim_Storage_Conditions", "Dim_Vendor"
+        ]
+        for table in dim_tables:
+            add_check(f"{table} populated", f"SELECT COUNT(*) FROM dw.{table}", expected_zero=False, critical=True)
+
 
     # --- Fact checks ---
     if scope in ("facts", "all"):
-        add_check(
-            "Negative Stock (Absolute)",
-            "SELECT COUNT(*) FROM dw.Fact_Inventory_Transactions WHERE AbsoluteQuantity < 0",
-            critical=True
-        )
-        add_check(
-            "Orphaned Products",
-            """SELECT COUNT(*) FROM dw.Fact_Inventory_Transactions f
-               LEFT JOIN dw.Dim_Product p ON f.ProductKey = p.ProductKey
-               WHERE p.ProductKey IS NULL""",
-            critical=True
-        )
-        add_check(
-            "Orphaned Locations",
-            """SELECT COUNT(*) FROM dw.Fact_Inventory_Transactions f
-               LEFT JOIN dw.Dim_Location l ON f.LocationKey = l.LocationKey
-               WHERE l.LocationKey IS NULL""",
-            critical=True
-        )
-        add_check(
-            "Duplicate Transaction IDs",
-            "SELECT COUNT(TransactionID) - COUNT(DISTINCT TransactionID) FROM dw.Fact_Inventory_Transactions",
-            critical=True
-        )
+        inventory_orphans = [
+            ("Dim_Product", "ProductKey"), 
+            ("Dim_User", "UserKey"), 
+            ("Dim_Location", "LocationKey"), 
+            ("Dim_Stock_Event", "StockEventKey"), 
+            ("Dim_Storage_Conditions", "StorageConditionKey")
+        ]
+
+        for dim, key in inventory_orphans:
+            add_check(
+                f"Orphaned Inventory Transaction {dim}", 
+                f"SELECT COUNT(*) FROM dw.Fact_Inventory_Transactions f LEFT JOIN dw.{dim} d ON f.{key} = d.{key} WHERE d.{key} IS NULL", 
+                critical=True
+            )
+
+        purchase_orphans = [
+            ("Dim_Product", "ProductKey"), 
+            ("Dim_User", "RequestedByKey"),
+            ("Dim_Status", "StatusKey"), 
+            ("Dim_Storage_Conditions", "StorageConditionKey")
+        ]
+        for dim, key in purchase_orphans:
+            join_key = "UserKey" if dim == "Dim_User" else key
+            add_check(
+                f"purchase orphans {dim}", 
+                f"SELECT COUNT(*) FROM dw.Fact_Purchase_Orders f LEFT JOIN dw.{dim} d ON f.{key} = d.{join_key} WHERE d.{join_key} IS NULL", 
+                critical=True
+            )
+
+        add_check("Negative Stock (Absolute)", "SELECT COUNT(*) FROM dw.Fact_Inventory_Transactions WHERE AbsoluteQuantity < 0", critical=True)
+        add_check("Zero/Negative purchase_orphans Cost", "SELECT COUNT(*) FROM dw.Fact_Purchase_Orders WHERE TotalCost <= 0", critical=False)
+
         today_key = int(datetime.now().strftime('%Y%m%d'))
-        add_check(
-            "Data is from Today",
-            f"SELECT COUNT(*) FROM dw.Fact_Inventory_Transactions WHERE DateKey = {today_key}",
-            expected_zero=False, critical=False
-        )
+
+        add_check("Inventory Transactions Today", f"SELECT COUNT(*) FROM dw.Fact_Inventory_Transactions WHERE DeliveryDateKey = {today_key}", expected_zero=False, critical=False)
+        add_check("Purchase Orders Today", f"SELECT COUNT(*) FROM dw.Fact_Purchase_Orders WHERE OrderDateKey = {today_key}", expected_zero=False, critical=False)
 
     return report
 

@@ -17,7 +17,7 @@ def extract_stock_events():
     logger.info("Extracting stock event reasons from OLTP...")
     query = """
         SELECT
-            inventory.StockEvent. StockEventID,
+            inventory.StockEvent.StockEventID,
             inventory.EventReason.Reason AS StockEventReason,
             inventory.StockEvent.EventDescription
         FROM inventory.StockEvent
