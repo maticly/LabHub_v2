@@ -400,7 +400,8 @@ def create_analytics_views():
             Building,
             RoomNumber,
             SUM(CASE WHEN DaysUntilExpiration < 30 THEN CurrentStockSnapshot ELSE 0 END) AS AtRiskStock30,
-            SUM(CurrentStockSnapshot) AS TotalStock
+            SUM(CurrentStockSnapshot) AS TotalStock,
+            SUM(CASE WHEN DaysUntilExpiration < 30 THEN ItemRisk.ProductKey ELSE 0 END) AS AtRiskProducts30,
         FROM dw.v_location_expiration_risk
         GROUP BY SiteName, Building, RoomNumber;
         """)
