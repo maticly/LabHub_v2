@@ -1,4 +1,4 @@
-## LabHub Intelligence
+# LabHub Intelligence
 
 A laboratory inventory analytics platform built on a custom data warehouse — tracking stock movements, expiration risk, vendor performance, and user compliance across multi-site research facilities.
 
@@ -6,30 +6,6 @@ A laboratory inventory analytics platform built on a custom data warehouse — t
 ## 📌 Overview
 LabHub is a full-stack analytics pipeline that ingests operational data from a SQL Server OLTP system, transforms it into a dimensional warehouse in DuckDB, and exposes it through an interactive Streamlit dashboard. It is designed for research labs that need visibility into reagent consumption, supply chain reliability, and audit-level traceability of every stock movement.
 Stack: Python · SQL Server · DuckDB · Streamlit · Plotly
-
-
-
-# 🧪 LabHub — Inventory Intelligence Platform
-*A full OLTP → OLAP warehouse with ETL, Data Quality, semantic search, and a Streamlit analytics dashboard.*
-
-## [App link](https://vectorlab.streamlit.app/)
----
-
-## 📌 Overview
-
-LabHub is a complete data engineering project that simulates a real-world inventory intelligence system. It includes:
-
-- **SQL Server OLTP** database (core product, user, vendor, inventory tables)  
-- **DuckDB OLAP warehouse** with a Kimball-style star schema  
-- **Python ETL pipeline** (dimensions, facts, DQ gatekeeper, rollback logic)  
-- **Data Quality framework** with critical/warning checks  
-- **Semantic search** using ChromaDB + embeddings  
-- **Streamlit dashboard** for KPIs and inventory insights  
-- **Documentation, diagrams, and SQL build scripts**
-
-This project demonstrates modern data engineering practices: incremental loads, DQ enforcement, warehouse orchestration, and vector search integration.
-
----
 
 ## 🏗️ Architecture
 ```code
@@ -44,6 +20,15 @@ DuckDB Warehouse (OLAP)
 Streamlit Dashboard + Vector Search
 ```
 
+## Business Questions
+
+- Expiration risk tracking — per-product, per-location visibility with 30/60/90-day windows
+- SCD2 dimension history — full temporal tracking of product, user, and status changes
+- Incremental ETL with data quality gates — warehouse only commits if all DQ checks pass
+- Multi-tab Streamlit dashboard — product visibility, lineage & traceability, user accountability, semantic search, and system health
+- After-hours movement audit — flags inventory events outside standard operating hours
+- Vendor freshness scorecard — ranks vendors by average remaining shelf life at delivery
+- Process integrity gaps — surfaces users with negative balance events for retraining
 ---
 
 ## 📁 Project Structure
