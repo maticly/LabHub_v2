@@ -1,3 +1,14 @@
+## LabHub Intelligence
+
+A laboratory inventory analytics platform built on a custom data warehouse — tracking stock movements, expiration risk, vendor performance, and user compliance across multi-site research facilities.
+
+
+## 📌 Overview
+LabHub is a full-stack analytics pipeline that ingests operational data from a SQL Server OLTP system, transforms it into a dimensional warehouse in DuckDB, and exposes it through an interactive Streamlit dashboard. It is designed for research labs that need visibility into reagent consumption, supply chain reliability, and audit-level traceability of every stock movement.
+Stack: Python · SQL Server · DuckDB · Streamlit · Plotly
+
+
+
 # 🧪 LabHub — Inventory Intelligence Platform
 *A full OLTP → OLAP warehouse with ETL, Data Quality, semantic search, and a Streamlit analytics dashboard.*
 
